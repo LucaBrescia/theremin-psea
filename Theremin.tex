@@ -71,7 +71,6 @@
 		\item Moltiplicatore analogico;
 		\item Oscillatore a frequenza fissata;
 		\item Filtro passa basso.
-		\item Bella simo le vedi le modifiche?
 	\end{enumerate}
 	
 	La scelta dei componenti è stata fatta considerando le caratteristiche del segnale da generare. In particolare, volendo realizzare uno shift in frequenza, vi è la necessità di lavorare con integrati con una banda passante adeguata.
@@ -165,12 +164,12 @@
 	\end{equation}
 	\begin{equation}
 		\label{eq:prodotto sinusoidi con fase}
-		W = \frac{AB}{2}[\cos ((\omega _1 - \omega _2)t + (\varphi _1 - \varphi _2)) - \cos ((\omega _1 -+\omega _2)t + (\varphi _1 + \varphi _2))]\frac{1}{10[V]}
+		W = \frac{AB}{2}[\cos ((\omega _1 - \omega _2)t + (\varphi _1 - \varphi _2)) - \cos ((\omega _1 +\omega _2)t + (\varphi _1 + \varphi _2))]\frac{1}{10[V]}
 	\end{equation}
-	Aggiungendo l'ipotesi che le due sinusoidu abbiano fase nulla la formula \ref*{eq:prodotto sinusoidi con fase} diventa:
+	Aggiungendo l'ipotesi che le due sinusoidi abbiano fase nulla la formula \ref*{eq:prodotto sinusoidi con fase} diventa:
 	\begin{equation}
 		\label{eq:prodotto sinusoidi}
-		W = \frac{AB}{2}[\cos ((\omega _1 - \omega _2)t) - \cos ((\omega _1 -+\omega _2)t)]\frac{1}{10[V]} 
+		W = \frac{AB}{2}[\cos ((\omega _1 - \omega _2)t) - \cos ((\omega _1 +\omega _2)t)]\frac{1}{10[V]} 
 	\end{equation}
 	Si nota quindi che all'uscita del mixer si avrà un segnale dato dalla combinazione delle due sinusoidi in ingresso, le cui componenti spettrali saranno date una dalla somma delle componenti spettrali delle sinusoidi in ingresso e l'altra dalla loro differenza.
 	Quindi inserendo un opportuno filtro passa basso si va a selezionare sollo la componente spettrale d'interesse, ovvero quella compresa tra 20 $Hz$ e 20 $kHz$.
