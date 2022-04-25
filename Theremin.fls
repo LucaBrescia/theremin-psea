@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-PWD c:\Progetti\theremin-psea
-INPUT C:\Users\Luca Brescia\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Progetti\theremin-psea\Theremin.tex
-=======
 PWD d:\Università\PSEA\Progetto\RelazioneComune\theremin-psea
 INPUT C:\Users\pezz9\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT d:\Università\PSEA\Progetto\RelazioneComune\theremin-psea\Theremin.tex
->>>>>>> 0dfaf23205c993af62b47a54daa7266565eb39fd
 OUTPUT Theremin.log
 INPUT D:\Programmi\MiKTeX\tex\latex\base\report.cls
 INPUT D:\Programmi\MiKTeX\tex\latex\base\report.cls
@@ -930,7 +924,6 @@ INPUT .\Immagini\AD633_300k.png
 INPUT .\Immagini\AD633_300k.png
 INPUT .\Immagini\AD633_300k.png
 INPUT .\Immagini\AD633_300k.png
-INPUT D:\Programmi\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Immagini\lf353p_performance.pdf
 INPUT .\Immagini\lf353p_performance.pdf
 INPUT Immagini\lf353p_performance.pdf

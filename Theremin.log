@@ -1,19 +1,10 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  16 APR 2022 18:40
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  25 APR 2022 16:07
->>>>>>> 0dfaf23205c993af62b47a54daa7266565eb39fd
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  25 APR 2022 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-<<<<<<< HEAD
-**c:/Progetti/theremin-psea/Theremin.tex
-(c:/Progetti/theremin-psea/Theremin.tex
-=======
 **d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex
 (d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex
->>>>>>> 0dfaf23205c993af62b47a54daa7266565eb39fd
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (D:\Programmi\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -736,145 +727,136 @@ Capitolo 1.
 [3
 
 ]
-<Immagini/schema_blocchi_xr2206.pdf, id=169, 452.35329pt x 283.80057pt>
+<Immagini/schema_blocchi_xr2206.pdf, id=171, 452.35329pt x 283.80057pt>
 File: Immagini/schema_blocchi_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_blocchi_xr2206.pdf>
-Package pdftex.def Info: Immagini/schema_blocchi_xr2206.pdf  used on input line 120.
+Package pdftex.def Info: Immagini/schema_blocchi_xr2206.pdf  used on input line 116.
 (pdftex.def)             Requested size: 193.47578pt x 121.3823pt.
-<Immagini/schema_blocchi_pinout_xr2206.pdf, id=170, 514.3687pt x 277.8077pt>
+<Immagini/schema_blocchi_pinout_xr2206.pdf, id=172, 514.3687pt x 277.8077pt>
 File: Immagini/schema_blocchi_pinout_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_blocchi_pinout_xr2206.pdf>
-Package pdftex.def Info: Immagini/schema_blocchi_pinout_xr2206.pdf  used on input line 122.
+Package pdftex.def Info: Immagini/schema_blocchi_pinout_xr2206.pdf  used on input line 118.
 (pdftex.def)             Requested size: 241.84843pt x 130.6205pt.
-<Immagini/ad633_bp.pdf, id=173, 213.80533pt x 160.30577pt>
+<Immagini/ad633_bp.pdf, id=175, 213.80533pt x 160.30577pt>
 File: Immagini/ad633_bp.pdf Graphic file (type pdf)
 <use Immagini/ad633_bp.pdf>
-Package pdftex.def Info: Immagini/ad633_bp.pdf  used on input line 140.
+Package pdftex.def Info: Immagini/ad633_bp.pdf  used on input line 136.
 (pdftex.def)             Requested size: 213.8048pt x 160.30537pt.
  [4 <./Immagini/schema_blocchi_xr2206.pdf> <./Immagini/schema_blocchi_pinout_xr2206.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/schema_blocchi_pinout_xr2206.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Immagini/ad633_bp.pdf
-
-pdfTeX warning: pdflatex (file ./Immagini/ad633_bp.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/ad633_pinout.pdf, id=239, 150.49805pt x 116.03651pt>
+<Immagini/ad633_pinout.pdf, id=206, 150.49805pt x 116.03651pt>
 File: Immagini/ad633_pinout.pdf Graphic file (type pdf)
 <use Immagini/ad633_pinout.pdf>
-Package pdftex.def Info: Immagini/ad633_pinout.pdf  used on input line 180.
+Package pdftex.def Info: Immagini/ad633_pinout.pdf  used on input line 192.
 (pdftex.def)             Requested size: 150.49767pt x 116.03622pt.
- [5 <./Immagini/ad633_pinout.pdf>]
+ [5 <./Immagini/ad633_bp.pdf>] [6 <./Immagini/ad633_pinout.pdf>]
 Capitolo 2.
-<Immagini/Schema a blocchi PSEA.png, id=260, 954.56625pt x 322.20375pt>
+<Immagini/Schema a blocchi PSEA.png, id=268, 954.56625pt x 322.20375pt>
 File: Immagini/Schema a blocchi PSEA.png Graphic file (type png)
 <use Immagini/Schema a blocchi PSEA.png>
-Package pdftex.def Info: Immagini/Schema a blocchi PSEA.png  used on input line 195.
+Package pdftex.def Info: Immagini/Schema a blocchi PSEA.png  used on input line 206.
 (pdftex.def)             Requested size: 477.28197pt x 161.10147pt.
-<Immagini/schema_xr2206.pdf, id=262, 349.71185pt x 234.04086pt>
+<Immagini/schema_xr2206.pdf, id=270, 349.71185pt x 234.04086pt>
 File: Immagini/schema_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_xr2206.pdf>
-Package pdftex.def Info: Immagini/schema_xr2206.pdf  used on input line 218.
+Package pdftex.def Info: Immagini/schema_xr2206.pdf  used on input line 229.
 (pdftex.def)             Requested size: 349.71098pt x 234.04027pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6
+[7
 
  <./Immagini/Schema a blocchi PSEA.png>]
-<Immagini/sch_osc_wien.png, id=274, 282.05376pt x 273.02pt>
+<Immagini/sch_osc_wien.png, id=280, 282.05376pt x 273.02pt>
 File: Immagini/sch_osc_wien.png Graphic file (type png)
 <use Immagini/sch_osc_wien.png>
-Package pdftex.def Info: Immagini/sch_osc_wien.png  used on input line 238.
+Package pdftex.def Info: Immagini/sch_osc_wien.png  used on input line 250.
 (pdftex.def)             Requested size: 197.43626pt x 191.11269pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--251
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
-[7 <./Immagini/schema_xr2206.pdf> <./Immagini/sch_osc_wien.png (PNG copy)>]
-<Immagini/009_OscillatoreWienFFT.png, id=295, 455.2441pt x 273.14645pt>
+[8 <./Immagini/schema_xr2206.pdf> <./Immagini/sch_osc_wien.png (PNG copy)>]
+<Immagini/009_OscillatoreWienFFT.png, id=301, 455.2441pt x 273.14645pt>
 File: Immagini/009_OscillatoreWienFFT.png Graphic file (type png)
 <use Immagini/009_OscillatoreWienFFT.png>
-Package pdftex.def Info: Immagini/009_OscillatoreWienFFT.png  used on input line 263.
+Package pdftex.def Info: Immagini/009_OscillatoreWienFFT.png  used on input line 277.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
- [8 <./Immagini/009_OscillatoreWienFFT.png>]
-<Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png, id=311, 455.2441pt x 273.14645pt>
+ [9 <./Immagini/009_OscillatoreWienFFT.png>]
+<Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png, id=316, 455.2441pt x 273.14645pt>
 File: Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png Graphic file (type png)
 <use Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>
-Package pdftex.def Info: Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png  used on input line 300.
+Package pdftex.def Info: Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png  used on input line 314.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
- [9 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>]
-<Immagini/sch_lp4.png, id=319, 522.95375pt x 139.01938pt>
+<Immagini/sch_lp4.png, id=318, 522.95375pt x 139.01938pt>
 File: Immagini/sch_lp4.png Graphic file (type png)
 <use Immagini/sch_lp4.png>
-Package pdftex.def Info: Immagini/sch_lp4.png  used on input line 317.
+Package pdftex.def Info: Immagini/sch_lp4.png  used on input line 331.
 (pdftex.def)             Requested size: 470.65402pt x 125.11627pt.
-<Immagini/bode_teorico_lp4.png, id=321, 504.88625pt x 196.23312pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Immagini/bode_teorico_lp4.png, id=320, 504.88625pt x 196.23312pt>
 File: Immagini/bode_teorico_lp4.png Graphic file (type png)
 <use Immagini/bode_teorico_lp4.png>
-Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 326.
+Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 340.
 (pdftex.def)             Requested size: 454.3934pt x 176.60815pt.
- [10 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>] [11 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
 Capitolo 3.
-<Immagini/AD633_300k.png, id=330, 455.2441pt x 273.14645pt>
+<Immagini/AD633_300k.png, id=335, 455.2441pt x 273.14645pt>
 File: Immagini/AD633_300k.png Graphic file (type png)
 <use Immagini/AD633_300k.png>
-Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 358.
+Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 372.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11
+[12
 
 ]
-<Immagini/lf353p_performance.pdf, id=335, 236.44513pt x 212.96779pt>
+<Immagini/lf353p_performance.pdf, id=341, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 376.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 390.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
-<Immagini/bode_lf353p.pdf, id=336, 242.80711pt x 203.29951pt>
+<Immagini/bode_lf353p.pdf, id=342, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 377.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 391.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
- [12 <./Immagini/AD633_300k.png> <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
+ [13 <./Immagini/AD633_300k.png> <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/bode_lf353p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Capitolo 4.
-[13
+[14
 
 ] (Theremin.aux)
 Package rerunfilecheck Info: File `Theremin.out' has not changed.
-(rerunfilecheck)             Checksum: E1553AE80F8AA0476603387D5891653A;2607.
+(rerunfilecheck)             Checksum: AF9B7FBB9F8CBBDAB4D22A955D3D0319;2470.
 Package logreq Info: Writing requests to 'Theremin.run.xml'.
 \openout1 = `Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 19878 strings out of 478582
- 356235 string characters out of 2854137
- 836020 words of memory out of 3000000
- 37747 multiletter control sequences out of 15000+600000
- 475418 words of font info for 48 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,10n,77p,1871b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (14 pages, 1219340 bytes).
-=======
- 19960 strings out of 478582
- 354931 string characters out of 2856070
- 836589 words of memory out of 3000000
+ 19963 strings out of 478582
+ 354937 string characters out of 2856070
+ 836590 words of memory out of 3000000
  37830 multiletter control sequences out of 15000+600000
- 475418 words of font info for 48 fonts, out of 8000000 for 9000
+ 475111 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1904b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (14 pages, 1219012 bytes).
->>>>>>> 0dfaf23205c993af62b47a54daa7266565eb39fd
+Output written on Theremin.pdf (15 pages, 1220031 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
