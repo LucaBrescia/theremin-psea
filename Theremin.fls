@@ -1,6 +1,6 @@
-PWD g:\Il mio Drive\Uni\Magistrale\Progetti\PSEA\Relazione
+PWD c:\Progetti\theremin-psea
 INPUT C:\Users\Luca Brescia\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT g:\Il mio Drive\Uni\Magistrale\Progetti\PSEA\Relazione\Theremin.tex
+INPUT c:\Progetti\theremin-psea\Theremin.tex
 OUTPUT Theremin.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\report.cls
