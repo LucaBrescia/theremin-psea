@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  25 APR 2022 18:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  27 APR 2022 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,24 +796,18 @@ File: Immagini/sch_lp4.png Graphic file (type png)
 <use Immagini/sch_lp4.png>
 Package pdftex.def Info: Immagini/sch_lp4.png  used on input line 331.
 (pdftex.def)             Requested size: 470.65402pt x 125.11627pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Immagini/bode_teorico_lp4.png, id=320, 504.88625pt x 196.23312pt>
+ [10 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>]
+<Immagini/bode_teorico_lp4.png, id=328, 504.88625pt x 196.23312pt>
 File: Immagini/bode_teorico_lp4.png Graphic file (type png)
 <use Immagini/bode_teorico_lp4.png>
 Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 340.
 (pdftex.def)             Requested size: 454.3934pt x 176.60815pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>] [11 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
+ [11 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
 Capitolo 3.
-<Immagini/AD633_300k.png, id=335, 455.2441pt x 273.14645pt>
+<Immagini/AD633_300k.png, id=340, 455.2441pt x 273.14645pt>
 File: Immagini/AD633_300k.png Graphic file (type png)
 <use Immagini/AD633_300k.png>
-Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 372.
+Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 393.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -821,15 +815,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [12
 
 ]
-<Immagini/lf353p_performance.pdf, id=341, 236.44513pt x 212.96779pt>
+<Immagini/lf353p_performance.pdf, id=346, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 390.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 411.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
-<Immagini/bode_lf353p.pdf, id=342, 242.80711pt x 203.29951pt>
+<Immagini/bode_lf353p.pdf, id=347, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 391.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 412.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
  [13 <./Immagini/AD633_300k.png> <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
@@ -846,17 +840,17 @@ Package logreq Info: Writing requests to 'Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19963 strings out of 478582
- 354937 string characters out of 2856070
- 836590 words of memory out of 3000000
+ 19966 strings out of 478582
+ 354979 string characters out of 2856070
+ 836713 words of memory out of 3000000
  37830 multiletter control sequences out of 15000+600000
  475111 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1904b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (15 pages, 1220031 bytes).
+<D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Theremin.pdf (15 pages, 1239869 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

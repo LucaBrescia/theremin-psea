@@ -309,10 +309,10 @@
 	
 	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando la sinusoide ottenuta precedentemente \textit{Sezione \ref{sec:osc_wien}} con l'oscillatore di Wien, avente una $\omega_0$ di 45kHz, e una sinusoide generata dal generatore di funzione ad una frequenza di 20 kHz.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.9]{Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png}
-		\caption{FFT del segnale in uscita dall'AD633}
+		\caption{FFT del segnale in uscita dall'AD633, con test tra Oscillatore di Wien avente $\omega_0$ = 45kHz 12V picco e generatore di funzione con segnale 20 Khz e 2.5V picco.}
 		\label{fig:FFTmixer}
 	\end{figure}
 	
@@ -326,21 +326,42 @@
 	\\ 
 	Volendo un filtro molto selettivo e visto che il compondente $LF353P$ ha al suo interno due amplificatori, si è scelto di utilizzare un filtro attivo di ordine 4. Realizzandolo tramite un filtro di Chebychev con due celle Sallen-Key in casacata. 
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.9]{Immagini/sch_lp4.png}
 		\caption{Filtro attivo di ordine 4.}
 		\label{fig:LP4}
 	\end{figure}	
 	
-	Dove la sua risposta in frequenza del modulo del filtro teorico risulta essere quello riportato nella \textit{Figura \ref{fig:BodeLp4}}.
+	\noindent Dove la sua risposta teorica in frequenza del modulo del filtro risulta essere quella riportato nel diagramma di Bode mostrato in \textit{Figura \ref{fig:BodeLp4}}.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.9]{Immagini/bode_teorico_lp4.png}
 		\caption{Diagramma di Bode del modulo del filtro.}
 		\label{fig:BodeLp4}
 	\end{figure}
+
+	La funzione di trasferimento del filtro del quarto ordine può essere visto come il prodotto in cascata delle funzioni di trasferimeto delle due celle Sellen-Key del secondo ordine.
+	La funzione della prima cella risulta:
+
+	\begin{equation}
+		H_1(s) = \frac{V_{in}}{V_u}  =  \frac{1}{1 + s(C_1R_1 + C_2R_2)+ s^2C_1C_2R_1R_2 } 
+	\end{equation}
+
+	Mentre la funzione di trasferimento della seconda cella risulta essere:
+
+	\begin{equation}
+		H_2(s) = \frac{V_u}{V_{out}}  = \frac{1}{1 + s(C_3R_3 + C_4R_4)+ s^2C_3C_4R_3R_4 } 
+	\end{equation}
+
+	La funzione di trasferimento totale del filtro sarà data dal prodotto delle due funzioni di trasferimento
+	\begin{equation}
+		H(s) = H_1(s)H_2(s) =  \frac{V_{in}}{V_u}\frac{V_u}{V_{out}} = \frac{V_{in}}{V_{out}}
+	\end{equation}
+
+	
+
 
 
 \chapter{Risultati sperimentali}
