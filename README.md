@@ -23,3 +23,8 @@
 ```bash
  TODO: Modificare lo schematico di conseguenza
 ```
+
+# Catta su
+- Jumper
+- Distanziali
+- Flessibile
