@@ -24,6 +24,10 @@
  TODO: Modificare lo schematico di conseguenza
 ```
 
+# Aggiungere su disegni
+
+- Oscillatore di wien agigungere i pin sul diagramma e i valori utilizzati.
+- 
 # Catta su
 - Jumper
 - Distanziali
