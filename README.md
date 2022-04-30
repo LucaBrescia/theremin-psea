@@ -24,10 +24,12 @@
  TODO: Modificare lo schematico di conseguenza
 ```
 
-# Aggiungere su disegni
+## Oscillatore di Wien
 
-- Oscillatore di wien agigungere i pin sul diagramma e i valori utilizzati.
-- 
+- Modificare schema in accordo con il circuito: rimozione diodi e forse utilizzo di potenziometri al posto delle R.
+- Aggiungere i pin sul diagramma e i valori utilizzati.
+
+
 # Catta su
 - Jumper
 - Distanziali
