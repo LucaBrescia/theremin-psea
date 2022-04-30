@@ -18,4 +18,8 @@
 - Su pin 8 inseriamo un'altra 100k (che non utilizziamo per la sinusoide) per eventuali tirangolari e quadra
 - La capacità minima sui pin 5 e 6 è di 10pF
 - Le alimentazioni sono 100nF e non 1uF
+- La resistenza da 200ohm nel nostro caso è una serie di due resistenze da 100
 
+```bash
+ TODO: Modificare lo schematico di conseguenza
+```
