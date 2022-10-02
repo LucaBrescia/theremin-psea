@@ -29,6 +29,11 @@
 - Modificare schema in accordo con il circuito: rimozione diodi e forse utilizzo di potenziometri al posto delle R.
 - Aggiungere i pin sul diagramma e i valori utilizzati.
 
+## Filtro passa alto ua741
+ Taglio a 15 Hz:
+ - R = 106kOhm
+ - C = 100nF
+ (vedi filterPro)
 
 # Catta su
 - Jumper
