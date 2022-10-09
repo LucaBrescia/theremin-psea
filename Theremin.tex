@@ -107,7 +107,7 @@
 \section{Oscillatore monolitico XR2206}
 	\label{sec:XR2206}
 	
-	Si è scelto di utilizzare $XR2206$ perchè permette la generazioni di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impunsi garantendo un'alta precisione, stabilità e distorsione. L'ampiezza e la frequenza dei segnali in uscita è direttamente modulabile dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $HZ$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
+	Si è scelto di utilizzare $XR2206$ perchè permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impunsi garantendo un'alta precisione, stabilità e distorsione. L'ampiezza e la frequenza dei segnali in uscita è direttamente modulabile dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $HZ$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
 	In \textit{Figura \ref{fig:sch_xr2206}} è mostrato lo schema a blocchi del componente.
 	
 	\begin{figure}[h]
@@ -413,9 +413,28 @@
 	     	\caption{Diagrammi di bode del componente LF353P in anello aperto}
 	     	\label{fig:bode_LF353P}
 	     \end{figure}
+
+		 \begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.7]{Immagini/bode_lp4.pdf}
+			\caption{Diagramma di Bode del filtro Sallen-Key del $4^o$ ordine}
+			\label{fig:BODELp4Real}
+		\end{figure}
      	% TODO: Testare il filtro passa alto che porta essere posizionato o in fondo prima o dopo del 741, oppure tra il mixer e il filtro del 4o ordine.
      	
      	%% Conti sul rumore non ce ne servono      
+
+\section{uA741}
+		Qua dentro ci mettiamo: \\
+		datasheet \\
+		Circuito \\
+		Risposta in frequenza bode \\
+		Giustificare che taglia a 10k perchè la banda passante dell'ampli fa schifo \\
+
+		In mancanza di componenti abbiamo dovuto adattarci
+		( in teoria ampli sposta bode)
+
+
 \section{Theremin}
 	%Schematico con cad
 	

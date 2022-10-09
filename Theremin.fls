@@ -936,6 +936,12 @@ INPUT Immagini\bode_lf353p.pdf
 INPUT .\Immagini\bode_lf353p.pdf
 INPUT .\Immagini\bode_lf353p.pdf
 INPUT .\Immagini\bode_lf353p.pdf
+INPUT .\Immagini\bode_lp4.pdf
+INPUT .\Immagini\bode_lp4.pdf
+INPUT Immagini\bode_lp4.pdf
+INPUT .\Immagini\bode_lp4.pdf
+INPUT .\Immagini\bode_lp4.pdf
+INPUT .\Immagini\bode_lp4.pdf
 INPUT Theremin.aux
 INPUT .\Theremin.out
 INPUT .\Theremin.out
@@ -955,6 +961,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb

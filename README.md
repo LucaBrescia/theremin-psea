@@ -35,7 +35,26 @@
  - C = 100nF
  (vedi filterPro)
 
-# Catta su
-- Jumper
-- Distanziali
-- Flessibile
+# Immagini che servono
+FFT:
+- Oscillatore di Wien (THD)
+- Uscita dal filtro LP4 o TUTTO
+
+Altro:
+- Studio della variazione della capacità. Su XR solo senza collegare il tutto. (Immagini sinusoide in uscita ?)
+- Immagini con metro.
+
+# Da provare
+- Oscillatore + fcngen e visualizzare l'uscita dell AD con FFT.
+
+# Misure
+- Passa alto reale
+- Passa basso 4 ordine (vpp aumentata e più preciso)
+
+# Tabelle 
+Capacità - frequenza - distanza (capacità ricavata con formula)
+
+# N B
+Controllare che i circuiti mostrati sulla relazione e il pcb siano concordi
+
+Aggiungere nel paragrafo 2.4 Q e Csi del filtro (sito mike)
