@@ -251,6 +251,8 @@
 		\caption{Schema generale di un oscillatore a ponte di Wien auto-avviante.}
 		\label{fig:sch_osc_wien}
 	\end{figure}
+
+
 	
 	\noindent Analizzando la $f.d.t$ del circuito si osserva che il prodotto $A\cdot B$ deve essere 1, quindi un numero reale.
 	Il blocco di forward A è rappresentato dal guadagno del circuito ovvero: 
@@ -259,6 +261,7 @@
 		\label{eq:LF356_Gain}
 		A = 1 + \frac{R_2}{R_1}
 	\end{equation}
+
 
 	Mentre, in presenza di $R$ e $C$ di valore unico, il blocco di feedback B è rappresentato dall'equazione:
 	\\
@@ -447,6 +450,9 @@
 % Cosa succede se la distorsione è sull'amplificatore, piuttosto che sull'oscillatore piuttosto che sull'XR? Bisogna che i componenti siano a bassa distorsione armonica.
 	
 	% Se il segnale in uscita all'oscillatore di wien fosse triangolare, cosa accade dopo il motiplicatore? Prossima lezione si vedrà cosa accade se il segnale è un onda quadra.
+
+
+	% L'xr2206 inserisce un offset grazie al quale riesce a far oscillare l'uscita, il ptenziomentro R3 serve a gestire tale oscillazione mandando in saturazione o meno, mentre R5 aggiusta le componenti armoniche.
 
 
 
