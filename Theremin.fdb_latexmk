@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Theremin"] 1666446903 "Theremin.aux" "Theremin.bbl" "Theremin" 1666446913
+["bibtex Theremin"] 1666446903 "Theremin.aux" "Theremin.bbl" "Theremin" 1666448476
   "C:/Program Files/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1643840491 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
-  "Theremin-blx.bib" 1666446911 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
-  "Theremin.aux" 1666446911 12039 5480fe8e0058875c30d0842f88361f5d "pdflatex"
+  "Theremin-blx.bib" 1666448474 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
+  "Theremin.aux" 1666448474 12039 5480fe8e0058875c30d0842f88361f5d "pdflatex"
   (generated)
   "Theremin.bbl"
   "Theremin.blg"
-["pdflatex"] 1666446904 "c:/Progetti/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1666446913
+["pdflatex"] 1666448469 "c:/Progetti/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1666448476
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -155,13 +155,13 @@
   "Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png" 1650127036 17166 b13a27ee69c651a17769976970d09a65 ""
   "Theremin-frn.pdf" 1650127036 135872 069d37333e0adeb68b75d92a08a81d29 ""
   "Theremin-frn.tex" 1650127036 994 d11605f6d84f398b3138871a9fe11454 ""
-  "Theremin.aux" 1666446911 12039 5480fe8e0058875c30d0842f88361f5d "pdflatex"
+  "Theremin.aux" 1666448474 12039 5480fe8e0058875c30d0842f88361f5d "pdflatex"
   "Theremin.bbl" 1666446904 533 205fa30ee4c093bb2bc4676324ab99fd "bibtex Theremin"
-  "Theremin.out" 1666446911 2706 36d1efd2caa049c230b81a1cdc38779e "pdflatex"
-  "Theremin.run.xml" 1666446911 2599 40229afc5cd2c637c7b6cb5862316c6f "pdflatex"
-  "Theremin.tex" 1666446888 30712 2e72df9b54db7cdb82b8788c81b44e69 ""
-  "Theremin.toc" 1666446911 1508 dcf7d3a1dd7bddd427709470f582933a "pdflatex"
-  "c:/Progetti/theremin-psea/Theremin.tex" 1666446888 30712 2e72df9b54db7cdb82b8788c81b44e69 ""
+  "Theremin.out" 1666448474 2706 36d1efd2caa049c230b81a1cdc38779e "pdflatex"
+  "Theremin.run.xml" 1666448474 2599 40229afc5cd2c637c7b6cb5862316c6f "pdflatex"
+  "Theremin.tex" 1666448466 30758 0e0d55a65549bc0b5c38c186fee234aa ""
+  "Theremin.toc" 1666448474 1508 dcf7d3a1dd7bddd427709470f582933a "pdflatex"
+  "c:/Progetti/theremin-psea/Theremin.tex" 1666448466 30758 0e0d55a65549bc0b5c38c186fee234aa ""
   (generated)
   "Theremin-blx.bib"
   "Theremin.aux"

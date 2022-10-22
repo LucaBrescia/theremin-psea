@@ -380,7 +380,7 @@
 \section{Oscillatore di Wien}
 
 Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura fdsfhshshshj.
-Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in serie alle resistenze da  $1k\Omega$ (da cotrollare). Questo è stato scelto per accordare l'oscillazione e riurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazine stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Tuttavia se, viceversa, si tengono a valori distanti, ovvero vengono regolati ruotando le viti in senso opposto, si ha un'oscillazione stabile e con una possibile regolazione.
+Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in serie alle resistenze da  $1k\Omega$ (da cotrollare). Questo è stato scelto per accordare l'oscillazione e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Tuttavia se, viceversa, si tengono a valori distanti, ovvero vengono regolati ruotando le viti in senso opposto, si ha un'oscillazione stabile e con una possibilità di regolazione.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{Immagini/osc_wien+bp210k.PNG}
@@ -388,11 +388,11 @@ Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in se
 		\label{fig:SINwien+BP}
 	\end{figure}
 
-	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzuro si può notare che la sinusioide satura sulla parte negativa e la pendenza di salita a discesa sono differenti, questa duvuto allo sbilanciamento dei due potenziometri. L'insieme di questi due fattori porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato in bianco nella figura \ref{fig:FFTwien+BP}.
-	Per risolvere il problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda forato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
-	L'aggiunta del filtro porta un sostanziale miglioramento delle sinusoide d'uscita. Il miglioramento è visibile sia in figura \ref{fig:SINwien+BP}, sinusoide gialla, dove si vede l'assenza di saturazione e fronti di salita e discesa praticamente identici. E in figura \ref{fig:FFTwien+BP} dove di nota la notevole riduzione delle armoniche nello spettro del segnale.
+	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzuro si può notare che la sinusioide satura sulla parte negativa e la pendenza di salita a discesa sono differenti, questo è dovuto allo sbilanciamento dei due potenziometri. L'insieme di questi due fattori porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato in bianco nella figura \ref{fig:FFTwien+BP}.
+	Per risolvere il problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
+	L'aggiunta del filtro porta un sostanziale miglioramento della sinusoide d'uscita. Il miglioramento è visibile sia in figura \ref{fig:SINwien+BP}, sinusoide gialla, dove si vede l'assenza di saturazione e fronti di salita e discesa pressoché identici, che in figura \ref{fig:FFTwien+BP} dove di nota la notevole riduzione delle armoniche nello spettro del segnale.
 
-	Tuttavia, l'aggiunta del filtro porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazioe è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), quindi il filtro inizia a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che risulta essere a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
+	Tuttavia, l'aggiunta del filtro porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazione è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), quindi il filtro inizia a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che risulta essere a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
 
 	\begin{figure}[H]
 		\centering
@@ -406,14 +406,14 @@ Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in se
 \section{AD633}
 
 
-L'AD633 rappresenta il blocco del mixer nel nostro sistema. Il suo compito è fare il prodotto tra due sinusoidi in ingresso. Le due sinusoidi sono quella di riferimento dell'socillatore di Wien e quella in usita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della rispetto all'altro estremo della capacità variabile (banderuola in alluminio). Il circuito dell'oscillatore è mostrato in figura xxxx
+L'AD633 rappresenta il blocco del mixer nel nostro sistema. Il suo compito è fare il prodotto tra due sinusoidi in ingresso. Le due sinusoidi sono quella di riferimento dell'oscillatore di Wien e quella in uscita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della mano rispetto all'altro estremo della capacità variabile (banderuola in alluminio). Il circuito dell'oscillatore è mostrato in figura xxxx
 
 
-Una delle problematiche riscontrate durate l'utilizzo del mixer è stata la comparsa di un offset in continua dovuto all'impossibilità degli ingressi di scaricare le correnti di baias, correnti in continua, verso massa. Questo ha porta alla comparsa di offset negativo e allo smorzamento delle altre armoniche presenti in uscita, come mostra la figura xyz.
+Una delle problematiche riscontrate durate l'utilizzo del mixer è stata la comparsa di un offset in continua dovuto all'impossibilità degli ingressi di scaricare le correnti di bias, correnti in continua, verso massa. Questo ha portato alla comparsa di offset negativo e allo smorzamento delle altre armoniche presenti in uscita, come mostra la figura xyz.
 
 
 
-Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ in parallelo al condensatore del passa basso passivo del primo ordine in uscita sia all'oscillatore che all'XR2206. La scelta di tale valore è stata condizionata dal fatto che si deve garantire un compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore che si forma con la resistenza del filtro che produrrebbe un'attenuazione del segnale in ingresso. Il resistore scelto evita un'attenuazione del segnael e salvaguarda l'alta impedenza del componente. Il risultato è mostrato in figura blabla. Ove è possibile vedere le due armoniche fondamentali che vengono a formasi dal prodotto di due sinusoidi, esattamente come ci si aspettava dalla teoria. Cosa che non accadeva in figura xyz, ovvero prima che venissero messe le resistenze.
+Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli ingressi del mixer e portandoli verso massa. La scelta di tale valore è stata condizionata dal fatto che si deve garantire un compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore che si forma con la resistenza del filtro che produrrebbe un'attenuazione del segnale in ingresso. Il resistore scelto evita un'attenuazione del segnale e salvaguarda l'alta impedenza del componente. Il risultato è mostrato in figura blabla. Dove è possibile vedere le due armoniche fondamentali che vengono a formarsi dal prodotto di due sinusoidi, esattamente come ci si aspetta dalla teoria. Cosa che non accade in figura xyz, ovvero prima che venissero messe le resistenze.
 	
 	%Verificare il limiti operativi del componente.
 	
@@ -432,7 +432,7 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ in pa
 
 \newpage
 \section{LP4}
-	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superioro ai $20kHz$, come richiesto da specifica di progetto e per eliminare quindi, le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione (vedere se inserire l'eq). La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
+	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superiori ai $20kHz$, come richiesto da specifica di progetto. Esso è necessario per eliminare le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione (vedere se inserire l'eq). La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
 
 	\begin{figure}[h]
 	     	\centering
@@ -443,8 +443,8 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ in pa
 	     	\label{fig:bode_LF353P}
 	     \end{figure}
 
-	La scelta di un filtro del quarto ordine è stata fatta per garantire un'atteuazione sufficiente delle armoniche successive ai $20kHz$ e perché l'LF353P contiene al suo interno due operazioni, quindi per sfruttare al meglio il componente ed evitare di lasciare flottanti dei piedini che possono diventare una fonte aggiuntiva i rumore.
-	L'andamento del filtro  è mostrato in figura \ref{fig:BODELp4Real}, mostra che le scelte progettuali sono rispecchiate dai dati sperimentali. In quanto si può notare come l'andamento ideale e quello reale siano molto simili.
+	La scelta di un filtro del quarto ordine è stata fatta sia per garantire un'atteuazione sufficiente delle armoniche successive ai $20kHz$ sia perché l'LF353P contiene al suo interno due operazionali. Quindi per sfruttare al meglio il componente, si è deciso di evitare di lasciare flottanti dei pin che potrebbero diventare una fonte aggiuntiva di rumore.
+	L'andamento del filtro è mostrato in figura \ref{fig:BODELp4Real}, la quale mostra che le scelte progettuali sono corette, in quanto i dati sperimentali rispecchiano l'andamento teorico del filtro. Come si può osservare in figura \ref{fig:BODELp4Real} i due andamenti sono molto simili.
 	
 	\begin{figure}[h]
 			\centering

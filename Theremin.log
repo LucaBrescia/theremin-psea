@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  22 OCT 2022 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  22 OCT 2022 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -832,7 +832,7 @@ File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
 Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 441.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
-<Immagini/bode_lp4.pdf, id=378, 669.2503pt x 414.79968pt>
+<Immagini/bode_lp4.pdf, id=379, 669.2503pt x 414.79968pt>
 File: Immagini/bode_lp4.pdf Graphic file (type pdf)
 <use Immagini/bode_lp4.pdf>
 Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 451.
@@ -853,7 +853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 468--473
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 477.
 
-<Immagini/bode_hp1_ua741.pdf, id=395, 1445.4pt x 718.93594pt>
+<Immagini/bode_hp1_ua741.pdf, id=396, 1445.4pt x 718.93594pt>
 File: Immagini/bode_hp1_ua741.pdf Graphic file (type pdf)
 <use Immagini/bode_hp1_ua741.pdf>
 Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 479.
@@ -863,19 +863,19 @@ Overfull \hbox (7.73264pt too wide) in paragraph at lines 479--480
  [][] 
  []
 
-<Immagini/sin_xr+lp.PNG, id=396, 803.0pt x 481.8pt>
+<Immagini/sin_xr+lp.PNG, id=397, 803.0pt x 481.8pt>
 File: Immagini/sin_xr+lp.PNG Graphic file (type png)
 <use Immagini/sin_xr+lp.PNG>
 Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 506.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 [16 <./Immagini/bode_lp4.pdf>]
-<Immagini/sin_xr.PNG, id=419, 803.0pt x 481.8pt>
+<Immagini/sin_xr.PNG, id=420, 803.0pt x 481.8pt>
 File: Immagini/sin_xr.PNG Graphic file (type png)
 <use Immagini/sin_xr.PNG>
 Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 513.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [17 <./Immagini/bode_hp1_ua741.pdf> <./Immagini/sin_xr+lp.PNG (PNG copy)>]
-<Immagini/fft_xr+lp.PNG, id=443, 803.0pt x 481.8pt>
+<Immagini/fft_xr+lp.PNG, id=444, 803.0pt x 481.8pt>
 File: Immagini/fft_xr+lp.PNG Graphic file (type png)
 <use Immagini/fft_xr+lp.PNG>
 Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 520.
@@ -900,9 +900,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1871b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Luca Brescia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (20 pages, 1495389 bytes).
+Output written on Theremin.pdf (20 pages, 1495235 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
+ 546 PDF objects out of 1000 (max. 8388607)
  87 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
