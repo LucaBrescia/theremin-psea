@@ -99,7 +99,7 @@
 	
 	
 	\noindent Importante osservare che l'LF353P ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del 4o ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo. Inoltre, l'LF356N, avente una GBP maggiore (5MHz), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
-	L'UA741 viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 10Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate, che verranno tagliate definitvamente dal filtro passa basso.
+	L'UA741 viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 10Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate.
 
 	\noindent I motivi per cui le frequenze in gioco risultino essere elevate sono indicate nel capitolo \ref{ch:Risultati}.
 
@@ -198,14 +198,14 @@
 \chapter{Scelte progettuali}
 	\label{ch:scelte}
 	
-	Nella realizzazione di questo progetto si deve prestare particolare attenzione allo spettro del segnale di uscita. Nello specifico, si deve valutare il THD della sinusoide di uscita per osservare quanto armoniche indesiderate dovute a disturbi intrinsechi del sistema influiscano sulle performance del dispositivo.
-	Per ridurre l'effetto di armoniche a frequenza esterna alla banda udibile si è scelto di introdurre cascate di filtri passa alto e passa basso in modo da cercare un filtro passa-banda accettabile per l'esperienza. Di seguito è riportato lo schema a blocchi del sistema:
+	Nella realizzazione di questo progetto si deve prestare particolare attenzione allo spettro del segnale di uscita. Nello specifico, si deve valutare la distorsione armonica totale ($THD$) della sinusoide di uscita osservando quanto le armoniche indesiderate, anche generate da disturbi intrinsechi del sistema, influiscano sulle performance del dispositivo.
+	Per ridurre l'effetto di armoniche a frequenza esterna alla banda udibile si è scelto di introdurre cascate di filtri passa alto e passa basso in modo da cercare un insieme di filtri passa-banda che producano un effetto accettabile per l'esperienza. Di seguito è riportato lo schema a blocchi del sistema:
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{Immagini/Schema a blocchi PSEA.png}
-		\caption{Schema a blocchi del sistema realizzato>}
-		\label{<fig: Schema a blocchi finale>}
+		\caption{Schema a blocchi del sistema realizzato}
+		\label{fig: Schema a blocchi finale}
 	\end{figure}
 \space
 	\noindent Nelle sezioni successive vengono analizzate singolarmente le scelte effettuate per ogni singolo blocco del sistema.
@@ -214,7 +214,7 @@
 
 	Il VCO, \textit{Voltage Controlled Oscillator}, è un generatore di segnali che modifica la frequenza di oscillazione del segnale generato in funzione della tensione applicata al suo ingresso.
 	
-	\noindent La frequenza di oscillazione $f_0$ viene controllata da una capacità esterna C, detta capacità di $timing$ collegata tra i \textit{pin5} e $pin6$ e dalla resistenza R posta in ingresso ai $pin7$ e $pin8$. La frequenza di oscillazione si calcola come:
+	\noindent In relazione all'integrato utilizzato, il cui schema interno è riportato in figura \textit{Figura \ref{fig:sch_xr2206_}}, la frequenza di oscillazione $f_0$ viene controllata da una capacità esterna C, detta capacità di $timing$ collegata tra i \textit{pin5} e $pin6$ e dalla resistenza R posta in ingresso ai $pin7$ e $pin8$. Essa viene calcolata come:
 	
 	\begin{equation}
 		\label{eq:freq_operation}
@@ -222,12 +222,12 @@
 	\end{equation}
 
 	\noindent Regolando il valore di \textit{R}, dato dalla somma di $R_1 + 1k\Omega$, e di \textit{C}, si imposta a piacere la frequenza di oscillazione.
-	La \textit{Figura \ref{fig:sch_xr2206_}} mostra il circuito utilizzato. Nel progetto si è scelto di utilizzare una resistenza \textit{R} fissa in quanto si ha una capacità variabile per la regolazione della frequenza.
+	Nel progetto si è scelto di utilizzare una resistenza \textit{R} fissa in quanto si ha una capacità variabile per la regolazione della frequenza.
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=1]{Immagini/schema_xr2206.pdf}
-		\caption{Schema xr2206}
+		\caption{Schema a blocchi interno dell'oscillatore monolitico XR2206}
 		\label{fig:sch_xr2206_}
 	\end{figure}
 	\newpage
@@ -235,9 +235,7 @@
 	\noindent
 	Dal datasheet, per garantire una buona stabilità in temperatura, viene consigliato di utilizzare valori di R compresi tra $4k\Omega < R < 200k\Omega$ e valori di C compresi tra $1\mu F < C < 100\mu F$.
 	
-
-	% TODO: scrivere i valori corretti
-	\noindent Dato che la capacità risulta variabile, in quanto dipende dalla mano dell'utente e dall'antenna realizzata, si è scelta una R di $100k\Omega$ (da verificare) per cercare di rispettare, almeno in parte, il range fornito dal datasheet per garantire una buona stabilità in temperatura. 
+	\noindent Dal momento che la capacità risulta variabile, in quanto dipendendente dalla posizione della mano dell'utente e dalla geometria dell'antenna realizzata, si è scelta una R di $100k\Omega$ per cercare di rispettare, almeno in parte, il range fornito dal datasheet per garantire una buona stabilità in temperatura. 
 	
 	% Inserire lo studio del THD generato dal VCO 
 	
@@ -252,8 +250,6 @@
 		\label{fig:sch_osc_wien}
 	\end{figure}
 
-
-	
 	\noindent Analizzando la $f.d.t$ del circuito si osserva che il prodotto $A\cdot B$ deve essere 1, quindi un numero reale.
 	Il blocco di forward A è rappresentato dal guadagno del circuito ovvero: 
 
@@ -437,6 +433,12 @@
 		In mancanza di componenti abbiamo dovuto adattarci
 		( in teoria ampli sposta bode)
 
+		\begin{figure}[]
+			\centering
+			\includegraphics[scale=0.34]{Immagini/bode_hp1_ua741.pdf}
+			\caption{Diagramma di Bode del filtro passa alto del $1^o$ ordine}
+			\label{fig:BODEHp1Real}
+		\end{figure}
 
 \section{Theremin}
 	%Schematico con cad
@@ -454,7 +456,41 @@
 
 	% L'xr2206 inserisce un offset grazie al quale riesce a far oscillare l'uscita, il ptenziomentro R3 serve a gestire tale oscillazione mandando in saturazione o meno, mentre R5 aggiusta le componenti armoniche.
 
+	%\label{FIGURE}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/fft_osc+bp210k.PNG}
+		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore di Wien prima e dopo il filtro BP in cascata.}
+		\label{fig:FFTwien+BP}
+	\end{figure}
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/osc_wien+bp210k.PNG}
+		\caption{Confronto tra i segnali in uscita dall'oscillatore di Wien prima e dopo il fitro BP in cascata.}
+		\label{fig:SINwien+BP}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/sin_xr+lp.PNG}
+		\caption{Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima e dopo il fitro LP in cascata.}
+		\label{fig:SINxr+LP}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/sin_xr.PNG}
+		\caption{Segnale in uscita dal blocco XR2206 + LP.}
+		\label{fig:SINx}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/fft_xr+lp.PNG}
+		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore monolitico XR2206 prima e dopo il filtro LP in cascata.}
+		\label{fig:FFTxr+LP}
+	\end{figure}
 
 \chapter{Conclusioni}
  	\label{ch:Conclusioni}
