@@ -294,7 +294,8 @@
 		V_{RMS} = \frac{V}{\sqrt{2}}
 	\end{equation}
 
-	%% OSS: L'oscillatore di Wien è sensibile alle temperature, l'ampiezza dell uscita varia in funzione della temperatura (detto a lezione)
+	La presenza di un THD più o meno buono si manifesta con un andamento della sinusoide di uscita più o meno ideale. L'aggiunta di nuove armoniche poù essere cuasata dalla sensibile alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di diturbi e/o distorioni potrebbe essera la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, oltre che altre fonti esterne.
+
 
 	% Se la distorsione non è armonica cosa succede? Ottendo piu righe spettrali che mi generano disturbi nel segnale
 	
@@ -375,7 +376,32 @@
 	Le prestazioni ottenute con questo tipo di antenna sono le seguenti:
 	
 	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
-	
+
+\section{Oscillatore di Wien}
+
+Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura fdsfhshshshj.
+Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in serie alle resistenze da  $1k\Omega$ (da cotrollare). Questo è stato scelto per accordare l'oscillazione e riurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazine stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Tuttavia se, viceversa, si tengono a valori distanti, ovvero vengono regolati ruotando le viti in senso opposto, si ha un'oscillazione stabile e con una possibile regolazione.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/osc_wien+bp210k.PNG}
+		\caption{Confronto tra i segnali in uscita dall'oscillatore di Wien prima e dopo il fitro BP in cascata.}
+		\label{fig:SINwien+BP}
+	\end{figure}
+
+	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzuro si può notare che la sinusioide satura sulla parte negativa e la pendenza di salita a discesa sono differenti, questa duvuto allo sbilanciamento dei due potenziometri. L'insieme di questi due fattori porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato in bianco nella figura \ref{fig:FFTwien+BP}.
+	Per risolvere il problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda forato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
+	L'aggiunta del filtro porta un sostanziale miglioramento delle sinusoide d'uscita. Il miglioramento è visibile sia in figura \ref{fig:SINwien+BP}, sinusoide gialla, dove si vede l'assenza di saturazione e fronti di salita e discesa praticamente identici. E in figura \ref{fig:FFTwien+BP} dove di nota la notevole riduzione delle armoniche nello spettro del segnale.
+
+	Tuttavia, l'aggiunta del filtro porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazioe è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), quindi il filtro inizia a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che risulta essere a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/fft_osc+bp210k.PNG}
+		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore di Wien prima e dopo il filtro BP in cascata.}
+		\label{fig:FFTwien+BP}
+	\end{figure}
+
+	 
 	
 \section{AD633}
 	
@@ -400,11 +426,9 @@
 
 \newpage
 \section{LP4}
-	% TODO: Inserire diagramma di bode sperimentale.
-	
-	% TODO: Inserire un diagramma per punti mettendo in ingresso al filtro un segnale con il generatore di funzioni variando la F di X kHz e visualizzando l'uscita sull'oscilloscopio
-	%\subsection{Analisi della banda in anello chiuso}
-	     \begin{figure}[h]
+	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superioro ai $20kHz$, come richiesto da specifica di progetto e per eliminare quindi, le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione (vedere se inserire l'eq). La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
+
+	\begin{figure}[h]
 	     	\centering
 	     	\subfloat[][\emph{Didascalia figura }]
 	     	{\includegraphics[width=.45\textwidth]{Immagini/lf353p_performance.pdf}} \qquad
@@ -413,16 +437,27 @@
 	     	\label{fig:bode_LF353P}
 	     \end{figure}
 
-		 \begin{figure}[h]
+	La scelta di un filtro del quarto ordine è stata fatta per garantire un'atteuazione sufficiente delle armoniche successive ai $20kHz$ e perché l'LF353P contiene al suo interno due operazioni, quindi per sfruttare al meglio il componente ed evitare di lasciare flottanti dei piedini che possono diventare una fonte aggiuntiva i rumore.
+	L'andamento del filtro  è mostrato in figura \ref{fig:BODELp4Real}, mostra che le scelte progettuali sono rispecchiate dai dati sperimentali. In quanto si può notare come l'andamento ideale e quello reale siano molto simili.
+	
+	\begin{figure}[h]
 			\centering
 			\includegraphics[scale=0.7]{Immagini/bode_lp4.pdf}
 			\caption{Diagramma di Bode del filtro Sallen-Key del $4^o$ ordine}
 			\label{fig:BODELp4Real}
 		\end{figure}
+	
+	
+	% TODO: Inserire un diagramma per punti mettendo in ingresso al filtro un segnale con il generatore di funzioni variando la F di X kHz e visualizzando l'uscita sull'oscilloscopio
+	%\subsection{Analisi della banda in anello chiuso}
+	     
+
+		
      	% TODO: Testare il filtro passa alto che porta essere posizionato o in fondo prima o dopo del 741, oppure tra il mixer e il filtro del 4o ordine.
      	
-     	%% Conti sul rumore non ce ne servono      
+     	%% Conti sul rumore non ce ne servono   
 
+\newpage
 \section{uA741}
 		Qua dentro ci mettiamo: \\
 		datasheet \\
@@ -457,20 +492,9 @@
 	% L'xr2206 inserisce un offset grazie al quale riesce a far oscillare l'uscita, il ptenziomentro R3 serve a gestire tale oscillazione mandando in saturazione o meno, mentre R5 aggiusta le componenti armoniche.
 
 	%\label{FIGURE}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/fft_osc+bp210k.PNG}
-		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore di Wien prima e dopo il filtro BP in cascata.}
-		\label{fig:FFTwien+BP}
-	\end{figure}
+	
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/osc_wien+bp210k.PNG}
-		\caption{Confronto tra i segnali in uscita dall'oscillatore di Wien prima e dopo il fitro BP in cascata.}
-		\label{fig:SINwien+BP}
-	\end{figure}
-
+	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{Immagini/sin_xr+lp.PNG}
