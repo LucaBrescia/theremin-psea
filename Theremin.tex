@@ -404,14 +404,20 @@ Si può notare che sono stati sggiunti due potenziometri, da  $1k\Omega$,  in se
 	 
 	
 \section{AD633}
+
+
+L'AD633 rappresenta il blocco del mixer nel nostro sistema. Il suo compito è fare il prodotto tra due sinusoidi in ingresso. Le due sinusoidi sono quella di riferimento dell'socillatore di Wien e quella in usita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della rispetto all'altro estremo della capacità variabile (banderuola in alluminio). Il circuito dell'oscillatore è mostrato in figura xxxx
+
+
+Una delle problematiche riscontrate durate l'utilizzo del mixer è stata la comparsa di un offset in continua dovuto all'impossibilità degli ingressi di scaricare le correnti di baias, correnti in continua, verso massa. Questo ha porta alla comparsa di offset negativo e allo smorzamento delle altre armoniche presenti in uscita, come mostra la figura xyz.
+
+
+
+Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ in parallelo al condensatore del passa basso passivo del primo ordine in uscita sia all'oscillatore che all'XR2206. La scelta di tale valore è stata condizionata dal fatto che si deve garantire un compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore che si forma con la resistenza del filtro che produrrebbe un'attenuazione del segnale in ingresso. Il resistore scelto evita un'attenuazione del segnael e salvaguarda l'alta impedenza del componente. Il risultato è mostrato in figura blabla. Ove è possibile vedere le due armoniche fondamentali che vengono a formasi dal prodotto di due sinusoidi, esattamente come ci si aspettava dalla teoria. Cosa che non accadeva in figura xyz, ovvero prima che venissero messe le resistenze.
 	
 	%Verificare il limiti operativi del componente.
 	
-	Verifichiamo il THD delle sinusoidi in uscita dall'Oscillatore e AD633
-	Osserviamo che in entrambi i casi non otteniamo distorsioni. Notiamo una continua di circa 2V che non riconosciamo.
-	Aggiungendo un condensatore di filtraggio in uscita al moltiplicatore non otteniamo risultati. Ipotizziamo sia dovuto a qualcosa di intrinseco all'oscilloscopio. 
-	Anche perché nella visualizzazione della sinusoide non rileviamo alcun offset. Inoltre ad un certo punto delle misurazioni è sparito.
-	Abbiamo osservato che l'ampiezza delle righe della fft è coerente con i segnali in ingresso al sistema. $V_{osc}$=15V $V_{fcngen}$=2.5V quindi considerando il fattore intrinseco di scala dell'AD633 otteniamo delle righe di fft di ampiezza coerente perché sommando le varie componenti si ottiene quei 3.5V circa di ampiezza del segnale.
+	%Verifichiamo il THD delle sinusoidi in uscita dall'Oscillatore e AD633 	Osserviamo che in entrambi i casi non otteniamo distorsioni. Notiamo una continua di circa 2V che non riconosciamo. 	Aggiungendo un condensatore di filtraggio in uscita al moltiplicatore non otteniamo risultati. Ipotizziamo sia dovuto a qualcosa di intrinseco all'oscilloscopio.  	Anche perché nella visualizzazione della sinusoide non rileviamo alcun offset. Inoltre ad un certo punto delle misurazioni è sparito. 	Abbiamo osservato che l'ampiezza delle righe della fft è coerente con i segnali in ingresso al sistema. $V_{osc}$=15V $V_{fcngen}$=2.5V quindi considerando il fattore intrinseco di scala dell'AD633 otteniamo delle righe di fft di ampiezza coerente perché sommando le varie componenti si ottiene quei 3.5V circa di ampiezza del segnale.
 
 	\begin{figure}[h]
 		\centering
