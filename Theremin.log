@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  27 OCT 2022 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  27 OCT 2022 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -810,7 +810,7 @@ Package pdftex.def Info: Immagini/sch_osc_wien_cad.pdf  used on input line 386.
 <Immagini/osc_wien+bp210k.PNG, id=352, 803.0pt x 481.8pt>
 File: Immagini/osc_wien+bp210k.PNG Graphic file (type png)
 <use Immagini/osc_wien+bp210k.PNG>
-Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 393.
+Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 394.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 [12
 
@@ -818,72 +818,72 @@ Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 393.
 <Immagini/fft_osc+bp210k.PNG, id=386, 803.0pt x 481.8pt>
 File: Immagini/fft_osc+bp210k.PNG Graphic file (type png)
 <use Immagini/fft_osc+bp210k.PNG>
-Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 406.
+Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 407.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [13 <./Immagini/osc_wien+bp210k.PNG (PNG copy)>]
 <Immagini/AD633_300k.png, id=394, 455.2441pt x 273.14645pt>
 File: Immagini/AD633_300k.png Graphic file (type png)
 <use Immagini/AD633_300k.png>
-Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 431.
+Package pdftex.def Info: Immagini/AD633_300k.png  used on input line 432.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
-<Immagini/lf353p_performance.pdf, id=400, 236.44513pt x 212.96779pt>
+<Immagini/lf353p_performance.pdf, id=401, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 447.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 454.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
-<Immagini/bode_lf353p.pdf, id=401, 242.80711pt x 203.29951pt>
+<Immagini/bode_lf353p.pdf, id=402, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 448.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 455.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
  [15 <./Immagini/AD633_300k.png> <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/bode_lf353p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/bode_lp4.pdf, id=420, 669.2503pt x 414.79968pt>
+<Immagini/bode_lp4.pdf, id=421, 669.2503pt x 414.79968pt>
 File: Immagini/bode_lp4.pdf Graphic file (type pdf)
 <use Immagini/bode_lp4.pdf>
-Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 458.
+Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 466.
 (pdftex.def)             Requested size: 468.47202pt x 290.3578pt.
  [16 <./Immagini/bode_lp4.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 475--480
+Underfull \hbox (badness 10000) in paragraph at lines 483--488
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 484.
+               Default added (so using `tbp') on input line 492.
 
-<Immagini/bode_hp1_ua741.pdf, id=443, 1445.4pt x 718.93594pt>
+<Immagini/bode_hp1_ua741.pdf, id=445, 1445.4pt x 718.93594pt>
 File: Immagini/bode_hp1_ua741.pdf Graphic file (type pdf)
 <use Immagini/bode_hp1_ua741.pdf>
-Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 486.
+Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 494.
 (pdftex.def)             Requested size: 491.4295pt x 244.43498pt.
 
-Overfull \hbox (7.73264pt too wide) in paragraph at lines 486--487
+Overfull \hbox (7.73264pt too wide) in paragraph at lines 494--495
  [][] 
  []
 
-<Immagini/sin_xr+lp.PNG, id=444, 803.0pt x 481.8pt>
+<Immagini/sin_xr+lp.PNG, id=446, 803.0pt x 481.8pt>
 File: Immagini/sin_xr+lp.PNG Graphic file (type png)
 <use Immagini/sin_xr+lp.PNG>
-Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 513.
+Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 521.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 [17 <./Immagini/bode_hp1_ua741.pdf>]
-<Immagini/sin_xr.PNG, id=467, 803.0pt x 481.8pt>
+<Immagini/sin_xr.PNG, id=469, 803.0pt x 481.8pt>
 File: Immagini/sin_xr.PNG Graphic file (type png)
 <use Immagini/sin_xr.PNG>
-Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 520.
+Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 528.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/fft_xr+lp.PNG, id=468, 803.0pt x 481.8pt>
+<Immagini/fft_xr+lp.PNG, id=470, 803.0pt x 481.8pt>
 File: Immagini/fft_xr+lp.PNG Graphic file (type png)
 <use Immagini/fft_xr+lp.PNG>
-Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 527.
+Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 535.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [18 <./Immagini/sin_xr+lp.PNG (PNG copy)> <./Immagini/sin_xr.PNG (PNG copy)>] [19 <./Immagini/fft_xr+lp.PNG (PNG copy)>]
 Capitolo 4.
@@ -891,23 +891,23 @@ Capitolo 4.
 
 ] (Theremin.aux)
 Package rerunfilecheck Info: File `Theremin.out' has not changed.
-(rerunfilecheck)             Checksum: 36D1EFD2CAA049C230B81A1CDC38779E;2706.
+(rerunfilecheck)             Checksum: D8B20DFC6CF192A3D22EF1C50618968A;2856.
 Package logreq Info: Writing requests to 'Theremin.run.xml'.
 \openout1 = `Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19969 strings out of 478582
- 358271 string characters out of 2854137
- 837089 words of memory out of 3000000
- 37807 multiletter control sequences out of 15000+600000
+ 19971 strings out of 478582
+ 358305 string characters out of 2854137
+ 837150 words of memory out of 3000000
+ 37808 multiletter control sequences out of 15000+600000
  475448 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1871b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Luca Brescia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (21 pages, 1509082 bytes).
+Output written on Theremin.pdf (21 pages, 1510536 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
  278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

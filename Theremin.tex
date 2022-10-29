@@ -387,7 +387,8 @@ Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello ripo
 	\caption{Schematico dell'oscillatore di Wien utilizzato}
 	\label{sch:osc_wien}
 \end{figure}
-Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$ del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Tuttavia se, viceversa, si tengono a valori distanti, ovvero vengono regolati ruotando le viti in senso opposto, si ha un'oscillazione stabile e con una possibilità di regolazione.
+Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$ del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Grazie ai potenziometri, si ha la possibilità di sbilanciare il ponte rendendo possibile l'avviarsi dell'oscillatore ottenendo un'oscillazione stabile e con una possibilità di regolazione.
+
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{Immagini/osc_wien+bp210k.PNG}
@@ -438,8 +439,14 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 	% TODO: Qui tutta la pappa con le immagini oscilloscopio e breadboard, qualche calcolo anche excel e tanta ma tanta descrizione che non serve a nulla
 
 \newpage
-\section{LP4}
-	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superiori ai $20kHz$, come richiesto da specifica di progetto. Esso è necessario per eliminare le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione (vedere se inserire l'eq). La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
+\section{Filtro passa basso di ordine 4}
+	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superiori ai $20kHz$, come richiesto da specifica di progetto. Esso è necessario per eliminare le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione. Infatti, dati due segnali del tipo $ V_1 = A_1 \cdot sin(\omega_1t) $
+	e $ V_2 = A_2 \cdot sin(\omega_2t) $, il segnale risultante dalla moltiplicazione analogica tra i due sarà dato dall'equazione \ref{eq:analog_multiply}:
+	\begin{equation}
+		V_m = V_1 \cdot V_2 = \frac{A_1A_2}{2}[sin((\omega_1 + \omega_2)t) + sin((\omega_1 - \omega_2)t)]
+		\label{eq:analog_multiply}
+	\end{equation}
+	La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
 
 	\begin{figure}[h]
 	     	\centering
@@ -450,8 +457,9 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 	     	\label{fig:bode_LF353P}
 	     \end{figure}
 
-	La scelta di un filtro del quarto ordine è stata fatta sia per garantire un'atteuazione sufficiente delle armoniche successive ai $20kHz$ sia perché l'LF353P contiene al suo interno due operazionali. Quindi per sfruttare al meglio il componente, si è deciso di evitare di lasciare flottanti dei pin che potrebbero diventare una fonte aggiuntiva di rumore.
-	L'andamento del filtro è mostrato in figura \ref{fig:BODELp4Real}, la quale mostra che le scelte progettuali sono corette, in quanto i dati sperimentali rispecchiano l'andamento teorico del filtro. Come si può osservare in figura \ref{fig:BODELp4Real} i due andamenti sono molto simili.
+	La scelta di un filtro del quarto ordine è stata fatta sia per garantire un'atteuazione sufficiente delle armoniche successive ai $20kHz$ sia perché l'LF353P contiene al suo interno due operazionali. Quindi per evitare di lasciare flottanti dei pin che sarebbero potuti diventare una fonte aggiuntiva di rumore, si è deciso di utilizzare il componente al meglio delle possibilità.
+	L'andamento del filtro ottenuto è mostrato in figura \ref{fig:BODELp4Real}, la quale mostra che le scelte progettuali sono state corette, in quanto i dati sperimentali rispecchiano l'andamento teorico del filtro.
+	Come si può osservare in figura \ref{fig:BODELp4Real} i due andamenti sono molto simili.
 	
 	\begin{figure}[h]
 			\centering
