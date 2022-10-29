@@ -87,6 +87,7 @@
 	
 	
 \section{Amplificatori operazionali LF353, LF356 e uA741}
+\label{sec:OpAmp}
 	La scelta di questi componenti tra quelli disponibili è stata fatta principalmente per le bande bassanti dei dispositivi.
 	\\ Sono necessari componenti a banda elevata poiché, come risulta dal capitolo \ref{ch:Risultati}, si deve lavorare con frequenze dell'ordine delle centinaia di kHz.
 	
@@ -384,6 +385,31 @@
 		\label{fig:SINxr+LP}
 	\end{figure}
 
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/sin_xr.PNG}
+		\caption{Segnale in uscita dal blocco XR2206 + LP.}
+		\label{fig:SINx}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/fft_xr+lp.PNG}
+		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore monolitico XR2206 prima e dopo il filtro LP in cascata.}
+		\label{fig:FFTxr+LP}
+	\end{figure}
+
+
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale =1]{Immagini/thd_xr+bp.pdf}
+		\caption{THD dell'XR2206 dopo il passa banda}
+		\label{fig:THDXR+BP}
+	\end{figure}
+
 \section{Oscillatore di Wien}
 
 Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura \ref{sch:osc_wien}.
@@ -394,6 +420,7 @@ Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello ripo
 	\caption{Schematico dell'oscillatore di Wien utilizzato}
 	\label{sch:osc_wien}
 \end{figure}
+
 Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$ del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Grazie ai potenziometri, si ha la possibilità di sbilanciare il ponte rendendo possibile l'avviarsi dell'oscillatore ottenendo un'oscillazione stabile e con una possibilità di regolazione.
 
 	\begin{figure}[H]
@@ -416,9 +443,25 @@ Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettiva
 		\label{fig:FFTwien+BP}
 	\end{figure}
 
+	Un altro riscontro lo si ha con il calcolo del $THD$ del segnale in usscita dall'oscillatore. Il risultato calcolato con l'equazione \ref{eq:thd}, si può vedere della figura \ref{fig:ThdWien} dove si mostra il valore del $THD$ del segnale in uscita dall'oscillatore. In figura \ref{fig:ThdWien+lp} è riportato il valore del $THD$ dopo il filtro passa banda passivo. Si nota un effettivo miglioramento del $THD$ della sinusoide di riferiento.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/thd_osc.pdf}
+		\caption{Valori delle armoniche ricavate dalla FFT del segnale in unscita dall'oscillatore di Wien.}
+		\label{fig:ThdWien}
+	\end{figure}
 	 
-	
-\section{AD633}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/thd_osc+bp.pdf}
+		\caption{Valori delle armoniche ricavate dalla FFT del segnale in unscita dall'oscillatore di Wien.}
+		\label{fig:ThdWien+lp}
+	\end{figure}
+
+
+\section{Mixer}
+\label{sec:Mixer}
 
 
 L'AD633 rappresenta il blocco del mixer nel nostro sistema. Il suo compito è fare il prodotto tra due sinusoidi in ingresso. Le due sinusoidi sono quella di riferimento dell'oscillatore di Wien e quella in uscita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della mano rispetto all'altro estremo della capacità variabile (banderuola in alluminio). Il circuito dell'oscillatore è mostrato in figura xxxx
@@ -493,7 +536,7 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
      	%% Conti sul rumore non ce ne servono   
 
 \newpage
-\section{uA741}
+\section{Filtro passa altro del primo ordine}
 		Qua dentro ci mettiamo: \\
 		datasheet \\
 		Circuito \\
@@ -503,7 +546,7 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 		In mancanza di componenti abbiamo dovuto adattarci
 		( in teoria ampli sposta bode)
 
-		\begin{figure}[]
+		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.34]{Immagini/bode_hp1_ua741.pdf}
 			\caption{Diagramma di Bode del filtro passa alto del $1^o$ ordine}
@@ -511,13 +554,49 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 		\end{figure}
 
 \section{Theremin}
+\label{ch:Teremin}
 	%Schematico con cad
+	In FIGURA PINCO PALLO è riportato lo schema circuitale completo del Theremin. Si possono vedere i vari blocchi spiegati nei capitoli precendeti come vengo fatti comunicare tra loro.
+
+	La FIGURA PINCOPALLO VIVO mostra il circuito fisico realizzato per l'esperimento su cui si sono effettuate tutte le misurazioni.
+
+
+	La scelta delle frequenze operative nell'ordine delle centinaio di $KHz$ è stata obbligata per potre avere una risoluzione accettabile in frequenza avvicinando la mano alla capacità variabile collegata al $VCO$.
+	Come si è visto nelle sezioni precedenti e come è riportato nella figura \ref{fig:FFTwien+BP} e in figura \ref{fig:FFTxr+LP}.
+
+	Altro passo obbligato è stato l'inserimento del filtro passa basso del quarto ordine in cascata al mixer. Questo ha portato ad un notevole miglioramento del THD del segnale in uscita, come mostra la FFT riportata in figura \ref{fig:FFTAD33+LP4}. Nella quale si può notare la presenza di una singola armonica. Ovvero lìoscilloscopio utilizzato non ha permesso di rilevare altre armoniche con la scala impostata. Quindi non c'è stato bisogno di calcoare il $THD$ del segnale.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/fft_ad633+lp4.PNG}
+		\caption{FFT in uscita dall'AD633 dopo il Filtro passa basso del quarto ordine}
+		\label{fig:FFTAD33+LP4}
+	\end{figure}
+
+	L'aggiunta del filtro attivo passa alto è stato introdotto per taglaire la continua e le armoniche inferiori ai $20Hz$.
+	In figura \ref{fig:FFTfinale}.
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/ftt_ad633+lp4+hp1_final.PNG}
+		\caption{FFT della sinusoide in uscita dal sistema}
+		\label{fig:FFTfinale}
+	\end{figure}
+
+
+	 La differeza tra le due è poco apprezzabile della $FFT$, ma si può notare in figura \ref{fig:AD33+LPconsenzaHP} che la sinusioide gialla, quella in uscita al filtro passa basso del quarto ordine, abbia delle componenti in ala frequezna evienziate dagli spike che si vedono sovrapposti alla sinusoide principale. Questi vengono eliminati dallo stadio successivo, ovvero il passa alto attivo. Questo perchè il passa alto è stato realizzato utilizzando come amplificatore operazione l'UA741, che ha un rapporto guadagno banda che cala in modo porporzionale al guadagno impostato dall'amplificatore, come spiegato \ref{sec:OpAmp}. Quindi da filtro passa alto teorico si ottiene un passa banda che va ad eliminare le coponenti in alta frequenza.
+	 
+	 \begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG}
+		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
+		\label{fig:AD33+LPconsenzaHP}
+	\end{figure}
 	%Considerazioni sul circuito: scelta della frequenza di oscillazione
 	%che è stata cambiata perchè non riuscivamo a farla variare con la mano ecc...
 	
-	%
-\section{Problematiche}
+%\section{Problematiche}
 
 % Cosa succede se la distorsione è sull'amplificatore, piuttosto che sull'oscillatore piuttosto che sull'XR? Bisogna che i componenti siano a bassa distorsione armonica.
 	
@@ -532,56 +611,17 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 	
 	
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/sin_xr.PNG}
-		\caption{Segnale in uscita dal blocco XR2206 + LP.}
-		\label{fig:SINx}
-	\end{figure}
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/fft_xr+lp.PNG}
-		\caption{Confronto tra le FFT del segnale in uscita dall'oscillatore monolitico XR2206 prima e dopo il filtro LP in cascata.}
-		\label{fig:FFTxr+LP}
-	\end{figure}
+	
 
 \chapter{Conclusioni}
  	\label{ch:Conclusioni}
 	Bene questo progetto si conclude qui, \textit{grazie a tutti!}
 	
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale = 0.5]{Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG}
-		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
-		\label{fig:AD33+LPconsenzaHP}
-	\end{figure}
-
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale = 0.5]{Immagini/fft_ad633+lp4.PNG}
-		\caption{FFT in uscita dall'AD633 dopo il Filtro passa basso del quarto ordine}
-		\label{fig:FFTAD33+LP4}
-	\end{figure}
 
 
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale = 0.5]{Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG}
-		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
-		\label{fig:AD33+LPconsenzaHP}
-	\end{figure}
-
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale = 0.5]{Immagini/ftt_ad633+lp4+hp1_final.PNG}
-		\caption{FFT della sinusoide in uscita dal sistema}
-		\label{fig:FFTfinale}
-	\end{figure}
+	
 
 
 \end{document}
