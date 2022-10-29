@@ -308,7 +308,7 @@
 	Alla moltiplicazione di due segnali nei tempi corrisponde la convoluzione degli stessi in frequenza. Questo porta ad ottenere due sinusoidi centrate a frequenza $\omega_1 + \omega_2$ e $\omega_1 - \omega_2$.
 	
 	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando la sinusoide ottenuta precedentemente \textit{Sezione \ref{sec:osc_wien}} con l'oscillatore di Wien, avente una $\omega_0$ di 45kHz, e una sinusoide generata dal generatore di funzione ad una frequenza di 20 kHz.
-	
+
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.9]{Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png}
@@ -377,6 +377,13 @@
 	
 	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/sin_xr+lp.PNG}
+		\caption{Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima e dopo il fitro LP in cascata.}
+		\label{fig:SINxr+LP}
+	\end{figure}
+
 \section{Oscillatore di Wien}
 
 Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura \ref{sch:osc_wien}.
@@ -427,12 +434,19 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 	
 	%Verifichiamo il THD delle sinusoidi in uscita dall'Oscillatore e AD633 	Osserviamo che in entrambi i casi non otteniamo distorsioni. Notiamo una continua di circa 2V che non riconosciamo. 	Aggiungendo un condensatore di filtraggio in uscita al moltiplicatore non otteniamo risultati. Ipotizziamo sia dovuto a qualcosa di intrinseco all'oscilloscopio.  	Anche perché nella visualizzazione della sinusoide non rileviamo alcun offset. Inoltre ad un certo punto delle misurazioni è sparito. 	Abbiamo osservato che l'ampiezza delle righe della fft è coerente con i segnali in ingresso al sistema. $V_{osc}$=15V $V_{fcngen}$=2.5V quindi considerando il fattore intrinseco di scala dell'AD633 otteniamo delle righe di fft di ampiezza coerente perché sommando le varie componenti si ottiene quei 3.5V circa di ampiezza del segnale.
 
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.9]{Immagini/AD633_300k.png}
-		\caption{FFT in uscita dall'AD633 con fondamentale a 300k}
+		\includegraphics[scale = 0.5]{Immagini/ad633_fft_mixed.PNG}
+		\caption{FFT in sucita dal mixer AD633 senza filtraggio}
 		\label{fig:FFTAD633}
 	\end{figure}
+
+	%\begin{figure}[h]
+		%\centering
+		%\includegraphics[scale=0.9]{Immagini/AD633_300k.png}
+		%\caption{FFT in uscita dall'AD633 con fondamentale a %300k}
+	%	\label{fig:FFTAD633}
+	%\end{figure}
 
 	\label{ch:Risultati}
 	
@@ -516,12 +530,7 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 	
 
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/sin_xr+lp.PNG}
-		\caption{Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima e dopo il fitro LP in cascata.}
-		\label{fig:SINxr+LP}
-	\end{figure}
+	
 
 	\begin{figure}[H]
 		\centering
@@ -541,5 +550,38 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
  	\label{ch:Conclusioni}
 	Bene questo progetto si conclude qui, \textit{grazie a tutti!}
 	
-	
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG}
+		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
+		\label{fig:AD33+LPconsenzaHP}
+	\end{figure}
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/fft_ad633+lp4.PNG}
+		\caption{FFT in uscita dall'AD633 dopo il Filtro passa basso del quarto ordine}
+		\label{fig:FFTAD33+LP4}
+	\end{figure}
+
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG}
+		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
+		\label{fig:AD33+LPconsenzaHP}
+	\end{figure}
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.5]{Immagini/ftt_ad633+lp4+hp1_final.PNG}
+		\caption{FFT della sinusoide in uscita dal sistema}
+		\label{fig:FFTfinale}
+	\end{figure}
+
+
 \end{document}
