@@ -413,6 +413,44 @@ INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
@@ -938,12 +976,6 @@ INPUT .\Immagini\fft_xr+lp.PNG
 INPUT .\Immagini\fft_xr+lp.PNG
 INPUT .\Immagini\fft_xr+lp.PNG
 INPUT .\Immagini\fft_xr+lp.PNG
-INPUT .\Immagini\thd_xr+bp.pdf
-INPUT .\Immagini\thd_xr+bp.pdf
-INPUT Immagini\thd_xr+bp.pdf
-INPUT .\Immagini\thd_xr+bp.pdf
-INPUT .\Immagini\thd_xr+bp.pdf
-INPUT .\Immagini\thd_xr+bp.pdf
 INPUT .\Immagini\sch_osc_wien_cad.pdf
 INPUT .\Immagini\sch_osc_wien_cad.pdf
 INPUT Immagini\sch_osc_wien_cad.pdf
@@ -965,18 +997,6 @@ INPUT .\Immagini\fft_osc+bp210k.PNG
 INPUT .\Immagini\fft_osc+bp210k.PNG
 INPUT .\Immagini\fft_osc+bp210k.PNG
 INPUT .\Immagini\fft_osc+bp210k.PNG
-INPUT .\Immagini\thd_osc.pdf
-INPUT .\Immagini\thd_osc.pdf
-INPUT Immagini\thd_osc.pdf
-INPUT .\Immagini\thd_osc.pdf
-INPUT .\Immagini\thd_osc.pdf
-INPUT .\Immagini\thd_osc.pdf
-INPUT .\Immagini\thd_osc+bp.pdf
-INPUT .\Immagini\thd_osc+bp.pdf
-INPUT Immagini\thd_osc+bp.pdf
-INPUT .\Immagini\thd_osc+bp.pdf
-INPUT .\Immagini\thd_osc+bp.pdf
-INPUT .\Immagini\thd_osc+bp.pdf
 INPUT .\Immagini\ad633_fft_mixed.PNG
 INPUT .\Immagini\ad633_fft_mixed.PNG
 INPUT Immagini\ad633_fft_mixed.PNG

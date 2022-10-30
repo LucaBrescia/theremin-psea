@@ -9,6 +9,7 @@
 \usepackage{sidecap}			% pacchetto delle didascalie laterali
 \usepackage{setspace}			% pacchetto per modificare interlinea
 \usepackage{textcomp} 			% pacchetto per simboli unicode
+\usepackage[table]{xcolor}		% pacchetto colori per le celle delle tabelle
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -401,18 +402,28 @@
 	\end{figure}
 
 
-
-
-	\begin{figure}[H]
+	\begin{table}[h!]
 		\centering
-		\includegraphics[scale =1]{Immagini/thd_xr+bp.pdf}
-		\caption{THD dell'XR2206 dopo il passa banda}
-		\label{fig:THDXR+BP}
-	\end{figure}
+		\begin{tabular}{||c|c|c||}
+			\hline
+			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
+			\hline
+			Fondamentale & 800 &\\
+			\cline{1-2}
+			$2^a$ armonica & 40 & 7.071 \\
+			\cline{1-2} 
+			$3^a$ armonica & 40 & \\
+			\hline	
+		\end{tabular}
+		\caption{Misure in ampiezza delle componenti armoniche e calcolo del THD della sinusoide in scita dall'XR2206 filtrata dal filtro passa-banda}
+		\label{tab:THD_XR2206+BP}
+	\end{table}
 
 \section{Oscillatore di Wien}
 
 Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura \ref{sch:osc_wien}.
+
+
 
 \begin{figure}[H]
 	\centering
@@ -443,22 +454,45 @@ Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettiva
 		\label{fig:FFTwien+BP}
 	\end{figure}
 
-	Un altro riscontro lo si ha con il calcolo del $THD$ del segnale in usscita dall'oscillatore. Il risultato calcolato con l'equazione \ref{eq:thd}, si può vedere della figura \ref{fig:ThdWien} dove si mostra il valore del $THD$ del segnale in uscita dall'oscillatore. In figura \ref{fig:ThdWien+lp} è riportato il valore del $THD$ dopo il filtro passa banda passivo. Si nota un effettivo miglioramento del $THD$ della sinusoide di riferiento.
+	Un altro riscontro lo si ha con il calcolo del \textit{THD} del segnale in usscita dall'oscillatore. Il risultato calcolato con l'equazione \ref{eq:thd}. Dalla tabella \ref{tab:THD_WIEN} dove si mostra il valore del \textit{THD} del segnale in uscita dall'oscillatore. Nella tabella \ref{tab:THD_WIEN+LP} è riportato il valore del \textit{THD} dopo il filtro passa banda passivo. Si nota un effettivo miglioramento del \textit{THD} della sinusoide di riferiento.
 
-	\begin{figure}[H]
+	\begin{table}[h!]
 		\centering
-		\includegraphics[scale=0.5]{Immagini/thd_osc.pdf}
-		\caption{Valori delle armoniche ricavate dalla FFT del segnale in unscita dall'oscillatore di Wien.}
-		\label{fig:ThdWien}
-	\end{figure}
-	 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/thd_osc+bp.pdf}
-		\caption{Valori delle armoniche ricavate dalla FFT del segnale in unscita dall'oscillatore di Wien.}
-		\label{fig:ThdWien+lp}
-	\end{figure}
+		\begin{tabular}{||c|c|c||}
+			\hline
+			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
+			\hline
+			Fondamentale & 6800 &\\
+			\cline{1-2}
+			$2^a$ armonica & 1200 & \\
+			\cline{1-2} 
+			$3^a$ armonica & 600 & 19.96 \\
+			\cline{1-2} 
+			$4^a$ armonica & 200 & \\
+			\cline{1-2} 
+			$5^a$ armonica & 50 & \\
+			\hline	
+		\end{tabular}
+		\caption{Ampiezza delle armoniche del segnale in uscita dall'oscillatore di Wien.}
+		\label{tab:THD_WIEN}
+	\end{table}
 
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c|c|c||}
+			\hline
+			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
+			\hline
+			Fondamentale & 3800 &\\
+			\cline{1-2}
+			$2^a$ armonica & 400 & 10.61 \\
+			\cline{1-2} 
+			$3^a$ armonica & 50 & \\
+			\hline	
+		\end{tabular}
+		\caption{Ampiezze delle armoniche del segnale filtrato con il filtro passa basso in cascata all'oscillatore di Wien.}
+		\label{tab:THD_WIEN+LP}
+	\end{table}
 
 \section{Mixer}
 \label{sec:Mixer}
