@@ -1,4 +1,5 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex Theremin"] 1667142852 "Theremin.aux" "Theremin.bbl" "Theremin" 1667142860
   "C:/Program Files/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1643836891 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
   "Theremin-blx.bib" 1667142858 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
@@ -7,6 +8,16 @@
   "Theremin.bbl"
   "Theremin.blg"
 ["pdflatex"] 1667142853 "c:/Progetti/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1667142860
+=======
+["bibtex Theremin"] 1667143691 "Theremin.aux" "Theremin.bbl" "Theremin" 1667143702
+  "C:/Program Files/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1643836891 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
+  "Theremin-blx.bib" 1667143700 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
+  "Theremin.aux" 1667143700 14536 312b177cfb8499efa7dee257339d3b4c "pdflatex"
+  (generated)
+  "Theremin.bbl"
+  "Theremin.blg"
+["pdflatex"] 1667143692 "c:/Progetti/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1667143702
+>>>>>>> main
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993058908 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -75,10 +86,15 @@
   "C:/Program Files/MiKTeX/tex/latex/environ/environ.sty" 1399188561 4378 f429f0da968c278653359293040a8f52 ""
   "C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1622999586 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601894156 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+<<<<<<< HEAD
   "C:/Program Files/MiKTeX/tex/latex/graphics-cfg/color.cfg" 1465890692 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "C:/Program Files/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465890692 1224 978390e9c2234eab29404bc21b268d1e ""
   "C:/Program Files/MiKTeX/tex/latex/graphics-def/pdftex.def" 1645286786 19103 48d29b6e2a64cb717117ef65f107b404 ""
   "C:/Program Files/MiKTeX/tex/latex/graphics/color.sty" 1639593010 7197 eb6c1ebf41667a05cb50c23c19d5e8bc ""
+=======
+  "C:/Program Files/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465890692 1224 978390e9c2234eab29404bc21b268d1e ""
+  "C:/Program Files/MiKTeX/tex/latex/graphics-def/pdftex.def" 1645286786 19103 48d29b6e2a64cb717117ef65f107b404 ""
+>>>>>>> main
   "C:/Program Files/MiKTeX/tex/latex/graphics/graphics.sty" 1639593010 18399 7e40f80366dffb22c0e7b70517db5cb4 ""
   "C:/Program Files/MiKTeX/tex/latex/graphics/graphicx.sty" 1639593010 7996 a8fb260d598dcaf305a7ae7b9c3e3229 ""
   "C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty" 1639593011 2671 4de6781a30211fe0ea4c672e4a2a8166 ""
@@ -94,7 +110,10 @@
   "C:/Program Files/MiKTeX/tex/latex/ragged2e/ragged2e.sty" 1639763652 9244 53da791cc5f775633a8a852b08533fe2 ""
   "C:/Program Files/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253165583 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Program Files/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+<<<<<<< HEAD
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
+=======
+>>>>>>> main
   "C:/Users/Luca" 1658686704 1067 2cb63e3a1f7fa671168499a64e50cee8 ""
   "C:/Users/Luca Brescia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1667126487 81629 f47fc86e5e29769d869b5ecede0714da ""
   "C:/Users/Luca Brescia/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1629718315 14064 925c9d071baa7f3473617d207783af0a ""
@@ -115,7 +134,10 @@
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/caption/caption.sty" 1603740596 51746 e89c4da670ba533e6ab38e045ce6d1d9 ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/caption/caption3.sty" 1603740596 67929 d50ae850e1d9604065e8337a75a41029 ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/caption/subcaption.sty" 1603740596 6133 46bea384e36e9b74bd53a238fc2d0654 ""
+<<<<<<< HEAD
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/colortbl/colortbl.sty" 1660205607 12441 3b2a708337608012a865c7d9b7f05d28 ""
+=======
+>>>>>>> main
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/csquotes/csquotes.cfg" 1613979084 7068 06f8d141725d114847527a66439066b6 ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/csquotes/csquotes.def" 1613979084 20781 dc1bec6693d5466d8972ecc6b81f9f0b ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/csquotes/csquotes.sty" 1613979084 62518 6e0d74482f5cb16b3b0755031e72faf1 ""
@@ -134,7 +156,10 @@
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/setspace/setspace.sty" 1324294077 22913 a27d7908fc6f0385466454a966a316eb ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/sidecap/sidecap.sty" 1469785173 10863 e4fd75d883a0e21600bac6a209f020eb ""
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/tools/afterpage.sty" 1636710260 4085 5d204adcbe1ad2fc72fe565763c803ee ""
+<<<<<<< HEAD
   "C:/Users/Luca Brescia/AppData/Roaming/MiKTeX/tex/latex/tools/array.sty" 1636710260 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
+=======
+>>>>>>> main
   "Immagini/009_OscillatoreWienFFT.png" 1650123436 38153 c0a46d3d845395773cf217ddc8d43a68 ""
   "Immagini/Schema Generale PSEA.png" 1650123436 23045 7b056653255ba6e881392fbcfaa798d3 ""
   "Immagini/Schema a blocchi PSEA.png" 1650123436 25597 91c0562caae9c70badc0f0c6686448c2 ""
@@ -161,6 +186,7 @@
   "Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG" 1666460250 26142 6be56e80379d942779e8f2c27566829f ""
   "Immagini/sin_xr+lp.PNG" 1666361450 28869 a73581d93053d22fd11d116c227ded10 ""
   "Immagini/sin_xr.PNG" 1666361538 38112 30f53c90a2be92a5647506bff5b0930f ""
+<<<<<<< HEAD
   "Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png" 1650123436 17166 b13a27ee69c651a17769976970d09a65 ""
   "Theremin-frn.pdf" 1650123436 135872 069d37333e0adeb68b75d92a08a81d29 ""
   "Theremin-frn.tex" 1650123436 994 d11605f6d84f398b3138871a9fe11454 ""
@@ -171,6 +197,21 @@
   "Theremin.tex" 1667142842 36643 3d456bfa87c5eff32a8eabcfabad1a07 ""
   "Theremin.toc" 1667142858 1491 9008997a807e97c0a4c98a12ac0f2694 "pdflatex"
   "c:/Progetti/theremin-psea/Theremin.tex" 1667142842 36643 3d456bfa87c5eff32a8eabcfabad1a07 ""
+=======
+  "Immagini/thd_osc+bp.pdf" 1667036347 32619 62f9f41bbd91b35666b90853a7904810 ""
+  "Immagini/thd_osc.pdf" 1667036388 35351 081bd8413d6cb117aa88d6b922a19049 ""
+  "Immagini/thd_xr+bp.pdf" 1667036108 32325 f2afc0948b336988efda66a7e91639a7 ""
+  "Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png" 1650123436 17166 b13a27ee69c651a17769976970d09a65 ""
+  "Theremin-frn.pdf" 1650123436 135872 069d37333e0adeb68b75d92a08a81d29 ""
+  "Theremin-frn.tex" 1650123436 994 d11605f6d84f398b3138871a9fe11454 ""
+  "Theremin.aux" 1667143700 14536 312b177cfb8499efa7dee257339d3b4c "pdflatex"
+  "Theremin.bbl" 1667143691 533 205fa30ee4c093bb2bc4676324ab99fd "bibtex Theremin"
+  "Theremin.out" 1667143700 2901 8c8d39f206ee89dbeb3009eaa6a55a4d "pdflatex"
+  "Theremin.run.xml" 1667143700 2599 40229afc5cd2c637c7b6cb5862316c6f "pdflatex"
+  "Theremin.tex" 1667143671 37003 bd28ae433b6c4bd5e8668571d46725f0 ""
+  "Theremin.toc" 1667143700 1491 9008997a807e97c0a4c98a12ac0f2694 "pdflatex"
+  "c:/Progetti/theremin-psea/Theremin.tex" 1667143671 37003 bd28ae433b6c4bd5e8668571d46725f0 ""
+>>>>>>> main
   (generated)
   "Theremin-blx.bib"
   "Theremin.aux"

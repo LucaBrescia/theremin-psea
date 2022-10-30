@@ -627,6 +627,12 @@ Il problema è stato risolto ponendo una resistenza di valore $680k\Omega$ agli 
 		\caption{Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto}
 		\label{fig:AD33+LPconsenzaHP}
 	\end{figure}
+
+
+	La variazione di frequenza si manifesta con l'avvicinamento o l'allontanamennto della mano dell'utente dalla bandiera, che rappresenta l'altra faccia della capacità variabile. La variazione di capacità determinata dalla posizione della mano determina quindi la variazio di frequeza. Come primo tentativo avevamo deciso di utilizzare una frequenza di rifetminto di di $45KHz$ per poi var variare il segnale generato dal $VCO$ a frequenza che andassero da circa $45KHz$ a circa $85KHz$.
+	Tuttavia, è stato riscontrato subito il problema della sensibilità.Ovvero si è visto che le uniche variazioni di frequenza apprezzabili si avevano quando la mano era a contatto con l'antenna o se questa era assente. Senza però portare le variazioni volute, si andava a coprire una piccolissima parte del range richiesto dal progetto.
+	Quindi, si è deciso di alzare le frequeze operative, portando il riferimeno in uscita dall'oscillatore di Wien ad un valore di $245KHz$ come mostrato in figura \ref{fig:SINwien+BP}. Questo ha porta a dover aumentare anche il range di frequenze del $VCO$ portando così gli estremi da un'oscillazione di $275KHz$ senza mano a circa un $250KHz$ con la mano ad una distanza minima ove la mano risulta a contatto con l'atenna.
+	Questa volta si è riscontranto un netto miglioramento della sensibilità nella variazione della frequeza rispetto alla distanza della mano.
 	%Considerazioni sul circuito: scelta della frequenza di oscillazione
 	%che è stata cambiata perchè non riuscivamo a farla variare con la mano ecc...
 	
