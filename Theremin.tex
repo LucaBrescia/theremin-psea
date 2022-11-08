@@ -68,7 +68,7 @@
 	I blocchi minimi necessari alla realizzazione di questo progetto sono:
 	
 	\begin{enumerate}
-		\item Oscillatore controllato in tensione $(VCO)$;
+		\item Oscillatore controllato in tensione (\textit{VCO});
 		\item Moltiplicatore analogico;
 		\item Oscillatore a frequenza fissata;
 		\item Filtro passa basso.
@@ -81,18 +81,18 @@
 	\begin{enumerate}
 		\item l'oscillatore monolitico \textit{XR2206} come \textit{VCO};
 		\item Il moltiplicatore analogico \textit{AD633} per lo shift frequenziale;
-		\item L'amplificatore operazionale \textit{LF356N} per la realizzazione dell oscillatore a ponte di Wien per la generazione di una sinusoide di riferimento;
+		\item L'amplificatore operazionale \textit{LF353N} per la realizzazione dell oscillatore a ponte di Wien per la generazione di una sinusoide di riferimento;
 		\item L'amplificatore \textit{LF356P} per la realizzazione di filtro passa basso.
 		\item L'amplificatore \textit{UA741} per la realizzazione dei filtri passa alto.
 	\end{enumerate}
 	
 	
-\section{Amplificatori operazionali LF353, LF356 e uA741}
+\section{Amplificatori operazionali LF353N, LF356P e uA741}
 \label{sec:OpAmp}
 	La scelta di questi componenti tra quelli disponibili è stata fatta principalmente per le bande bassanti dei dispositivi.
 	\\ Sono necessari componenti a banda elevata poiché, come risulta dal capitolo \ref{ch:Risultati}, si deve lavorare con frequenze dell'ordine delle centinaia di kHz.
 	
-	 \noindent Infatti le bande in gioco sono di circa \textit{3MHz} per \textit{LF353P} mentre \textit{5MHz} per \textit{LF356N}. Ad esempio, l'\textit{UA741} ha un \textit{GBP} di \textit{1MHz} tipico. I primi due operazionali sono stati scelti per:
+	 \noindent Infatti le bande in gioco sono di circa \textit{3MHz} per \textit{LF356P} mentre \textit{5MHz} per \textit{LF353N}. Ad esempio, l'\textit{UA741} ha un \textit{GBP} di \textit{1MHz} tipico. I primi due operazionali sono stati scelti per:
 	
 	\begin{enumerate}
 		\item \textit{LF356N} per l'oscillatore armonica fondamentale 
@@ -100,7 +100,7 @@
 	\end{enumerate}
 	
 	
-	\noindent Importante osservare che l'\textit{LF353P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del 4o ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo. Inoltre, l'\textit{LF356N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
+	\noindent Importante osservare che l'\textit{LF356P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del 4o ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo. Inoltre, l'\textit{LF353N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
 	L'\textit{UA741} viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 10Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate.
 
 	\noindent I motivi per cui le frequenze in gioco risultino essere elevate sono indicate nel capitolo \ref{ch:Risultati}.
@@ -113,7 +113,7 @@
 		\subfloat[][\emph{uA741}]
 		{\includegraphics[width=.40\textwidth]{Immagini/ua741_pinout.pdf}} \qquad
 		\subfloat[][\emph{LF353N}]
-		{\includegraphics[width=.30\textwidth]{Immagini/lf353n_pinout.pdf}} 
+		{\includegraphics[width=.30\textwidth]{Immagini/lf353n_pinout.pdf}} \qquad 
 		\subfloat[][\emph{LF356P}]
 		{\includegraphics[width=.40\textwidth]{Immagini/lf356p_pinout.pdf}} \\
 		\caption{PinOut dei tre Amplificatori Operazionali usati}
@@ -124,7 +124,7 @@
 \section{Oscillatore monolitico XR2206}
 	\label{sec:XR2206}
 	
-	Si è scelto di utilizzare \textit{XR2206} perchè permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impunsi garantendo un'alta precisione, stabilità e una bassa distorsione. L'ampiezza e la frequenza dei segnali in uscita è direttamente modulabile dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $HZ$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
+	Si è scelto di utilizzare \textit{XR2206} perché permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impulsi garantendo un'alta precisione, stabilità e una bassa distorsione. L'ampiezza e la frequenza dei segnali in uscita sono direttamente modulabili dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $Hz$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
 	In \textit{Figura \ref{fig:sch_xr2206}} è mostrato lo schema a blocchi del componente.
 	
 	\begin{figure}[H]
@@ -137,15 +137,15 @@
 		\label{fig:sch_xr2206}
 	\end{figure}
 
-	La frequenza di oscillazione può essere determinata agendo sulla capacità o sulla resistenza equivlente collegate ai pin opportuni del componente, come riportato nel capitolo \ref{ch:scelte}.
+	La frequenza di oscillazione può essere determinata agendo sulla capacità o sulla resistenza equivalente collegate ai pin opportuni del componente, come riportato nel capitolo \ref{ch:scelte}.
 	
 	
 \section{Moltiplicatore analogico AD633}
 	\label{sec:AD633}
-	La scelta del moltiplicatore analogico o mixer è stata obbigata in quanto non erano presenti altri componenti del genere a disposizione.
+	La scelta del moltiplicatore analogico AD633 è stata obbigata in quanto tra i componenti messi a disposizione non vi erano altre proposte.
 	Tuttavia garantisce delle buone prestazioni permettendo di restare nelle specifiche di progetto.
-	Infatti, possiede elevate impedenze d'ingresso sia sugli ingressi differenziali $X$ e $Y$, che sull'ingersso sommatore $Z$. Una bassa impedenza d'uscita che permette quindi di disaccoppiare la parte a monte del circuito con quella che si trova a valle. Lavora con una larghezza di banda pari ad 1 $MHz$ e uno slew rate pari a 20 $V/\mu S$. 
-	Si può notare, come mostrano in figura \ref{fig:sch_ad633}, che il componete inizia a tagliare ad una frequenza inferiore ripetto alla banda passante teorica indicata, tagliando intorno ai 500 $kHz$.
+	Infatti, possiede elevate impedenze d'ingresso sia sugli ingressi differenziali $X$ e $Y$, che sull'ingersso sommatore $Z$, una bassa impedenza d'uscita che permette quindi di disaccoppiare la parte a monte del circuito con quella che si trova a valle e lavora con una larghezza di banda pari ad 1 $MHz$ e uno slew rate pari a 20 $V/\mu S$. 
+	Si può notare, come mostrano in figura \ref{fig:sch_ad633}, che il componente inizia ad attenuare il segnale ad una frequenza inferiore ripetto alla banda passante teorica indicata, tagliando intorno ai 500$kHz$.
 	Tuttavia, dal punto di vista teorico, questo non impone una limitazione ai fini del progetto.
 
 	\begin{figure}[H]
@@ -156,16 +156,16 @@
 	\end{figure}
 
 	
-	\noindent La figura \ref{fig: AD633 schema a blocchi} mostra sia il pinout che lo schema  blocchi interno dell'\textit{AD6333}. Il segnale in uscita dal mixer si calcola con la seguente formula:
+	\noindent La \textit{Figura \ref{fig: AD633 schema a blocchi}} mostra sia il pinout che lo schema  blocchi interno dell'\textit{AD6333}. Il segnale in uscita dal mixer si calcola con la seguente equazione:
 
 	\begin{equation}
 		\label{eq: funzione trasferimeto AD633}
 		W = \frac{(X1 - X2)(Y1 - Y2)}{10 [V]}  + Z 
 	\end{equation}
 
-	Come si può notare dalla formula in segnale viene attenuato di un fattore 10 $V$, quindi sarà necessaria una compensazione negli stadi successivi. 
+	Come si può notare dall'\textit{Equazione \ref{eq: funzione trasferimeto AD633}} il segnale viene attenuato di un fattore 10, quindi sarà necessaria una compensazione negli stadi successivi come viene mostrato nella \textit{Sezione \ref{sec:filtro_hp1}}. 
 
-	\noindent Analizzando il caso che gli ingressi X2, Y2 e Z collegti a massa, ovvero che diano contributo nullo. L'equazione \ref*{eq: funzione trasferimeto AD633} diventa:
+	\noindent Analizzando il caso che gli ingressi X2, Y2 e Z collegti a massa, ovvero che diano contributo nullo. L'\textit{Equazione \ref{eq: funzione trasferimeto AD633}} diventa:
 
 
 	\begin{equation}
@@ -174,8 +174,7 @@
 	\end{equation}
 
 
-	Ora si consideri che i due ingressi siano sinusoidali:
-
+	Considerando che i due ingressi siano sinusoidali:
 
 	\begin{equation}
 		\label{eq: X1 sinusoidale}
@@ -191,7 +190,7 @@
 	\end{equation}
 
 
-	Aggiungendo l'ipotesi che le due sinusoidi abbiano fase nulla la formula \ref*{eq:prodotto sinusoidi con fase} diventa:
+	Aggiungendo l'ipotesi che le due sinusoidi abbiano fase nulla, l'\textit{Equazione \ref{eq:prodotto sinusoidi con fase}} diventa:
 
 
 	\begin{equation}
@@ -200,8 +199,8 @@
 	\end{equation}
 	
 
-	Si nota quindi che all'uscita del mixer si avrà un segnale dato dalla combinazione delle due sinusoidi in ingresso, le cui componenti spettrali saranno date una dalla somma delle componenti spettrali delle delle singole e l'altra dalla loro differenza.
-	Quindi inserendo un opportuno filtro passa basso si va a selezionare solo la componente spettrale d'interesse, ovvero quella compresa tra 20 $Hz$ e 20 $kHz$.
+	Dunque, all'uscita del mixer si avrà un segnale dato dalla combinazione delle due sinusoidi in ingresso, le cui componenti spettrali saranno date una dalla somma delle componenti spettrali delle delle singole e l'altra dalla loro differenza.
+	Quindi, inserendo un opportuno filtro passa basso, si va a selezionare solo la componente spettrale d'interesse ovvero quella compresa tra 20 $Hz$ e 20 $kHz$.
 
 	
 	\begin{figure}[H]
@@ -215,8 +214,8 @@
 \chapter{Scelte progettuali}
 	\label{ch:scelte}
 	
-	Nella realizzazione di questo progetto si deve prestare particolare attenzione allo spettro del segnale di uscita. Nello specifico, si deve valutare la distorsione armonica totale (\textit{THD}) della sinusoide di uscita osservando quanto le armoniche indesiderate, anche generate da disturbi intrinsechi del sistema, influiscano sulle performance del dispositivo.
-	Per ridurre l'effetto di armoniche a frequenza esterna alla banda udibile si è scelto di introdurre cascate di filtri passa alto e passa basso in modo da cercare un insieme di filtri passa-banda che producano un effetto accettabile per l'esperienza. Di seguito è riportato lo schema a blocchi del sistema:
+	Nella realizzazione di questo progetto si deve prestare particolare attenzione allo spettro delle frequenze del segnale di uscita. Nello specifico, si deve valutare la distorsione armonica totale (\textit{THD}) del segnale di uscita osservando quanto le armoniche a frequenza diversa da quella desiderata, anche generate da disturbi intrinsechi del sistema, influiscano sovrapponendosi all'armonica a frequenza desiderata.
+	Per ridurre l'effetto delle armoniche a frequenza esterna alla banda udibile si è scelto di introdurre cascate di filtri passa alto e passa basso in modo da creare un insieme di filtri passa-banda che producano un effetto accettabile per l'esperienza. Di seguito è riportato lo schema a blocchi del sistema:
 
 	\begin{figure}[h]
 		\centering
@@ -283,7 +282,7 @@
 		B = \frac{1}{3 + j\omega C R - j\frac{1}{\omega C R}}
 	\end{equation}
 	\\
-	Per l'innesco delle oscillazioni è necessario che il guadagno ad anello aperto sia inizialmente $A\cdot B>1$ ed $A>3$ per poi assestarsi a $A\cdot B=1$ ed $A=3$. La tecnica più semplice consiste nel disporre due diodi in antiparallelo lungo l'anello di retroazione dell'OpAmp.
+	Per l'innesco delle oscillazioni è necessario che il guadagno ad anello aperto sia inizialmente $A\cdot B>1$ ed $A>3$ per poi assestarsi a $A\cdot B=1$ ed $A=3$. La tecnica più semplice consiste nel disporre due diodi in antiparallelo lungo l'anello di retroazione dell'amplificatore operazionale.
 	
 	\noindent Quando \textit{$V_{O}$} è bassa i diodi presentano un'alta resistenza differenziale mentre all'aumentare di \textit{$V_{O}$} essa diminuisce. 
 	\\ Per rispettare le condizioni di lavoro imposte, il guadagno A può essere posto, circa, all'85\% del suo valore nominale (A=2,5 — 2,55) così si fa in modo modo che $A>3$ all'avvio che poi si riduce ad A=3 a regime.
@@ -311,7 +310,7 @@
 		V_{RMS} = \frac{V}{\sqrt{2}}
 	\end{equation}
 
-	La presenza di un \textit{THD} più o meno buono si manifesta con un andamento della sinusoide di uscita più o meno ideale. L'aggiunta di nuove armoniche poù essere cuasata dalla sensibile alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di diturbi e/o distorioni potrebbe essera la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, oltre che altre fonti esterne.
+	La presenza di un \textit{THD} più o meno buono si manifesta con un andamento della sinusoide di uscita più o meno ideale. L'aggiunta di nuove armoniche può essere cuasata dalla sensibilità alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di diturbi e/o distorioni è la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, bisogna quindi essere sempre attenti a non portare l'amplificatore a saturare il segnale.
 
 
 	% Se la distorsione non è armonica cosa succede? Ottendo piu righe spettrali che mi generano disturbi nel segnale
@@ -322,7 +321,7 @@
 		
 \newpage
 \section{Moltiplicatore analogico}
-	Alla moltiplicazione di due segnali nei tempi corrisponde la convoluzione degli stessi in frequenza. Questo porta ad ottenere due sinusoidi centrate a frequenza $\omega_1 + \omega_2$ e $\omega_1 - \omega_2$.
+	Come segue dalla teoria dei segnali, alla moltiplicazione di due segnali nei tempi corrisponde la convoluzione degli stessi in frequenza. Questo porta ad ottenere due sinusoidi centrate a frequenza $\omega_1 + \omega_2$ e $\omega_1 - \omega_2$.
 	
 	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando la sinusoide ottenuta precedentemente \textit{Sezione \ref{sec:osc_wien}} con l'oscillatore di Wien, avente una $\omega_0$ di \textit{45kHz}, e una sinusoide generata dal generatore di funzione ad una frequenza di \textit{20kHz}.
 
@@ -333,15 +332,15 @@
 		\label{fig:FFTmixer}
 	\end{figure}
 	
-	 \noindent Essendo i due segnali in gioco di 20kHz e 45kHz, dalla  \textit{Figura \ref{fig:FFTmixer}} si può notare come vengano generate due sinusoidi aventi armoniche fondamentali a $(45-20)kHz$ e $(45+20)kHz$. %escludendo la componente armonica a frequenza nulla che è generata dalla strumentazione come spiegato in precedenza.
+	 \noindent Essendo i due segnali in gioco di 20kHz e 45kHz, dalla \textit{Figura \ref{fig:FFTmixer}} si può notare come vengano generate due sinusoidi aventi armoniche fondamentali a $(45-20)kHz$ e $(45+20)kHz$. %escludendo la componente armonica a frequenza nulla che è generata dalla strumentazione come spiegato in precedenza.
 	 \\
-	 Inoltre, le ampiezze rilevate risultano in linea con i risultati teorici in quanto l'ampiezza di picco dei due segnali in gioco è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicate tra loro e divise di un fattore $10$ come specificato nel datasheet del componente. Si nota anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente armonica del segnale.
+	 Inoltre, le ampiezze misurate risultano in linea con i risultati teorici in quanto l'ampiezza di picco dei due segnali in gioco è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicati tra loro e divise di un fattore $10$, come specificato nel datasheet del componente. Sempre in riferimento alla \textit{Figura \ref{fig:FFTmixer}} si può notare anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente armonica del segnale.
 	
 
 \section{Filtro LP del quarto ordine}
-	Il prodotto di due sinusoidi del mixer porterà in uscita due sinusoidi a frequenze diverse ovvero una sarà $\omega_{wien} + \omega_{VCO}$ e l'altra a $\omega_{wien} - \omega_{VCO}$. Per rientrare nelle specifiche di progetto, è stato necessario introdurre un filtro passa-basso (LP) tale che permettesse di avere in uscita solo la componente armonica $\omega_{wien} - \omega_{VCO}$.
+	Il prodotto di due sinusoidi del mixer porterà in uscita due sinusoidi a frequenze diverse ovvero una sarà $\omega_{wien} + \omega_{VCO}$ e l'altra a $\omega_{wien} - \omega_{VCO}$. Per rientrare nelle specifiche di progetto, è stato necessario introdurre un filtro passa-basso che permetta di ottenere in uscita al sistema solo la componente armonica $\omega_{wien} - \omega_{VCO}$.
 	\\ 
-	Volendo un filtro molto selettivo e visto che il compondente \textit{LF353P} ha al suo interno due amplificatori, si è scelto di utilizzare un filtro attivo di ordine 4. Realizzandolo tramite un filtro di Chebychev con due celle Sallen-Key in casacata. 
+	Volendo realizzare un filtro molto selettivo e, avendo il compondente \textit{LF353P} al suo interno due amplificatori, si è scelto di utilizzare un filtro attivo di ordine 4, realizzandolo tramite un filtro di Chebychev con due celle Sallen-Key in casacata. 
 	
 	\begin{figure}[H]
 		\centering
@@ -350,7 +349,7 @@
 		\label{fig:LP4}
 	\end{figure}	
 	
-	\noindent Dove la sua risposta teorica in frequenza del modulo del filtro risulta essere quella riportato nel diagramma di Bode mostrato in \textit{Figura \ref{fig:BodeLp4}}.
+	\noindent La risposta in frequenza teorica del filtro risulta essere in modulo quella riportata nel diagramma di Bode mostrato in \textit{Figura \ref{fig:BodeLp4}}.
 	
 	\begin{figure}[H]
 		\centering
@@ -359,28 +358,29 @@
 		\label{fig:BodeLp4}
 	\end{figure}
 
-	La funzione di trasferimento del filtro del quarto ordine può essere visto come il prodotto in cascata delle funzioni di trasferimeto delle due celle Sellen-Key del secondo ordine.
+	La funzione di trasferimento del filtro del quarto ordine può essere vista come il prodotto in cascata delle funzioni di trasferimeto delle due celle Sellen-Key del secondo ordine.
+
 	La funzione della prima cella risulta:
 
 	\begin{equation}
+		\label{eq:sallen-key-1}
 		H_1(s) = \frac{V_{in}}{V_u}  =  \frac{1}{1 + sC_1(R_1 + R_2)+ s^2C_1C_2R_1R_2 } 
 	\end{equation}
 
 	Mentre la funzione di trasferimento della seconda cella risulta essere:
 
 	\begin{equation}
+		\label{eq:sallen-key-2}
 		H_2(s) = \frac{V_u}{V_{out}}  = \frac{1}{1 + sC_3(R_3 + R_4)+ s^2C_3C_4R_3R_4 } 
 	\end{equation}
 
-	La funzione di trasferimento totale del filtro sarà data dal prodotto delle due funzioni di trasferimento
+	La funzione di trasferimento totale del filtro sarà quindi data dal prodotto delle due \textit{Equazioni \ref{eq:sallen-key-1}e \ref{eq:sallen-key-2}}:
+
 	\begin{equation}
 		H(s) = H_1(s)H_2(s) =  \frac{V_{in}}{V_u}\frac{V_u}{V_{out}} = \frac{V_{in}}{V_{out}}
 	\end{equation}
 
 	
-
-
-
 \chapter{Risultati sperimentali}
 
 \section{XR2206}
@@ -392,6 +392,7 @@
 	
 	Le prestazioni ottenute con questo tipo di antenna sono le seguenti:
 	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
 
 	\begin{figure}[H]
@@ -586,7 +587,7 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 
 \newpage
 \section{Filtro passa alto del primo ordine}
-
+\label{sec:filtro_hp1}
 	Per eliminare la componente in continua in uscita dal mixer analogico è necessario un filtro passa alto. L'elemento disaccoppiante più semplice da inserire è una capacità tra uscita del mixer e l'uscita del sistema completo.
 	Dovendo rispettare da specifiche una frequenza minima del segnale di uscita di \textit{20Hz} si è deciso di optare per la realizzazione di un filtro passa alto con frequenza di taglio di \textit{20Hz}. Tuttavia si è scelto di utilizzare un filtro attivo per recuperare l'attenuazione di fattore 10 imposta dall'\textit{AD633}, oltre che per disaccopiare il circuito dal carico.
 	
