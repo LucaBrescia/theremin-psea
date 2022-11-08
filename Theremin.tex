@@ -573,18 +573,19 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 \section{Filtro passa alto del primo ordine}
 
 	Per eliminare la componente in continua in uscita dal mixer analogico è necessario un filtro passa alto. L'elemento disaccoppiante più semplice da inserire è una capacità tra uscita del mixer e l'uscita del sistema completo.
-	Dovendo rispettare da specifiche una frequenza minima del segnale di uscita di \textit{20Hz} si è deciso di optare per la realizzazione di un filtro passa alto con frequenza di taglio di \textit{20Hz}. Tuttavia si è scelto di utilizzare un filtro attivo per recuperare l'attenuazione di fattore 10 imposta dall'\textit{AD633}
-	Qua dentro ci mettiamo: \\
-	datasheet \\
-	Circuito \\
-	Risposta in frequenza bode \\
-	Giustificare che taglia a 10k perchè la banda passante dell'ampli fa schifo \\
+	Dovendo rispettare da specifiche una frequenza minima del segnale di uscita di \textit{20Hz} si è deciso di optare per la realizzazione di un filtro passa alto con frequenza di taglio di \textit{20Hz}. Tuttavia si è scelto di utilizzare un filtro attivo per recuperare l'attenuazione di fattore 10 imposta dall'\textit{AD633}, oltre che per disaccopiare il circuito dal carico.
+	
+	Da dtasheet il prodotto banda guadagno dell'uA741 risulta essere di 1MHz in anello aperto. Tuttavia, utilizzando un guadagnodi 10 in anello chiuso la banda passante del componente è ridotta a 100KHz. Così si va ad ottenere un filtro passa banda effettivo con banda pari a \textit{20Hz - 100KHz}. Questo aguta ad attenuare ulteriormente tutte le coponenti in alta frequenza.
+	Come mostra la figura \ref{fig:gbp_ua741}, l'ampiezza massima del segnale in uscita dal componente viene ridotta per le alte frequenze. Ciò comporta che l'uscita finale del sistema potrà oscillare tra  \textit{$\pm$6V}.
+
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=1]{Immagini/gbp_ua741.pdf}
 		\caption{Ampiezza massima del segnale di uscita in relazione alla sua frequenza}
 		\label{fig:gbp_ua741}
 	\end{figure}
+
+	Altro parametro importante è il \textit{THD} che da datasheet risulta essere dello \textit{0.06\%} del segnale in ingresso. Quindi non introduce distorsione armonica apprezzabile al sistema.
 	
 	\begin{figure}[H]
 		\centering
@@ -593,8 +594,7 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:sch_hp1}
 	\end{figure}
 
-	In mancanza di componenti abbiamo dovuto adattarci
-	( in teoria ampli sposta bode)
+	In figura \ref{fig:BODEHp1Real} si può notare come il filtro teorico (in blu) e quello sperimentale (in rosso) abbiano un andamento simile, ma non siano sovrapposti. Il filtro sperimentale rispetta le specifiche di progetto ovvero il taglio ad a \textit{20Hz}. Possiamo dire che il filtro attenua il segnale con frequene inferiori a \textit{1Hz} in qunato si trova ad un valore di \textit{-20dB}. Per quanto riguarda le frequenze comprese tra \textit{1Hz e 20Hz} vero che rsultano amplificate, ma di un valore inferiore rispetto alla banda passante del filtro. Questo non risulta essere un problema dato che i due stadi precedenti, LP4 e il mixer, attenuano il prodotto delle sinusoidi in ingresso al blocco del mixer di un valore 20. Pertanto le armoniche fuori dalla banda passante del filtro passa alto risultano comunque attenuate. Il risultato finale è riportato in Figura \ref{fig:FFTfinale}.
 
 	\begin{figure}[H]
 		\centering
@@ -603,6 +603,8 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:BODEHp1Real}
 	\end{figure}
 
+
+\newpage
 \section{Theremin}
 \label{ch:Teremin}
 	%Schematico con cad
@@ -714,8 +716,8 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{tab:Distanza-Frequenza}
 	\end{table}
 	
-
-	\begin{figure}[H]
+\newpage
+	\begin{figure}[]
 		\centering
 		\includegraphics[scale=0.8]{Immagini/sch_complet_a4_verticale.pdf}
 		\caption{Schematico completo del circuito realizzato}
