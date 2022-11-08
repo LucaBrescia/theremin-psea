@@ -106,13 +106,28 @@
 	\noindent I motivi per cui le frequenze in gioco risultino essere elevate sono indicate nel capitolo \ref{ch:Risultati}.
 
 	
+
+
+	\begin{figure}[H]
+		\centering
+		\subfloat[][\emph{uA741}]
+		{\includegraphics[width=.40\textwidth]{Immagini/ua741_pinout.pdf}} \qquad
+		\subfloat[][\emph{LF353N}]
+		{\includegraphics[width=.30\textwidth]{Immagini/lf353n_pinout.pdf}} 
+		\subfloat[][\emph{LF356P}]
+		{\includegraphics[width=.40\textwidth]{Immagini/lf356p_pinout.pdf}} \\
+		\caption{PinOut dei tre Amplificatori Operazionali usati}
+		\label{fig:pinout_OpAmp}
+	\end{figure}
+
+	
 \section{Oscillatore monolitico XR2206}
 	\label{sec:XR2206}
 	
 	Si è scelto di utilizzare \textit{XR2206} perchè permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impunsi garantendo un'alta precisione, stabilità e una bassa distorsione. L'ampiezza e la frequenza dei segnali in uscita è direttamente modulabile dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $HZ$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
 	In \textit{Figura \ref{fig:sch_xr2206}} è mostrato lo schema a blocchi del componente.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\subfloat[][\emph{Schema dei collegamenti interni}]
 		{\includegraphics[width=.40\textwidth]{Immagini/schema_blocchi_xr2206.pdf}} \qquad
