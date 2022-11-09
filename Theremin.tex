@@ -386,11 +386,17 @@
 \section{XR2206}
 	Per la realizzazione dell'armonica a frequenza variabile ci siamo appoggiati al datasheet del componente scegliendo come valori di partenza quelli mostrati in esempio. 
 	
-	La capacità variabile è stata realizzata con un supporto rigido e della carta di alluminio posta a bandiera. Il tutto è stato collegato come mostrato in figura.
-	
+	La capacità variabile è stata realizzata con un supporto rigido e della carta di alluminio posta a bandiera. Il tutto è stato collegato come mostrato in figura \ref{fig:antenna}.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.25]{Immagini/Antenna.jpg}
+		\caption{Foto dell'antenna utilizzata come capacità variabile}
+		\label{fig:antenna}
+	\end{figure}
 	% TODO:inserire foto circuito XR2206 con antenna.
 	
-	Le prestazioni ottenute con questo tipo di antenna sono le seguenti:
+	Le prestazioni ottenute con questo tipo di antenna sono le mostrate nelle figure \ref{fig:SINxr+LP} e \ref{fig:SINx}. Dove si possono vedere le sinusoidi in uscita dall'XR2206 quando l'antenna è montata, ma non vi è la presenza della mano nelle vicinanze. Ovvero l'scillazione base d'uscita.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
@@ -409,6 +415,8 @@
 		\caption{Segnale in uscita dal blocco XR2206 + LP.}
 		\label{fig:SINx}
 	\end{figure}
+
+	La figura \ref{fig:FFTxr+LP} mostra la FFT in uscita dall'XR2206 prima del filtro (bianco) e dopo il filtro (giallo). Le due armoniche sono alla stessa frequenza, sono state visualizzate con scala differente per miglirarne la visualizzaione. Si nota che l'armonica dopo il filtro presenta un miglioramento del THD rispetto a quella non filtrata, anche se si ha una notevole riduzione in apiezza. La tabella \ref{tab:THD_XR2206+BP} mostra i valori calcolati.
 
 	\begin{figure}[H]
 		\centering
@@ -435,6 +443,7 @@
 		\label{tab:THD_XR2206+BP}
 	\end{table}
 
+\newpage
 \section{Oscillatore di Wien}
 
 Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura \ref{sch:osc_wien}.

@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.6)  8 NOV 2022 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  9 NOV 2022 16:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Progetti/theremin-psea/Theremin.tex
-(c:/Progetti/theremin-psea/Theremin.tex
+**d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex
+(d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (C:\Program Files\MiKTeX\tex/latex/base\report.cls
+L3 programming layer <2022-02-24> (D:\Programmi\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
+(D:\Programmi\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -23,31 +23,31 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+) (D:\Programmi\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
 \babel@savecnt=\count194
 \U@D=\dimen139
 \l@unhyphenated=\language79
- (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+ (D:\Programmi\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count195
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+(D:\Programmi\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/babel-italian\italian.ldf
-Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
+) (D:\Programmi\MiKTeX\tex/latex/babel-italian\italian.ldf
+Language: italian 2022/03/27 v.1.4.07 Italian support for the babel system
 \it@lettering=\count196
 \it@doublequoteactive=\count197
 \it@ISOcompliance=\count198
-)) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)) (D:\Programmi\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count199
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.sty
+) (D:\Programmi\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
- (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+ (D:\Programmi\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
@@ -58,22 +58,22 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \csq@maxlvl=\count270
 \csq@tshold=\count271
 \csq@ltx@everypar=\toks17
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.def
+ (D:\Programmi\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.cfg
+ (D:\Programmi\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+) (D:\Programmi\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (D:\Programmi\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+ (D:\Programmi\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count272
@@ -88,30 +88,30 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen146
 \Gm@layoutvoffset=\dimen147
 \Gm@dimlist=\toks18
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
+ (D:\Programmi\MiKTeX\tex/latex/geometry\geometry.cfg)) (D:\Programmi\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
- (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+ (D:\Programmi\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+ (D:\Programmi\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+) (D:\Programmi\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+) (D:\Programmi\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+ (D:\Programmi\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.sty
+)) (D:\Programmi\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count275
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.def
+ (D:\Programmi\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+)) (D:\Programmi\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/url\url.sty
+) (D:\Programmi\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -173,7 +173,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \c@mincompwidth=\count320
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -264,12 +264,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip70
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-bibtex.def
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\blx-bibtex.def
 File: blx-bibtex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 
 
@@ -279,7 +279,7 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 \c@textcitecount=\count389
 \c@textcitetotal=\count390
@@ -297,28 +297,28 @@ File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-natbib.def
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\blx-natbib.def
 File: blx-natbib.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
+ (D:\Programmi\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
 File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+ (D:\Programmi\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+ (D:\Programmi\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count398
 \c@bbx:relatedtotal=\count399
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric-comp.cbx
+ (D:\Programmi\MiKTeX\tex/latex/biblatex/cbx\numeric-comp.cbx
 File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
 \c@cbx@tempcnta=\count400
 \c@cbx@tempcntb=\count401
@@ -338,14 +338,14 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+ (D:\Programmi\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2022-02-24 L3 programming layer (loader) 
- (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (D:\Programmi\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count404
 \l__pdf_internal_box=\box50
@@ -354,23 +354,24 @@ Package biblatex Info: ... and expl3
 (biblatex)             2022-02-24 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+ (D:\Programmi\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (D:\Programmi\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
-)) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen148
-\captionmargin@=\dimen149
-\captionwidth=\dimen150
-\caption@tempdima=\dimen151
-\caption@indent=\dimen152
-\caption@parindent=\dimen153
-\caption@hangindent=\dimen154
+)) (D:\Programmi\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (D:\Programmi\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (D:\Programmi\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen148
+\captionmargin=\dimen149
+\caption@leftmargin=\dimen150
+\caption@rightmargin=\dimen151
+\caption@width=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count405
@@ -378,46 +379,46 @@ Package caption Info: Standard document class detected.
 )
 \c@subfigure=\count407
 \c@subtable=\count408
-) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+) (D:\Programmi\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+ (D:\Programmi\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+ (D:\Programmi\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (D:\Programmi\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (D:\Programmi\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen155
-\Gin@req@width=\dimen156
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/sidecap\sidecap.sty
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+) (D:\Programmi\MiKTeX\tex/latex/sidecap\sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
-\SC@BOXWD=\dimen157
-\SC@CAPWD=\dimen158
-\SC@tempdima=\dimen159
-\SC@tempdimb=\dimen160
+\SC@BOXWD=\dimen158
+\SC@CAPWD=\dimen159
+\SC@tempdima=\dimen160
+\SC@tempdimb=\dimen161
 \c@SC@C=\count409
 \SC@BOX=\box51
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+) (D:\Programmi\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+) (D:\Programmi\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (D:\Programmi\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (D:\Programmi\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+ (D:\Programmi\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/tools\array.sty
+ (D:\Programmi\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen161
+\col@sep=\dimen162
 \ar@mcellbox=\box52
-\extrarowheight=\dimen162
+\extrarowheight=\dimen163
 \NC@list=\toks19
 \extratabsurround=\skip71
 \backup@length=\skip72
@@ -436,40 +437,40 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+) (D:\Programmi\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count411
 \float@exts=\toks21
 \float@box=\box54
 \@float@everytoks=\toks22
 \@floatcapt=\box55
-) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (D:\Programmi\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+ (D:\Programmi\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+) (D:\Programmi\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (D:\Programmi\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+) (D:\Programmi\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (D:\Programmi\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen163
+\@linkdim=\dimen164
 \Hy@linkcounter=\count412
 \Hy@pagecounter=\count413
- (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (D:\Programmi\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (D:\Programmi\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+) (D:\Programmi\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count414
- (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+ (D:\Programmi\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -483,15 +484,15 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
 \c@Hy@tempcnt=\count415
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen164
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+\XeTeXLinkMargin=\dimen165
+ (D:\Programmi\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+ (D:\Programmi\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count416
-\Field@Width=\dimen165
-\Fld@charsize=\dimen166
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -501,7 +502,7 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6052.
 Package hyperref Info: PDF/A mode OFF on input line 6057.
 LaTeX Info: Redefining \ref on input line 6097.
 LaTeX Info: Redefining \pageref on input line 6101.
- (C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+ (D:\Programmi\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -510,23 +511,23 @@ package with kernel methods
 \c@Hfootnote=\count419
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (D:\Programmi\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
- (C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+ (D:\Programmi\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count420
 \c@bookmark@seq@number=\count421
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+ (D:\Programmi\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+ (D:\Programmi\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip74
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (D:\Programmi\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip75
 \f@nch@O@elh=\skip76
@@ -537,22 +538,22 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 \f@nch@O@erf=\skip81
 \f@nch@O@olf=\skip82
 \f@nch@O@orf=\skip83
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/frontespizio\frontespizio.sty
+) (D:\Programmi\MiKTeX\tex/latex/frontespizio\frontespizio.sty
 Package: frontespizio 2011/09/21 1.4a (Enrico Gregorio)
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/tools\afterpage.sty
+ (D:\Programmi\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks23
 \AP@partial=\box56
 \AP@footins=\box57
-) (C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
+) (D:\Programmi\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+ (D:\Programmi\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks24
-) (C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty
+) (D:\Programmi\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-) (C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty
+) (D:\Programmi\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 \front@candtoks=\toks25
@@ -632,7 +633,7 @@ italian.ldf    on input line 18.
 
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
-(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\italian.lbx
+(D:\Programmi\MiKTeX\tex/latex/biblatex/lbx\italian.lbx
 File: italian.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -653,25 +654,25 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (D:\Programmi\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count425
-\scratchdimen=\dimen167
+\scratchdimen=\dimen168
 \scratchbox=\box58
 \nofMPsegments=\count426
 \nofMParguments=\count427
 \everyMPshowfont=\toks28
 \MPscratchCnt=\count428
-\MPscratchDim=\dimen168
+\MPscratchDim=\dimen169
 \MPnumerator=\count429
 \makeMPintoPDFobject=\count430
 \everyMPtoPDFconversion=\toks29
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (D:\Programmi\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (D:\Programmi\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Program Files\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+)) (D:\Programmi\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \CenteringLeftskip=\skip84
 \RaggedLeftLeftskip=\skip85
@@ -689,11 +690,11 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \JustifyingParindent=\skip97
 )
 Package hyperref Info: Link coloring OFF on input line 18.
- (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+ (D:\Programmi\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+ (D:\Programmi\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (C:\Users\Luca Brescia\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+) (D:\Programmi\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count431
@@ -712,7 +713,7 @@ Package pdftex.def Info: Theremin-frn.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [1
 
- <./Theremin-frn.pdf{C:/Users/Luca Brescia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>] (Theremin.toc
+ <./Theremin-frn.pdf{C:/Users/pezz9/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>] (Theremin.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -855,140 +856,132 @@ Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 356.
 (pdftex.def)             Requested size: 454.3934pt x 176.60815pt.
  [12 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
 Capitolo 3.
-<Immagini/sin_xr+lp.PNG, id=384, 803.0pt x 481.8pt>
-File: Immagini/sin_xr+lp.PNG Graphic file (type png)
-<use Immagini/sin_xr+lp.PNG>
-Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 400.
-(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/sin_xr.PNG, id=385, 803.0pt x 481.8pt>
-File: Immagini/sin_xr.PNG Graphic file (type png)
-<use Immagini/sin_xr.PNG>
-Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 408.
-(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
+<Immagini/Antenna.jpg, id=385, 902.37125pt x 1604.99625pt>
+File: Immagini/Antenna.jpg Graphic file (type jpg)
+<use Immagini/Antenna.jpg>
+Package pdftex.def Info: Immagini/Antenna.jpg  used on input line 393.
+(pdftex.def)             Requested size: 225.59225pt x 401.24808pt.
 [13
 
- <./Immagini/sin_xr+lp.PNG (PNG copy)>]
-<Immagini/fft_xr+lp.PNG, id=391, 803.0pt x 481.8pt>
+ <./Immagini/Antenna.jpg>]
+<Immagini/sin_xr+lp.PNG, id=393, 803.0pt x 481.8pt>
+File: Immagini/sin_xr+lp.PNG Graphic file (type png)
+<use Immagini/sin_xr+lp.PNG>
+Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 406.
+(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
+<Immagini/sin_xr.PNG, id=394, 803.0pt x 481.8pt>
+File: Immagini/sin_xr.PNG Graphic file (type png)
+<use Immagini/sin_xr.PNG>
+Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 414.
+(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
+<Immagini/fft_xr+lp.PNG, id=397, 803.0pt x 481.8pt>
 File: Immagini/fft_xr+lp.PNG Graphic file (type png)
 <use Immagini/fft_xr+lp.PNG>
-Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 415.
+Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 423.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/sch_osc_wien_cad.pdf, id=393, 600.92505pt x 438.55843pt>
+ [14 <./Immagini/sin_xr+lp.PNG (PNG copy)> <./Immagini/sin_xr.PNG (PNG copy)>] [15 <./Immagini/fft_xr+lp.PNG (PNG copy)>]
+<Immagini/sch_osc_wien_cad.pdf, id=412, 600.92505pt x 438.55843pt>
 File: Immagini/sch_osc_wien_cad.pdf Graphic file (type pdf)
 <use Immagini/sch_osc_wien_cad.pdf>
-Package pdftex.def Info: Immagini/sch_osc_wien_cad.pdf  used on input line 446.
+Package pdftex.def Info: Immagini/sch_osc_wien_cad.pdf  used on input line 455.
 (pdftex.def)             Requested size: 300.46179pt x 219.27867pt.
- [14 <./Immagini/sin_xr.PNG (PNG copy)> <./Immagini/fft_xr+lp.PNG (PNG copy)>]
-<Immagini/osc_wien+bp210k.PNG, id=402, 803.0pt x 481.8pt>
+<Immagini/osc_wien+bp210k.PNG, id=413, 803.0pt x 481.8pt>
 File: Immagini/osc_wien+bp210k.PNG Graphic file (type png)
 <use Immagini/osc_wien+bp210k.PNG>
-Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 455.
+Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 464.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [15 <./Immagini/sch_osc_wien_cad.pdf> <./Immagini/osc_wien+bp210k.PNG (PNG copy)>]
-<Immagini/fft_osc+bp210k.PNG, id=436, 803.0pt x 481.8pt>
+ [16 <./Immagini/sch_osc_wien_cad.pdf> <./Immagini/osc_wien+bp210k.PNG (PNG copy)>]
+<Immagini/fft_osc+bp210k.PNG, id=447, 803.0pt x 481.8pt>
 File: Immagini/fft_osc+bp210k.PNG Graphic file (type png)
 <use Immagini/fft_osc+bp210k.PNG>
-Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 468.
+Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 477.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[16 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
-<Immagini/ad633_fft_mixed.PNG, id=448, 803.0pt x 481.8pt>
+[17 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
+<Immagini/ad633_fft_mixed.PNG, id=460, 803.0pt x 481.8pt>
 File: Immagini/ad633_fft_mixed.PNG Graphic file (type png)
 <use Immagini/ad633_fft_mixed.PNG>
-Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 532.
+Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 541.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [17 <./Immagini/ad633_fft_mixed.PNG (PNG copy)>]
-<Immagini/lf353p_performance.pdf, id=455, 236.44513pt x 212.96779pt>
+ [18 <./Immagini/ad633_fft_mixed.PNG (PNG copy)>]
+<Immagini/lf353p_performance.pdf, id=468, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 561.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 565.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
-<Immagini/bode_lf353p.pdf, id=456, 242.80711pt x 203.29951pt>
+<Immagini/bode_lf353p.pdf, id=469, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 562.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 566.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
-<Immagini/bode_lp4.pdf, id=459, 669.2503pt x 414.79968pt>
+<Immagini/bode_lp4.pdf, id=472, 669.2503pt x 414.79968pt>
 File: Immagini/bode_lp4.pdf Graphic file (type pdf)
 <use Immagini/bode_lp4.pdf>
-Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 573.
+Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 577.
 (pdftex.def)             Requested size: 468.47202pt x 290.3578pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
+[19 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/bode_lf353p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/gbp_ua741.pdf, id=479, 177.6133pt x 170.35326pt>
+<Immagini/gbp_ua741.pdf, id=491, 177.6133pt x 170.35326pt>
 File: Immagini/gbp_ua741.pdf Graphic file (type pdf)
 <use Immagini/gbp_ua741.pdf>
-Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 599.
+Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 603.
 (pdftex.def)             Requested size: 177.61285pt x 170.35283pt.
- [19 <./Immagini/bode_lp4.pdf>]
+ [20 <./Immagini/bode_lp4.pdf>]
 
 pdfTeX warning: pdflatex (file ./Immagini/sch_hp1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/sch_hp1.pdf, id=502, 845.07724pt x 597.55246pt>
+<Immagini/sch_hp1.pdf, id=514, 845.07724pt x 597.55246pt>
 File: Immagini/sch_hp1.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1.pdf>
-Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 608.
+Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 612.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
-<Immagini/bode_hp1_ua741.pdf, id=505, 1445.4pt x 718.93594pt>
+<Immagini/bode_hp1_ua741.pdf, id=517, 1445.4pt x 718.93594pt>
 File: Immagini/bode_hp1_ua741.pdf Graphic file (type pdf)
 <use Immagini/bode_hp1_ua741.pdf>
-Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 617.
+Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 621.
 (pdftex.def)             Requested size: 491.4295pt x 244.43498pt.
 
-Overfull \hbox (7.73264pt too wide) in paragraph at lines 617--618
+Overfull \hbox (7.73264pt too wide) in paragraph at lines 621--622
  [][] 
  []
 
-[20 <./Immagini/gbp_ua741.pdf> <./Immagini/sch_hp1.pdf>] [21 <./Immagini/bode_hp1_ua741.pdf>]
+[21 <./Immagini/gbp_ua741.pdf> <./Immagini/sch_hp1.pdf>] [22 <./Immagini/bode_hp1_ua741.pdf>]
 
 pdfTeX warning: pdflatex (file ./Immagini/Schematico Completo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/Schematico Completo.pdf, id=568, 1194.98447pt x 845.07724pt>
+<Immagini/Schematico Completo.pdf, id=580, 1194.98447pt x 845.07724pt>
 File: Immagini/Schematico Completo.pdf Graphic file (type pdf)
 <use Immagini/Schematico Completo.pdf>
-Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 631.
+Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 635.
 (pdftex.def)             Requested size: 477.98532pt x 338.0249pt.
-<Immagini/fft_ad633+lp4.PNG, id=572, 803.0pt x 481.8pt>
+<Immagini/fft_ad633+lp4.PNG, id=584, 803.0pt x 481.8pt>
 File: Immagini/fft_ad633+lp4.PNG Graphic file (type png)
 <use Immagini/fft_ad633+lp4.PNG>
-Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 646.
+Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 650.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-[22 <./Immagini/Schematico Completo.pdf>]
-<Immagini/ftt_ad633+lp4+hp1_final.PNG, id=589, 803.0pt x 481.8pt>
+[23 <./Immagini/Schematico Completo.pdf>]
+<Immagini/ftt_ad633+lp4+hp1_final.PNG, id=601, 803.0pt x 481.8pt>
 File: Immagini/ftt_ad633+lp4+hp1_final.PNG Graphic file (type png)
 <use Immagini/ftt_ad633+lp4+hp1_final.PNG>
-Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 657.
+Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 661.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=592, 803.0pt x 481.8pt>
+<Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=604, 803.0pt x 481.8pt>
 File: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG Graphic file (type png)
 <use Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG>
-Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 667.
+Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 671.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [23 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
+ [24 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 736.
-
-
-
-pdfTeX warning: pdflatex (file ./Immagini/sch_complet_a4_verticale.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/sch_complet_a4_verticale.pdf, id=604, 597.55246pt x 845.07724pt>
-File: Immagini/sch_complet_a4_verticale.pdf Graphic file (type pdf)
-<use Immagini/sch_complet_a4_verticale.pdf>
-Package pdftex.def Info: Immagini/sch_complet_a4_verticale.pdf  used on input line 738.
-(pdftex.def)             Requested size: 478.04262pt x 676.06271pt.
-[25] [26 <./Immagini/sch_complet_a4_verticale.pdf>]
+[25 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>] [26]
 Capitolo 4.
 [27
 
@@ -1000,17 +993,17 @@ Package logreq Info: Writing requests to 'Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20668 strings out of 478582
- 369109 string characters out of 2854137
- 855175 words of memory out of 3000000
- 38465 multiletter control sequences out of 15000+600000
+ 20752 strings out of 478582
+ 367509 string characters out of 2856070
+ 855754 words of memory out of 3000000
+ 38548 multiletter control sequences out of 15000+600000
  475448 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,10n,77p,1871b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Luca Brescia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (28 pages, 1858443 bytes).
+ 67i,10n,77p,1904b,1340s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\pezz9\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Theremin.pdf (28 pages, 1942409 bytes).
 PDF statistics:
- 721 PDF objects out of 1000 (max. 8388607)
+ 718 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
  320 words of extra memory for PDF output out of 10000 (max. 10000000)
 
