@@ -100,7 +100,7 @@
 	\end{enumerate}
 	
 	
-	\noindent Importante osservare che l'\textit{LF356P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del 4o ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo. Inoltre, l'\textit{LF353N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
+	\noindent Importante osservare che l'\textit{LF356P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del $4^{o}$ ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo.Inoltre, l'\textit{LF353N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
 	L'\textit{UA741} viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 10Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate.
 
 	\noindent I motivi per cui le frequenze in gioco risultino essere elevate sono indicate nel capitolo \ref{ch:Risultati}.
@@ -124,7 +124,7 @@
 \section{Oscillatore monolitico XR2206}
 	\label{sec:XR2206}
 	
-	Si è scelto di utilizzare \textit{XR2206} perché permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impulsi garantendo un'alta precisione, stabilità e una bassa distorsione. L'ampiezza e la frequenza dei segnali in uscita sono direttamente modulabili dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va dai 0.01 $Hz$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
+	Si è scelto di utilizzare \textit{XR2206} perché permette la generazione di diverse forme d'onda sinusoidali, onde quadre, rampe, onde triangolari ed impulsi garantendo un'alta precisione, stabilità e una bassa distorsione. L'ampiezza e la frequenza dei segnali in uscita sono direttamente modulabili dall'integrato, gestendo opportunamente gli ingressi. La gamma di frequenze generabili va da 0.01 $Hz$ a 1 $MHz$, quindi perfetto per le specifiche richieste dal progetto. 
 	In \textit{Figura \ref{fig:sch_xr2206}} è mostrato lo schema a blocchi del componente.
 	
 	\begin{figure}[H]
@@ -142,11 +142,10 @@
 	
 \section{Moltiplicatore analogico AD633}
 	\label{sec:AD633}
-	La scelta del moltiplicatore analogico AD633 è stata obbigata in quanto tra i componenti messi a disposizione non vi erano altre proposte.
-	Tuttavia garantisce delle buone prestazioni permettendo di restare nelle specifiche di progetto.
+	La scelta del moltiplicatore analogico AD633 è stata obbigata in quanto tra i componenti a disposizione non vi erano altre proposte.
+	Tuttavia, garantisce delle buone prestazioni permettendo di restare nelle specifiche di progetto.
 	Infatti, possiede elevate impedenze d'ingresso sia sugli ingressi differenziali $X$ e $Y$, che sull'ingersso sommatore $Z$, una bassa impedenza d'uscita che permette quindi di disaccoppiare la parte a monte del circuito con quella che si trova a valle e lavora con una larghezza di banda pari ad 1 $MHz$ e uno slew rate pari a 20 $V/\mu S$. 
-	Si può notare, come mostrano in figura \ref{fig:sch_ad633}, che il componente inizia ad attenuare il segnale ad una frequenza inferiore ripetto alla banda passante teorica indicata, tagliando intorno ai 500$kHz$.
-	Tuttavia, dal punto di vista teorico, questo non impone una limitazione ai fini del progetto.
+	La \textit{Figura \ref{fig:sch_ad633}} mette in evidenza che il componente inizia ad attenuare il segnale ad una frequenza inferiore ripetto alla banda passante teorica indicata, tagliando intorno ai 500$kHz$. Dal punto di vista teorico, questo non impone una limitazione ai fini del progetto.
 
 	\begin{figure}[H]
 		\centering
@@ -156,14 +155,15 @@
 	\end{figure}
 
 	
-	\noindent La \textit{Figura \ref{fig: AD633 schema a blocchi}} mostra sia il pinout che lo schema  blocchi interno dell'\textit{AD6333}. Il segnale in uscita dal mixer si calcola con la seguente equazione:
+	\noindent La \textit{Figura \ref{fig: AD633 schema a blocchi}} mostra sia il pinout che lo schema  blocchi interno dell'\textit{AD6333}.
+	Il segnale in uscita dal mixer si calcola con la seguente equazione:
 
 	\begin{equation}
 		\label{eq: funzione trasferimeto AD633}
 		W = \frac{(X1 - X2)(Y1 - Y2)}{10 [V]}  + Z 
 	\end{equation}
 
-	Come si può notare dall'\textit{Equazione \ref{eq: funzione trasferimeto AD633}} il segnale viene attenuato di un fattore 10, quindi sarà necessaria una compensazione negli stadi successivi come viene mostrato nella \textit{Sezione \ref{sec:filtro_hp1}}. 
+	L'\textit{Equazione \ref{eq: funzione trasferimeto AD633}} ci dice che il segnale viene attenuato di un fattore 10, quindi sarà necessaria una compensazione negli stadi successivi come viene mostrato nella \textit{Sezione \ref{sec:filtro_hp1}}. 
 
 	\noindent Analizzando il caso che gli ingressi X2, Y2 e Z collegti a massa, ovvero che diano contributo nullo. L'\textit{Equazione \ref{eq: funzione trasferimeto AD633}} diventa:
 
@@ -224,10 +224,10 @@
 		\label{fig: Schema a blocchi finale}
 	\end{figure}
 \space
-	\noindent Nelle sezioni successive vengono analizzate singolarmente le scelte effettuate per ogni singolo blocco del sistema.
+	\noindent Nelle \textit{Sezioni \ref{sec:VCO} \ref{sec:osc_wien} \ref{sec:AD633} \ref{sec:LP4}} vengono analizzate singolarmente le scelte effettuate per ogni singolo blocco del sistema.
 	 
 \section{VCO}
-
+	\label{sec:VCO}
 	Il VCO, \textit{Voltage Controlled Oscillator}, è un generatore di segnali che modifica la frequenza di oscillazione del segnale generato in funzione della tensione applicata al suo ingresso.
 	
 	\noindent In relazione all'integrato utilizzato, il cui schema interno è riportato in figura \textit{Figura \ref{fig:sch_xr2206_}}, la frequenza di oscillazione $f_0$ viene controllata da una capacità esterna C, detta capacità di $timing$ collegata tra i \textit{pin5} e $pin6$ e dalla resistenza R posta in ingresso ai $pin7$ e $pin8$. Essa viene calcolata come:
@@ -249,15 +249,15 @@
 	\newpage
 
 	\noindent
-	Dal datasheet, per garantire una buona stabilità in temperatura, viene consigliato di utilizzare valori di R compresi tra $4k\Omega < R < 200k\Omega$ e valori di C compresi tra $1\mu F < C < 100\mu F$.
+	Come consigliato da datasheet, per garantire una buona stabilità in temperatura, si è scelto di utilizzare valori di R compresi tra $4k\Omega < R < 200k\Omega$ e valori di C compresi tra $1\mu F < C < 100\mu F$.
 	
-	\noindent Dal momento che la capacità risulta variabile, in quanto dipendendente dalla posizione della mano dell'utente e dalla geometria dell'antenna realizzata, si è scelta una R di $100k\Omega$ per cercare di rispettare, almeno in parte, il range fornito dal datasheet per garantire una buona stabilità in temperatura. 
+	\noindent Avendo una capacità variabile, in quanto dipendendente dalla posizione della mano dell'utente e dalla geometria dell'antenna realizzata, si è scelta una R di $100k\Omega$ per cercare di rispettare, almeno in parte, il range fornito dal datasheet per garantire una buona stabilità in temperatura. 
 	
 	% Inserire lo studio del THD generato dal VCO 
 	
 \section{Oscillatore sinusoidale di Wien}
 	\label{sec:osc_wien}
-	Per la realizzazione di un segnale sinusoidale a frequenza fissata si è scelto di utilizzare un oscillatore a ponte di Wien auto-avviante, il cui schema è riportato in \textit{Figura \ref{fig:sch_osc_wien}}
+	Per la realizzazione di un segnale sinusoidale a frequenza fissata si è scelto di utilizzare un oscillatore in configurazione a ponte di Wien auto-avviante, il cui schema è riportato in \textit{Figura \ref{fig:sch_osc_wien}}
 	
 	\begin{figure}[h]
 		\centering
@@ -296,7 +296,7 @@
 	
 	%Dalla \textit{Figura \ref{fig:FFT295k}} si può notare la presenza di sole due armoniche: quella voluta a 295kHz e una componente in continua. \\
 	%La componente in continua è sicuramente dovuta alla strumentazione utilizzata poiché anche introducendo un elemento capacitivo per disaccoppiare, la componente è sempre rimasta presente.
-	Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'equazione:
+	Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'\textit{Equazione \ref{eq:thd}}:
 	
 	\begin{equation}
 		\label{eq:thd}
@@ -310,7 +310,7 @@
 		V_{RMS} = \frac{V}{\sqrt{2}}
 	\end{equation}
 
-	La presenza di un \textit{THD} più o meno buono si manifesta con un andamento della sinusoide di uscita più o meno ideale. L'aggiunta di nuove armoniche può essere cuasata dalla sensibilità alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di diturbi e/o distorioni è la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, bisogna quindi essere sempre attenti a non portare l'amplificatore a saturare il segnale.
+	La presenza di un \textit{THD} più o meno accettabile è indice di un andamento sinusoidale in uscita più o meno ideale, ossia avente una \textit{fft} che presenta una sola riga spettrale. L'aggiunta di nuove armoniche può essere cuasata dalla sensibilità alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di disturbi e/o distorioni è la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, bisogna quindi essere sempre attenti a non portare l'amplificatore a saturare il segnale.
 
 
 	% Se la distorsione non è armonica cosa succede? Ottendo piu righe spettrali che mi generano disturbi nel segnale
@@ -321,6 +321,7 @@
 		
 \newpage
 \section{Moltiplicatore analogico}
+	\label{sec:AD633}
 	Come segue dalla teoria dei segnali, alla moltiplicazione di due segnali nei tempi corrisponde la convoluzione degli stessi in frequenza. Questo porta ad ottenere due sinusoidi centrate a frequenza $\omega_1 + \omega_2$ e $\omega_1 - \omega_2$.
 	
 	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando la sinusoide ottenuta precedentemente \textit{Sezione \ref{sec:osc_wien}} con l'oscillatore di Wien, avente una $\omega_0$ di \textit{45kHz}, e una sinusoide generata dal generatore di funzione ad una frequenza di \textit{20kHz}.
@@ -334,13 +335,14 @@
 	
 	 \noindent Essendo i due segnali in gioco di 20kHz e 45kHz, dalla \textit{Figura \ref{fig:FFTmixer}} si può notare come vengano generate due sinusoidi aventi armoniche fondamentali a $(45-20)kHz$ e $(45+20)kHz$. %escludendo la componente armonica a frequenza nulla che è generata dalla strumentazione come spiegato in precedenza.
 	 \\
-	 Inoltre, le ampiezze misurate risultano in linea con i risultati teorici in quanto l'ampiezza di picco dei due segnali in gioco è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicati tra loro e divise di un fattore $10$, come specificato nel datasheet del componente. Sempre in riferimento alla \textit{Figura \ref{fig:FFTmixer}} si può notare anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente armonica del segnale.
+	 Inoltre, le ampiezze misurate risultano comparabili con i risultati teorici in quanto l'ampiezza di picco dei due segnali in gioco è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicati tra loro e divise di un fattore $10$, come specificato nel datasheet del componente. Sempre in riferimento alla \textit{Figura \ref{fig:FFTmixer}} si può notare anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente armonica del segnale.
 	
 
 \section{Filtro LP del quarto ordine}
+	\label{sec:LP4}
 	Il prodotto di due sinusoidi del mixer porterà in uscita due sinusoidi a frequenze diverse ovvero una sarà $\omega_{wien} + \omega_{VCO}$ e l'altra a $\omega_{wien} - \omega_{VCO}$. Per rientrare nelle specifiche di progetto, è stato necessario introdurre un filtro passa-basso che permetta di ottenere in uscita al sistema solo la componente armonica $\omega_{wien} - \omega_{VCO}$.
 	\\ 
-	Volendo realizzare un filtro molto selettivo e, avendo il compondente \textit{LF353P} al suo interno due amplificatori, si è scelto di utilizzare un filtro attivo di ordine 4, realizzandolo tramite un filtro di Chebychev con due celle Sallen-Key in casacata. 
+	Volendo realizzare un filtro molto selettivo e, avendo il componente \textit{LF353P} al suo interno due amplificatori, si è scelto di utilizzare un filtro attivo di ordine 4, realizzandolo tramite un filtro di Chebychev con due celle Sallen-Key in casacata. 
 	
 	\begin{figure}[H]
 		\centering
@@ -382,11 +384,10 @@
 
 	
 \chapter{Risultati sperimentali}
-
+\label{ch:Risultati_sperimentali}
 \section{XR2206}
-	Per la realizzazione dell'armonica a frequenza variabile ci siamo appoggiati al datasheet del componente scegliendo come valori di partenza quelli mostrati in esempio. 
-	
-	La capacità variabile è stata realizzata con un supporto rigido e della carta di alluminio posta a bandiera. Il tutto è stato collegato come mostrato in figura \ref{fig:antenna}.
+	Per la realizzazione dell'armonica a frequenza variabile si è fatto riferimento al datasheet del componente scegliendo come valori di partenza quelli mostrati in esempio. 
+	La capacità variabile è stata realizzata con un supporto rigido e della carta di alluminio creando una struttura simile ad una bandiera. Il tutto è stato collegato come mostrato in \textit{Figura \ref{fig:antenna}}.
 
 	\begin{figure}[H]
 		\centering
@@ -396,7 +397,7 @@
 	\end{figure}
 	% TODO:inserire foto circuito XR2206 con antenna.
 	
-	Le prestazioni ottenute con questo tipo di antenna sono le mostrate nelle figure \ref{fig:SINxr+LP} e \ref{fig:SINx}. Dove si possono vedere le sinusoidi in uscita dall'XR2206 quando l'antenna è montata, ma non vi è la presenza della mano nelle vicinanze. Ovvero l'scillazione base d'uscita.
+	Le prestazioni ottenute con questo tipo di antenna sono le mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}} rispettivamente. Dove si possono vedere le sinusoidi in uscita dall'XR2206 quando l'antenna è montata, ma non vi è la presenza della mano nelle vicinanze. Ovvero l'oscillazione base d'uscita.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
