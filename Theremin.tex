@@ -252,8 +252,7 @@
 	Come consigliato da datasheet, per garantire una buona stabilità in temperatura, si è scelto di utilizzare valori di R compresi tra $4k\Omega < R < 200k\Omega$ e valori di C compresi tra $1\mu F < C < 100\mu F$.
 	
 	\noindent Avendo una capacità variabile, in quanto dipendendente dalla posizione della mano dell'utente e dalla geometria dell'antenna realizzata, si è scelta una R di $100k\Omega$ per cercare di rispettare, almeno in parte, il range fornito dal datasheet per garantire una buona stabilità in temperatura. 
-	
-	% Inserire lo studio del THD generato dal VCO 
+
 	
 \section{Oscillatore sinusoidale di Wien}
 	\label{sec:osc_wien}
@@ -285,7 +284,7 @@
 	Per l'innesco delle oscillazioni è necessario che il guadagno ad anello aperto sia inizialmente $A\cdot B>1$ ed $A>3$ per poi assestarsi a $A\cdot B=1$ ed $A=3$. La tecnica più semplice consiste nel disporre due diodi in antiparallelo lungo l'anello di retroazione dell'amplificatore operazionale.
 	
 	\noindent Quando \textit{$V_{O}$} è bassa i diodi presentano un'alta resistenza differenziale mentre all'aumentare di \textit{$V_{O}$} essa diminuisce. 
-	\\ Per rispettare le condizioni di lavoro imposte, il guadagno A può essere posto, circa, all'85\% del suo valore nominale (A=2,5 — 2,55) così si fa in modo modo che $A>3$ all'avvio che poi si riduce ad A=3 a regime.
+	\\ Per rispettare le condizioni di lavoro imposte, il guadagno A deve essere posto, circa, all'85\% del suo valore nominale (A=2,5 — 2,55) così si fa in modo modo che $A>3$ all'avvio che poi si riduce ad A=3 a regime.
 
 	\begin{figure}[H]
 		\centering
@@ -294,9 +293,7 @@
 		\label{fig:FFT295k}
 	\end{figure}
 	
-	%Dalla \textit{Figura \ref{fig:FFT295k}} si può notare la presenza di sole due armoniche: quella voluta a 295kHz e una componente in continua. \\
-	%La componente in continua è sicuramente dovuta alla strumentazione utilizzata poiché anche introducendo un elemento capacitivo per disaccoppiare, la componente è sempre rimasta presente.
-	Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'\textit{Equazione \ref{eq:thd}}:
+	\noindent Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'\textit{Equazione \ref{eq:thd}}:
 	
 	\begin{equation}
 		\label{eq:thd}
@@ -321,10 +318,10 @@
 		
 \newpage
 \section{Moltiplicatore analogico}
-	\label{sec:AD633}
+	\label{sec:analog_multiplier}
 	Come segue dalla teoria dei segnali, alla moltiplicazione di due segnali nei tempi corrisponde la convoluzione degli stessi in frequenza. Questo porta ad ottenere due sinusoidi centrate a frequenza $\omega_1 + \omega_2$ e $\omega_1 - \omega_2$.
 	
-	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando la sinusoide ottenuta precedentemente \textit{Sezione \ref{sec:osc_wien}} con l'oscillatore di Wien, avente una $\omega_0$ di \textit{45kHz}, e una sinusoide generata dal generatore di funzione ad una frequenza di \textit{20kHz}.
+	\noindent In \textit{Figura \ref{fig:FFTmixer}} viene mostrato il risultato ottenuto moltiplicando una sinusoide ottenuta precedentemente con l'oscillatore di Wien, illustrato nella \textit{Sezione \ref{sec:osc_wien}}, avente una $\omega_0$ di \textit{45kHz}, e una sinusoide generata dal generatore di funzione ad una frequenza di \textit{20kHz}.
 
 	\begin{figure}[H]
 		\centering
@@ -333,9 +330,9 @@
 		\label{fig:FFTmixer}
 	\end{figure}
 	
-	 \noindent Essendo i due segnali in gioco di 20kHz e 45kHz, dalla \textit{Figura \ref{fig:FFTmixer}} si può notare come vengano generate due sinusoidi aventi armoniche fondamentali a $(45-20)kHz$ e $(45+20)kHz$. %escludendo la componente armonica a frequenza nulla che è generata dalla strumentazione come spiegato in precedenza.
+	 \noindent Essendo i due segnali di 20kHz e 45kHz rispettivamente, dalla \textit{Figura \ref{fig:FFTmixer}} si può notare come vengano generate due sinusoidi aventi armoniche fondamentali a $(45-20)kHz$ e $(45+20)kHz$. 
 	 \\
-	 Inoltre, le ampiezze misurate risultano comparabili con i risultati teorici in quanto l'ampiezza di picco dei due segnali in gioco è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicati tra loro e divise di un fattore $10$, come specificato nel datasheet del componente. Sempre in riferimento alla \textit{Figura \ref{fig:FFTmixer}} si può notare anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente armonica del segnale.
+	 Inoltre, le ampiezze misurate risultano comparabili con i risultati teorici in quanto l'ampiezza di picco dei due segnali è di \textit{12V} e \textit{2.5V} rispettivamente, che vengono moltiplicati tra loro e scalati di un fattore $10$, come specificato nel datasheet del componente. Sempre in riferimento alla \textit{Figura \ref{fig:FFTmixer}} si può notare anche come le due ampiezze non siano uguali: questo è un errore dovuto alla non-linearità del componente. Tuttavia, per la nostra applicazione questo errore è irrilevante in quanto interessa maggiormente la componente frequenziale del segnale.
 	
 
 \section{Filtro LP del quarto ordine}
@@ -395,17 +392,13 @@
 		\caption{Foto dell'antenna utilizzata come capacità variabile}
 		\label{fig:antenna}
 	\end{figure}
-	% TODO:inserire foto circuito XR2206 con antenna.
 	
 	Le prestazioni ottenute con questo tipo di antenna sono mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}}. Dalle figure si può osservare le sinusoidi in uscita dall'XR2206 in presenza dell'antenna a bandiera, ma non vi è la presenza della mano nelle vicinanze. Ovvero l'oscillazione base d'uscita.
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% TODO: Foto distanza misurata della mano (senza mano, dove comicia a variare, variazione massima)
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{Immagini/sin_xr+lp.PNG}
-		\caption{Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima e dopo il fitro LP in cascata.}
+		\caption{Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima (in bianco) e dopo (in giallo) il fitro LP in cascata.}
 		\label{fig:SINxr+LP}
 	\end{figure}
 
@@ -417,7 +410,7 @@
 		\label{fig:SINx}
 	\end{figure}
 
-	La figura \ref{fig:FFTxr+LP} mostra la FFT in uscita dall'XR2206 prima del filtro (bianco) e dopo il filtro (giallo). Le due armoniche sono alla stessa frequenza, sono state visualizzate con scala differente per miglirarne la visualizzaione. Si nota che l'armonica dopo il filtro presenta un miglioramento del THD rispetto a quella non filtrata, anche se si ha una notevole riduzione in apiezza. La tabella \ref{tab:THD_XR2206+BP} mostra i valori calcolati.
+	La figura \ref{fig:FFTxr+LP} mostra la \textit{FFT} in uscita dall'\textit{XR2206} prima del filtro (segnale in bianco) e dopo il filtro (segnale in giallo). I due segnali oscillano alla stessa frequenza fondamentale e sono stati visualizzati con scala differente per poterne apprezzare l'intera riga spettrale. Si nota che l'armonica dopo il filtro (in giallo) presenta un miglioramento del THD rispetto a quella non filtrata (in bianco) in quanto le armoniche a frequenza diversa dalla fondamentale vengono attenuate, anche se la riduzione in ampiezza interessa anche la fondamentale. La tabella \ref{tab:THD_XR2206+BP} mostra i valori numerici ottenuti dal calcolo del \textit{THD} sostituendo i valori numerici delle ampiezze del segnale risultante nell'\textit{Equazione \ref{eq:thd}}.
 
 	\begin{figure}[H]
 		\centering
@@ -447,18 +440,16 @@
 \newpage
 \section{Oscillatore di Wien}
 
-Il circuito finale utilizzato per realizare l'oscillatore di Wien è quello riportato in figura \ref{sch:osc_wien}.
+	In figura \ref{sch:osc_wien} è riportato il circuito finale utilizzato per la realizzazione dell'oscillatore di Wien.
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/sch_osc_wien_cad.pdf}
+		\caption{Schematico dell'oscillatore di Wien utilizzato}
+		\label{sch:osc_wien}
+	\end{figure}
 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{Immagini/sch_osc_wien_cad.pdf}
-	\caption{Schematico dell'oscillatore di Wien utilizzato}
-	\label{sch:osc_wien}
-\end{figure}
-
-Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$ del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili l'oscillazione scompare. Grazie ai potenziometri, si ha la possibilità di sbilanciare il ponte rendendo possibile l'avviarsi dell'oscillatore ottenendo un'oscillazione stabile e con una possibilità di regolazione.
+	Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$, del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili viene meno la condizione di oscillazione del circuito. Grazie ai potenziometri  si ha la possibilità di sbilanciare il ponte rendendo possibile l'avviarsi dell'oscillatore ottenendo un'oscillazione continua e con una possibilità di regolare le caratteristiche del segnale generato.
 
 	\begin{figure}[H]
 		\centering
@@ -467,11 +458,11 @@ Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettiva
 		\label{fig:SINwien+BP}
 	\end{figure}
 
-	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzuro si può notare che la sinusioide satura sulla parte negativa e la pendenza di salita a discesa sono differenti, questo è dovuto allo sbilanciamento dei due potenziometri. L'insieme di questi due fattori porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato in bianco nella figura \ref{fig:FFTwien+BP}.
-	Per risolvere il problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
-	L'aggiunta del filtro porta un sostanziale miglioramento della sinusoide d'uscita. Il miglioramento è visibile sia in figura \ref{fig:SINwien+BP}, sinusoide gialla, dove si vede l'assenza di saturazione e fronti di salita e discesa pressoché identici, che in figura \ref{fig:FFTwien+BP} dove di nota la notevole riduzione delle armoniche nello spettro del segnale.
+	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzurro si può notare che la sinusoide satura sulla semionda negativa e le pendenze di salita a discesa sono differenti. Questo accade quando il valore di resistenza utilizzato dei potenziometri è comparabile. La saturazione del segnale di uscita dell'integrato porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato dal segnale in bianco mostrato in \textit{Figura \ref{fig:FFTwien+BP}}.
+	Per risolvere questo problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
+	L'aggiunta di questo filtro porta un notevole miglioramento del segnale di uscita. Tale miglioramento è osservabile sia in \textit{Figura \ref{fig:SINwien+BP}} (sinusoide in giallo), dove si può notare l'assenza di saturazione delle semionde e fronti di salita e discesa pressoché identici, che in figura \ref{fig:FFTwien+BP} dove di può notare la notevole riduzione delle armoniche nello spettro del segnale.
 
-	Tuttavia, l'aggiunta del filtro porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazione è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), quindi il filtro inizia a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che risulta essere a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
+	Tuttavia, l'aggiunta di un filtro di questo tipo porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazione è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), che quindi inizierà a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che è generata a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
 
 	\begin{figure}[H]
 		\centering
@@ -480,7 +471,8 @@ Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettiva
 		\label{fig:FFTwien+BP}
 	\end{figure}
 
-	Un altro riscontro lo si ha con il calcolo del \textit{THD} del segnale in usscita dall'oscillatore. Il risultato calcolato con l'equazione \ref{eq:thd}. Dalla tabella \ref{tab:THD_WIEN} dove si mostra il valore del \textit{THD} del segnale in uscita dall'oscillatore. Nella tabella \ref{tab:THD_WIEN+LP} è riportato il valore del \textit{THD} dopo il filtro passa banda passivo. Si nota un effettivo miglioramento del \textit{THD} della sinusoide di riferiento.
+	Un altro riscontro lo si ha con il calcolo del \textit{THD} del segnale in uscita dall'oscillatore il cui risultato ottenuto l'\textit{Equazione \ref{eq:thd}} è mostrato nella tabella \ref{tab:THD_WIEN}. Invece, nella tabella \ref{tab:THD_WIEN+LP} è riportato il valore del \textit{THD} ottenuto sempre dall'\textit{Equazione \ref{eq:thd}} riferito al segnale risultante in uscita al filtro passa banda passivo. 
+	Confrontando i due risultati ottenuti, si può osservare un effettivo miglioramento del \textit{THD} della sinusoide di riferimento.
 
 	\begin{table}[h!]
 		\centering
@@ -523,19 +515,12 @@ Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettiva
 \section{Mixer}
 \label{sec:Mixer}
 
-
-L'AD633 rappresenta il blocco del mixer nel nostro sistema. Il suo compito è fare il prodotto tra due sinusoidi in ingresso. Le due sinusoidi sono quella di riferimento dell'oscillatore di Wien e quella in uscita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della mano rispetto all'altro estremo della capacità variabile (banderuola in alluminio). Il circuito dell'oscillatore è mostrato in figura xxxx
-
-
-Una delle problematiche riscontrate durate l'utilizzo del mix er è stata la comparsa di un offset in continua dovuto all'impossibilità degli ingressi di scaricare le correnti di bias, correnti in continua, verso massa. Questo ha portato alla comparsa di offset negativo e allo smorzamento delle altre armoniche presenti in uscita, come mostra la figura xyz.
+	L'\textit{AD633} rappresenta il blocco del mixer nel nostro sistema. Il suo compito è moltiplicare tra loro le due sinusoidi in ingresso. Le sinusoidi interessate sono quella di riferimento dell'oscillatore di Wien e quella in uscita dal VCO. Quest'ultima sarà variabile e dipenderà dalla distanza della mano rispetto all'altro estremo della capacità variabile (bandiera in alluminio).
 
 
+	Una delle problematiche riscontrate durante l'utilizzo del mixer è stata la manifestazione di un offset del segnale dovuto all'impossibilità degli ingressi di scaricare le correnti di bias verso massa. Questo ha portato alla comparsa di offset negativo e alla cancellazione delle altre armoniche in uscita.
 
-Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omega$} agli ingressi del mixer e portandoli verso massa. La scelta di tale valore è stata condizionata dal fatto che si deve garantire un compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore che si forma con la resistenza del filtro che produrrebbe un'attenuazione del segnale in ingresso. Il resistore scelto evita un'attenuazione del segnale e salvaguarda l'alta impedenza del componente. Il risultato è mostrato in \ref{fig:FFTAD633}. Dove è possibile vedere le due armoniche fondamentali che vengono a formarsi dal prodotto di due sinusoidi, esattamente come ci si aspetta dalla teoria. %Cosa che non accade in figura xyz, ovvero prima che venissero messe le resistenze.
-	
-	%Verificare il limiti operativi del componente.
-	
-	%Verifichiamo il THD delle sinusoidi in uscita dall'Oscillatore e AD633 	Osserviamo che in entrambi i casi non otteniamo distorsioni. Notiamo una continua di circa 2V che non riconosciamo. 	Aggiungendo un condensatore di filtraggio in uscita al moltiplicatore non otteniamo risultati. Ipotizziamo sia dovuto a qualcosa di intrinseco all'oscilloscopio.  	Anche perché nella visualizzazione della sinusoide non rileviamo alcun offset. Inoltre ad un certo punto delle misurazioni è sparito. 	Abbiamo osservato che l'ampiezza delle righe della fft è coerente con i segnali in ingresso al sistema. $V_{osc}$=15V $V_{fcngen}$=2.5V quindi considerando il fattore intrinseco di scala dell'AD633 otteniamo delle righe di fft di ampiezza coerente perché sommando le varie componenti si ottiene quei 3.5V circa di ampiezza del segnale.
+	La soluzione si è trovata inserendo una resistenza di valore \textit{680k$\Omega$} agli ingressi del mixer, creando un percorso verso massa per le correnti di bias. La scelta di tale valore è dovuta al compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore formato con la resistenza del filtro. La scelta di un valore errato produrrebbe un'attenuazione indesiderata del segnale di ingresso al mixer. Il resistore scelto evita l'attenuazione del segnale e salvaguarda l'alta impedenza del componente. Il risultato che si è ottenuto è mostrato in \textit{Figura \ref{fig:FFTAD633}}, dove è possibile osservare le due armoniche fondamentali generate dal prodotto delle due sinusoidi, esattamente come ci si aspetta dalla teoria.
 
 	\begin{figure}[H]
 		\centering
@@ -548,17 +533,15 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 
 	\label{ch:Risultati}
 	
-	% TODO: Qui tutta la pappa con le immagini oscilloscopio e breadboard, qualche calcolo anche excel e tanta ma tanta descrizione che non serve a nulla
-
 \newpage
 \section{Filtro passa basso di ordine 4}
-	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superiori ai \textit{20KHz}, come richiesto da specifica di progetto. Esso è necessario per eliminare le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'equazione. Infatti, dati due segnali del tipo $ V_1 = A_1 \cdot sin(\omega_1t) $
+	In uscita dal mixer è stato necessario inserire un filtro passa basso per eliminare le frequenze superiori ai \textit{20kHz}, come richiesto da specifica di progetto. Esso è necessario per eliminare le componenti date dalla somma delle frequenze in uscita al mixer risultanti dell'\textit{Equazione \ref{eq: prodotto sinusoidi AD633}}. Infatti, dati due segnali del tipo $ V_1 = A_1 \cdot sin(\omega_1t) $
 	e $ V_2 = A_2 \cdot sin(\omega_2t) $, il segnale risultante dalla moltiplicazione analogica tra i due sarà dato dall'equazione \ref{eq:analog_multiply}:
 	\begin{equation}
 		V_m = V_1 \cdot V_2 = \frac{A_1A_2}{2}[sin((\omega_1 + \omega_2)t) + sin((\omega_1 - \omega_2)t)]
 		\label{eq:analog_multiply}
 	\end{equation}
-	La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'LF353P, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
+	La figura \ref{fig:bode_LF353P} mostra il comportamento in frequenza dell'\textit{LF353P}, ovvero il componente utilizzato per la realizzazione del filtro passa basso di ordine quattro.
 
 	\begin{figure}[h]
 		\centering
@@ -570,8 +553,8 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 	\end{figure}
 
 	La scelta di un filtro del quarto ordine è stata fatta sia per garantire un'atteuazione sufficiente delle armoniche successive ai \textit{20KHz} sia perché l'\textit{LF356P} contiene al suo interno due operazionali. Quindi per evitare di lasciare flottanti dei pin che sarebbero potuti diventare una fonte aggiuntiva di rumore, si è deciso di utilizzare il componente al meglio delle possibilità.
-	L'andamento del filtro ottenuto è mostrato in figura \ref{fig:BODELp4Real}, la quale mostra che le scelte progettuali sono state corette, in quanto i dati sperimentali rispecchiano l'andamento teorico del filtro.
-	Come si può osservare in figura \ref{fig:BODELp4Real} i due andamenti sono molto simili.
+	L'andamento del filtro ottenuto è mostrato in \textit{Figura \ref{fig:BODELp4Real}}, la quale mostra che le scelte progettuali sono state corette, in quanto i dati sperimentali rispecchiano l'andamento teorico del filtro.
+	Come si può osservare in \textit{Figura \ref{fig:BODELp4Real}} i due andamenti sono molto simili.
 	
 	\begin{figure}[h]
 		\centering
@@ -580,24 +563,14 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:BODELp4Real}
 	\end{figure}
 	
-	
-	% TODO: Inserire un diagramma per punti mettendo in ingresso al filtro un segnale con il generatore di funzioni variando la F di X kHz e visualizzando l'uscita sull'oscilloscopio
-	%\subsection{Analisi della banda in anello chiuso}
-	     
-
-		
-     	% TODO: Testare il filtro passa alto che porta essere posizionato o in fondo prima o dopo del 741, oppure tra il mixer e il filtro del 4o ordine.
-     	
-     	%% Conti sul rumore non ce ne servono   
-
 \newpage
 \section{Filtro passa alto del primo ordine}
 \label{sec:filtro_hp1}
-	Per eliminare la componente in continua in uscita dal mixer analogico è necessario un filtro passa alto. L'elemento disaccoppiante più semplice da inserire è una capacità tra uscita del mixer e l'uscita del sistema completo.
+	Per eliminare la componente in continua in uscita dal mixer analogico è necessario un filtro passa alto. L'elemento disaccoppiante più semplice da poter inserire è una capacità, tra uscita del mixer e l'uscita del sistema completo.
 	Dovendo rispettare da specifiche una frequenza minima del segnale di uscita di \textit{20Hz} si è deciso di optare per la realizzazione di un filtro passa alto con frequenza di taglio di \textit{20Hz}. Tuttavia si è scelto di utilizzare un filtro attivo per recuperare l'attenuazione di fattore 10 imposta dall'\textit{AD633}, oltre che per disaccopiare il circuito dal carico.
 	
-	Da dtasheet il prodotto banda guadagno dell'uA741 risulta essere di 1MHz in anello aperto. Tuttavia, utilizzando un guadagnodi 10 in anello chiuso la banda passante del componente è ridotta a 100KHz. Così si va ad ottenere un filtro passa banda effettivo con banda pari a \textit{20Hz - 100KHz}. Questo aguta ad attenuare ulteriormente tutte le coponenti in alta frequenza.
-	Come mostra la figura \ref{fig:gbp_ua741}, l'ampiezza massima del segnale in uscita dal componente viene ridotta per le alte frequenze. Ciò comporta che l'uscita finale del sistema potrà oscillare tra  \textit{$\pm$6V}.
+	Da datasheet il prodotto banda guadagno (\textit{GBP}) dell'\textit{uA741} risulta essere di \textit{1MHz} in anello aperto. Tuttavia, utilizzando un guadagno di fattore 10 in anello chiuso, la banda passante del componente è ridotta a \textit{100kHz}. In questo modo è possibile ottenere un filtro passa banda con banda pari a \textit{20Hz - 100KHz}. Questo aiuta ad attenuare ulteriormente tutte le componenti in alta frequenza.
+	Come mostra la \textit{Figura \ref{fig:gbp_ua741}}, l'ampiezza massima del segnale in uscita dal componente viene ridotta per le alte frequenze. Ciò implica che l'uscita finale del sistema oscillerà con un ampiezza massima di \textit{$\pm$6V}.
 
 	\begin{figure}[H]
 		\centering
@@ -606,7 +579,7 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:gbp_ua741}
 	\end{figure}
 
-	Altro parametro importante è il \textit{THD} che da datasheet risulta essere dello \textit{0.06\%} del segnale in ingresso. Quindi non introduce distorsione armonica apprezzabile al sistema.
+	Un'altro parametro importante da tenere in considerazione è il \textit{THD} che da datasheet risulta essere solo dello \textit{0.06\%} del segnale in ingresso. Quindi l'utilizzo di questo componente non introduce distorsione armonica significativa al sistema visti i valori esposti in precedenza.
 	
 	\begin{figure}[H]
 		\centering
@@ -615,7 +588,7 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:sch_hp1}
 	\end{figure}
 
-	In figura \ref{fig:BODEHp1Real} si può notare come il filtro teorico (in blu) e quello sperimentale (in rosso) abbiano un andamento simile, ma non siano sovrapposti. Il filtro sperimentale rispetta le specifiche di progetto ovvero il taglio ad a \textit{20Hz}. Possiamo dire che il filtro attenua il segnale con frequene inferiori a \textit{1Hz} in qunato si trova ad un valore di \textit{-20dB}. Per quanto riguarda le frequenze comprese tra \textit{1Hz e 20Hz} vero che rsultano amplificate, ma di un valore inferiore rispetto alla banda passante del filtro. Questo non risulta essere un problema dato che i due stadi precedenti, LP4 e il mixer, attenuano il prodotto delle sinusoidi in ingresso al blocco del mixer di un valore 20. Pertanto le armoniche fuori dalla banda passante del filtro passa alto risultano comunque attenuate. Il risultato finale è riportato in Figura \ref{fig:FFTfinale}.
+	In \textit{Figura \ref{fig:BODEHp1Real}} si può notare come il filtro teorico (mostrato in blu) e quello sperimentale (mostrato in rosso) abbiano un andamento simile, ma non siano sovrapposti. Il filtro sperimentale rispetta la specifica di progetto del limite inferiore di banda passante di \textit{20Hz}. Possiamo dire che il filtro attenua il segnale con frequenze inferiori a \textit{1Hz} in quanto si trova ad un valore di \textit{-20dB}. Per quanto riguarda le frequenze comprese tra \textit{1Hz e 20Hz} è vero dire che risultano amplificate, ma di un valore inferiore rispetto alla banda passante del filtro. Questo non risulta essere un problema poiché i due stadi precedenti, \textit{LP4} e il \textit{mixer}, attenuano il prodotto delle sinusoidi in ingresso al filtro di un valore 20. Pertanto le armoniche fuori dalla banda passante del filtro passa alto risultano comunque attenuate. Il risultato finale è riportato in \textit{Figura \ref{fig:FFTfinale}}.
 
 	\begin{figure}[H]
 		\centering
@@ -628,8 +601,8 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 \newpage
 \section{Theremin}
 \label{ch:Teremin}
-	%Schematico con cad
-	In Figura \ref{fig:Schematico Completo} è riportato lo schema circuitale completo del Theremin. Si possono vedere i vari blocchi spiegati nei capitoli precendeti come vengo fatti comunicare tra loro.
+
+	In \textit{Figura \ref{fig:Schematico Completo}} è riportato lo schema circuitale completo del Theremin. Si possono osservare i vari blocchi introdotti nei capitoli precendenti e come vengono posti in relazione tra loro.
 
 	\begin{figure}[H]
 		\centering
@@ -638,13 +611,10 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:Schematico Completo}
 	\end{figure}
 
-%	La FIGURA PINCOPALLO VIVO mostra il circuito fisico realizzato per %l'esperimento su cui si sono effettuate tutte le misurazioni.
+	\noindent La scelta delle frequenze operative nell'ordine del centinaio di \textit{kHz} è stata obbligata per poter avere una risoluzione accettabile in frequenza avvicinando la mano alla capacità variabile collegata al \textit{VCO}.
+	Come si è visto nelle sezioni precedenti e come è riportato nella \textit{Figura \ref{fig:FFTwien+BP}} e in \textit{Figura \ref{fig:FFTxr+LP}}.
 
-
-	La scelta delle frequenze operative nell'ordine delle centinaio di \textit{kHz} è stata obbligata per potre avere una risoluzione accettabile in frequenza avvicinando la mano alla capacità variabile collegata al \textit{VCO}.
-	Come si è visto nelle sezioni precedenti e come è riportato nella figura \ref{fig:FFTwien+BP} e in figura \ref{fig:FFTxr+LP}.
-
-	Altro passo obbligato è stato l'inserimento del filtro passa basso del quarto ordine in cascata al mixer. Questo ha portato ad un notevole miglioramento del \textit{THD} del segnale in uscita, come mostra la \textit{FFT} riportata in figura \ref{fig:FFTAD33+LP4}. Nella quale si può notare la presenza di una singola armonica. Ovvero lìoscilloscopio utilizzato non ha permesso di rilevare altre armoniche con la scala impostata. Quindi non c'è stato bisogno di calcoare il \textit{THD} del segnale.
+	\noindent Necessario è stato l'inserimento del filtro passa basso del quarto ordine in cascata al mixer. Questo ha portato ad un notevole miglioramento del \textit{THD} del segnale in uscita, come mostra la \textit{FFT} riportata in \textit{Figura \ref{fig:FFTAD33+LP4}}, nella quale si può notare la presenza di una singola armonica. L'oscilloscopio utilizzato non ha permesso di rilevare altre armoniche con la scala impostata, quindi non è stato possibile valutare il \textit{THD} del segnale.
 	
 	\begin{figure}[H]
 		\centering
@@ -653,9 +623,8 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:FFTAD33+LP4}
 	\end{figure}
 
-	L'aggiunta del filtro attivo passa alto è stato introdotto per taglaire la continua e le armoniche inferiori ai \textit{20Hz}.
-	In figura \ref{fig:FFTfinale}.
-
+	L'aggiunta del filtro attivo passa alto è stato introdotto per tagliare la componente continua e le armoniche inferiori ai \textit{20Hz}.
+	In \textit{Figura \ref{fig:FFTfinale}} è possibile osservare l'uscita complessiva del sistema.
 
 	\begin{figure}[H]
 		\centering
@@ -664,8 +633,7 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 		\label{fig:FFTfinale}
 	\end{figure}
 
-
-	 La differenza tra le due \textit{FFT} è poco apprezzabile, ma dalla figura \ref{fig:AD33+LPconsenzaHP} si può notare che la sinusioide in in uscita al filtro passa basso del quarto ordine, indicata in colore giallo, abbia delle componenti in alta frequenza evienziate dagli spikes che si vedono sovrapposti alla sinusoide principale. Tali spikes, vengono eliminati dallo stadio successivo, ovvero il passa alto attivo. Questo accade perchè il passa alto è stato realizzato utilizzando l'amplificatore operazione UA741. Questo tipo di operazionale ha un rapporto guadagno banda (\textit{GBP}) che cala la banda passante in relazione al guadagno impostato dall'amplificatore, come spiegato nella sezione \ref{sec:OpAmp}. Questo componente dunque agisce da filtro passa basso per costruzione. Uilizzandolo per realizzare un filtro passa alto attivo si ottiene un filtro passa banda, come somma dei due effetti, che va selezionare una banda passante di frequenze non attenuate.
+	È importante notare come in relazione alla \textit{Figura \ref{fig:FFTAD33+LP4}} l'introduzione del filtro passa alto non abbia portato un miglioramento apprezzabile al sistema. Tuttavia si può notare che la sinusioide in in uscita al filtro passa basso del quarto ordine, indicata in colore giallo, abbia delle componenti in alta frequenza evienziate dagli spikes che si vedono sovrapposti alla sinusoide principale. Tali spikes, vengono eliminati dallo stadio successivo, ovvero il passa alto attivo. Questo accade perchè il passa alto è stato realizzato utilizzando l'amplificatore operazione UA741. Questo tipo di operazionale ha un rapporto guadagno banda (\textit{GBP}) che cala la banda passante in relazione al guadagno impostato dall'amplificatore, come spiegato nella \textit{Sezione \ref{sec:OpAmp}}. Questo componente dunque agisce da filtro passa basso per costruzione. Uilizzandolo per realizzare un filtro passa alto attivo si ottiene un filtro passa banda, come somma dei due effetti, che va selezionare una banda passante di frequenze non attenuate.
 	 
 	 \begin{figure}[H]
 		\centering
@@ -675,12 +643,13 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 	\end{figure}
 
 
-	La variazione di frequenza si manifesta con l'avvicinamento o l'allontanamento della mano dell'utente dalla bandiera, che rappresenta l'altra faccia della capacità variabile. La variazione di capacità determinata dalla posizione della mano determina quindi la variazio di frequeza. Come primo tentativo avevamo deciso di utilizzare una frequenza di rifetminto di di \textit{45KHz} per poi var variare il segnale generato dal \textit{VCO} a frequenza che andassero da circa \textit{45KHz} a circa \textit{45KHz}.
-	Tuttavia, è stato riscontrato subito il problema della sensibilità.Ovvero si è visto che le uniche variazioni di frequenza apprezzabili si avevano quando la mano era a contatto con l'antenna o se questa era assente. Senza però portare le variazioni volute, si andava a coprire una piccolissima parte del range richiesto dal progetto.
-	Quindi, si è deciso di alzare le frequeze operative, portando il riferimeno in uscita dall'oscillatore di Wien ad un valore di \textit{245KHz} come mostrato in figura \ref{fig:SINwien+BP}. Questo ha porta a dover aumentare anche il range di frequenze del \textit{VCO} portando così gli estremi da un'oscillazione di \textit{275KHz} senza mano a circa un \textit{250KHz} con la mano ad una distanza minima ove la mano risulta a contatto con l'atenna.
-	Questa volta si è riscontranto un netto miglioramento della sensibilità nella variazione della frequeza rispetto alla distanza della mano.
-	%Considerazioni sul circuito: scelta della frequenza di oscillazione
-	%che è stata cambiata perchè non riuscivamo a farla variare con la mano ecc...
+	La variazione di frequenza si manifesta con l'avvicinamento o l'allontanamento della mano dell'utente dalla bandiera, che compone l'altra faccia della capacità variabile. La variazione di capacità determinata dalla posizione della mano determina quindi la variazione di frequenza.
+	In origine avevamo deciso di utilizzare una frequenza di riferimento di \textit{45kHz} per poi variare il segnale generato dal \textit{VCO} a frequenza che andassero da circa \textit{45kHz} a circa \textit{45kHz}.
+	Tuttavia, è stato immediatamente riscontrato il problema della sensibilità, ovvero si è osservato come le uniche variazioni di frequenza apprezzabili si ottenessero quando la mano era posta a contatto con l'antenna o se quest'ultima fosse completamente assente. Si riusciva dunque a coprire una piccolissima parte del range richiesto dal progetto senza però ottenere le variazioni volute.
+	Perciò, si è deciso di alzare le frequenze operative, portando il riferimento in uscita dall'oscillatore di Wien ad un valore di \textit{245kHz} come mostrato in \textit{Figura \ref{fig:SINwien+BP}}. Questo ha porta a dover aumentare anche il range di frequenze del \textit{VCO} portando così gli estremi da un'oscillazione di \textit{275kHz} senza la presenza della mano a circa \textit{250kHz} con la presenza della mano ad una distanza minima ove la mano risultasse quasi a contatto con l'antenna.
+	In questo caso, si è riscontrato un netto miglioramento della sensibilità nella variazione della frequenza rispetto alla distanza della mano.
+	Nella \textit{Tabella \ref{tab:Distanza-Frequenza}} sono mostrati i risultati sperimentali ottenuti misurando la frequenza di oscillazione del segnale di uscita in relazione alla distanza della mano dalla bandiera.
+
 	
 %\section{Problematiche}
 
@@ -747,9 +716,10 @@ Il problema è stato risolto ponendo una resistenza di valore \textit{680k$\Omeg
 
 \chapter{Conclusioni}
  	\label{ch:Conclusioni}
-	In conclusione il circuito realizzato rispetta le specifiche di progetto, in qunato testando con genertore di funzione i filtri in uscita garantiscono il passaggio di sinusoidi con frequenza conpresa tra \textit{20Hz e 20kHz}. Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
-	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema. La risoluzione non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna risulta essere minore. Inoltre, non è possibili rilevare variazioni inferiorial \textit{kHz}.
-	Il problema della risoluzione potrebbe essere risolto aumentando le frequenze in gioco e migliorando l'antenna utilizzata come faccia della capacità variabile.
+	In conclusione, il circuito realizzato rispetta le specifiche di progetto, in quanto testando con un generatore di funzione i filtri, in uscita essi garantiscono il passaggio di sinusoidi con frequenza compresa tra \textit{20Hz e 20kHz}. Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
+	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema realizzato. La risoluzione infatti non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna il sistema risulta meno sensibile. Infatti, non è possibile rilevare variazioni inferiori al \textit{kHz}.
+	Il problema della risoluzione potrebbe essere risolto migliorando il sistema utilizzato per la realizzazione della capacità variabile. Inoltre, aumentando la frequenza di oscillazione dell'\textit{XR2206} è possibile ottenere una sensibilità maggiore poiché per aumentare la frequenza di oscillazione è necessario utilizzare capacità molto piccole (dell'ordine del pF) confrontabili con la capacità formata tra antenna e mano. Questo fa in modo di attuare una variazione di capacità molto incisiva per la generazione del segnale, il quale avrà una risoluzione maggiore.
+	\newpage
 	Bene questo progetto si conclude qui, \textit{grazie a tutti!}
 	
 
