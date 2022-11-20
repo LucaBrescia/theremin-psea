@@ -1092,6 +1092,14 @@ INPUT .\Immagini\sin_ad633+lp4_ad633+lp4+hp1.PNG
 INPUT .\Immagini\sin_ad633+lp4_ad633+lp4+hp1.PNG
 INPUT .\Immagini\sin_ad633+lp4_ad633+lp4+hp1.PNG
 INPUT .\Immagini\sin_ad633+lp4_ad633+lp4+hp1.PNG
+INPUT .\Theremin.lof
+INPUT Theremin.lof
+INPUT Theremin.lof
+OUTPUT Theremin.lof
+INPUT .\Theremin.lot
+INPUT Theremin.lot
+INPUT Theremin.lot
+OUTPUT Theremin.lot
 INPUT Theremin.aux
 INPUT .\Theremin.out
 INPUT .\Theremin.out
