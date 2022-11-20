@@ -393,7 +393,7 @@
 		\label{fig:antenna}
 	\end{figure}
 	
-	Le prestazioni ottenute con questo tipo di antenna sono mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}}. Dalle figure si può osservare le sinusoidi in uscita dall'XR2206 in presenza dell'antenna a bandiera, ma non vi è la presenza della mano nelle vicinanze. Ovvero l'oscillazione base d'uscita.
+	Le prestazioni ottenute con questo tipo di antenna sono mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}}. Dalle figure si può osservare le sinusoidi in uscita dall'XR2206 in presenza dell'antenna a bandiera e in assenza della mano dell'utente, ovvero l'oscillazione a \textit{"riposo"} dell'oscillatore. È importante notare come dalla \textit{Figura \ref{fig:SINx}} venga evidenziata l'attenuazione e lo sfasamento del segnale dovuti all'effetto del filtro passa basso. Tuttavia, il filtro migliora le prestazioni di uscita dell'oscillatore. Infatti, già dalla \textit{Figura \ref{fig:SINxr+LP}} si può apprezzare la buona riuscita del sistema in termini di segnale sinusoidale generato. Prestazioni che possono essere quantificate con un'analisi di tipo spettrale.
 
 	\begin{figure}[H]
 		\centering
@@ -459,7 +459,7 @@
 	\end{figure}
 
 	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzurro si può notare che la sinusoide satura sulla semionda negativa e le pendenze di salita a discesa sono differenti. Questo accade quando il valore di resistenza utilizzato dei potenziometri è comparabile. La saturazione del segnale di uscita dell'integrato porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato dal segnale in bianco mostrato in \textit{Figura \ref{fig:FFTwien+BP}}.
-	Per risolvere questo problema è stato aggiunto un filtro passivo all'uscita dell'oscillare. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
+	Per risolvere questo problema è stato aggiunto un filtro passivo all'uscita dell'oscillatore. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
 	L'aggiunta di questo filtro porta un notevole miglioramento del segnale di uscita. Tale miglioramento è osservabile sia in \textit{Figura \ref{fig:SINwien+BP}} (sinusoide in giallo), dove si può notare l'assenza di saturazione delle semionde e fronti di salita e discesa pressoché identici, che in figura \ref{fig:FFTwien+BP} dove di può notare la notevole riduzione delle armoniche nello spettro del segnale.
 
 	Tuttavia, l'aggiunta di un filtro di questo tipo porta ad un'attenuazione anche dell'armonica fondamentale e ad uno sfasamento di 90° in ritardo rispetto alla sinusoide originale. L'attenuazione è dovuta alla scelta della frequenza di taglio del filtro ($212kHz$), che quindi inizierà a tagliare circa $20/30kHz$ prima della fondamentale dell'oscillatore di Wien che è generata a $245kHz$. Lo sfasamento invece è dovuto al filtro del primo ordine passivo.
@@ -471,7 +471,7 @@
 		\label{fig:FFTwien+BP}
 	\end{figure}
 
-	Un altro riscontro lo si ha con il calcolo del \textit{THD} del segnale in uscita dall'oscillatore il cui risultato ottenuto l'\textit{Equazione \ref{eq:thd}} è mostrato nella tabella \ref{tab:THD_WIEN}. Invece, nella tabella \ref{tab:THD_WIEN+LP} è riportato il valore del \textit{THD} ottenuto sempre dall'\textit{Equazione \ref{eq:thd}} riferito al segnale risultante in uscita al filtro passa banda passivo. 
+	Un altro riscontro lo si ha con il calcolo del \textit{THD} del segnale in uscita dall'oscillatore il cui risultato ottenuto l'\textit{Equazione \ref{eq:thd}} è mostrato nella \textit{Tabella \ref{tab:THD_WIEN}}. Invece, nella tabella \ref{tab:THD_WIEN+LP} è riportato il valore del \textit{THD} ottenuto sempre dall'\textit{Equazione \ref{eq:thd}} riferito al segnale risultante in uscita al filtro passa banda passivo. 
 	Confrontando i due risultati ottenuti, si può osservare un effettivo miglioramento del \textit{THD} della sinusoide di riferimento.
 
 	\begin{table}[h!]
@@ -545,9 +545,9 @@
 
 	\begin{figure}[h]
 		\centering
-		\subfloat[][\emph{Didascalia figura }]
+		\subfloat[][\emph{Relazione picco massimo di tensione e frequenza}]
 		{\includegraphics[width=.45\textwidth]{Immagini/lf353p_performance.pdf}} \qquad
-		\subfloat[][\emph{Didascalia figura}]	     	{\includegraphics[width=.49\textwidth]{Immagini/bode_lf353p.pdf}} \\
+		\subfloat[][\emph{Amplificazione della differenza di tensione degli ingressi in relazione alla frequenza}]	     	{\includegraphics[width=.49\textwidth]{Immagini/bode_lf353p.pdf}} \\
 		\caption{Diagrammi di bode del componente LF353P in anello aperto}
 		\label{fig:bode_LF353P}
 	\end{figure}
@@ -716,7 +716,7 @@
 
 \chapter{Conclusioni}
  	\label{ch:Conclusioni}
-	In conclusione, il circuito realizzato rispetta le specifiche di progetto, in quanto testando con un generatore di funzione i filtri, in uscita essi garantiscono il passaggio di sinusoidi con frequenza compresa tra \textit{20Hz e 20kHz}. Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
+	In conclusione, il circuito realizzato rispetta le specifiche di progetto, in quanto testando con un generatore di funzione i filtri, in uscita essi garantiscono il passaggio di sinusoidi con frequenza compresa tra \textit{20Hz e 20kHz}. Osservando la \textit{Tabella \ref{tab:Distanza-Frequenza}} si può osservare che i limiti inferiore e superiore concordano con la scelta di un oscillazione di \textit{245kHz} per l'oscillatore di Wien. Infatti, l'uscita complessiva del sistema oscilla tra \textit{22kHz} in assenza della mano, fino a \textit{1kHz} quando la mano è in prossimità dell'antenna. Il risultato non è ottimo ma abbastanza soddisfacente visti i limiti fisici dovuti agli strumenti a disposizione. Infatti, il limite inferiore di oscillazione del sistema è dovuto soltato ai disturbi generati dall'antenna quando la mano è molto vicina (circa 2cm di distanza). Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
 	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema realizzato. La risoluzione infatti non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna il sistema risulta meno sensibile. Infatti, non è possibile rilevare variazioni inferiori al \textit{kHz}.
 	Il problema della risoluzione potrebbe essere risolto migliorando il sistema utilizzato per la realizzazione della capacità variabile. Inoltre, aumentando la frequenza di oscillazione dell'\textit{XR2206} è possibile ottenere una sensibilità maggiore poiché per aumentare la frequenza di oscillazione è necessario utilizzare capacità molto piccole (dell'ordine del pF) confrontabili con la capacità formata tra antenna e mano. Questo fa in modo di attuare una variazione di capacità molto incisiva per la generazione del segnale, il quale avrà una risoluzione maggiore.
 	\newpage
