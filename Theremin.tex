@@ -293,6 +293,12 @@
 		\label{fig:FFT295k}
 	\end{figure}
 	
+	\noindent La frequenza di oscillazione si ottiene con l'\textit{Equazione \ref{eq:osc_wien}}:
+	\begin{equation}
+		\label{eq:osc_wien}
+		f_0 = \frac{1}{RC}
+	\end{equation}
+	
 	\noindent Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'\textit{Equazione \ref{eq:thd}}:
 	
 	\begin{equation}
@@ -300,14 +306,14 @@
 		THD (\%) = 100 \cdot \frac{\sqrt{\sum_{2}^{\infty} V_{n}^2}}{V_1}
 	\end{equation}
 
-	Tutti i valori di tensione devono essere in RMS: 
+	\noindent Tutti i valori di tensione devono essere in RMS: 
 	
 	\begin{equation}
 		\label{eq:Vrms}
 		V_{RMS} = \frac{V}{\sqrt{2}}
 	\end{equation}
 
-	La presenza di un \textit{THD} più o meno accettabile è indice di un andamento sinusoidale in uscita più o meno ideale, ossia avente una \textit{fft} che presenta una sola riga spettrale. L'aggiunta di nuove armoniche può essere cuasata dalla sensibilità alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di disturbi e/o distorioni è la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, bisogna quindi essere sempre attenti a non portare l'amplificatore a saturare il segnale.
+	\noindent La presenza di un \textit{THD} più o meno accettabile è indice di un andamento sinusoidale in uscita più o meno ideale, ossia avente una \textit{fft} che presenta una sola riga spettrale. L'aggiunta di nuove armoniche può essere cuasata dalla sensibilità alle temperature dell'oscillatore di Wien, che porta anche ad una variazione delle ampiezze. Un'altra possibile fonte di disturbi e/o distorioni è la saturazione dell'amplificatore utilizzato per realizzare l'oscillatore, bisogna quindi essere sempre attenti a non portare l'amplificatore a saturare il segnale.
 
 
 	% Se la distorsione non è armonica cosa succede? Ottendo piu righe spettrali che mi generano disturbi nel segnale
