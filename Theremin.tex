@@ -68,20 +68,20 @@
 	I blocchi minimi necessari alla realizzazione di questo progetto sono:
 	
 	\begin{enumerate}
-		\item Oscillatore controllato in tensione (\textit{VCO});
+		\item Oscillatore sinusoidale a frequenza variabile(controllato in tensione (\textit{VCO}));
 		\item Moltiplicatore analogico;
 		\item Oscillatore a frequenza fissata;
 		\item Filtro passa basso.
-		\item Prova di una modifica.
+		\item Filtro passa alto con Amplificazione
 	\end{enumerate}
 	
-	\noindent La scelta dei componenti è stata fatta considerando le caratteristiche del segnale da generare. In particolare, volendo realizzare uno shift in frequenza, vi è la necessità di lavorare con integrati con una banda passante adeguata.
+	\noindent La scelta dei componenti è stata fatta considerando le caratteristiche del segnale da generare. In particolare, volendo realizzare uno shift in frequenza, pertanto vi è la necessità di lavorare con integrati con una banda passante adeguata.
 	Avendo a disposizione una serie limitata di componenti si è deciso di utilizzare i seguenti:
 	
 	\begin{enumerate}
-		\item l'oscillatore monolitico \textit{XR2206} come \textit{VCO};
+		\item per l'ossillatore a frequenza variabile si è scelto l'oscillatore monolitico \textit{XR2206} come \textit{VCO};
 		\item Il moltiplicatore analogico \textit{AD633} per lo shift frequenziale;
-		\item L'amplificatore operazionale \textit{LF353N} per la realizzazione dell oscillatore a ponte di Wien per la generazione di una sinusoide di riferimento;
+		\item L'amplificatore operazionale \textit{LF353N} per la realizzazione dell oscillatore a ponte di Wien per la generazione della sinusoide di riferimento;
 		\item L'amplificatore \textit{LF356P} per la realizzazione di filtro passa basso.
 		\item L'amplificatore \textit{UA741} per la realizzazione dei filtri passa alto.
 	\end{enumerate}
@@ -100,8 +100,8 @@
 	\end{enumerate}
 	
 	
-	\noindent Importante osservare che l'\textit{LF356P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del $4^{o}$ ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo.Inoltre, l'\textit{LF353N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di freuenze maggiore, altro motivo per cui si sono scelti i componenti come spiegato sopra.
-	L'\textit{UA741} viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 10Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate.
+	\noindent Importante osservare che l'\textit{LF356P} ha al suo interno due amplificatori operazionali per cui è stato scelto per la realizzazione del filtro del $4^{o}$ ordine in modo da ridurre il numero di integrati per la realizzazione del dispositivo.Inoltre, l'\textit{LF353N}, avente una \textit{GBP} maggiore (\textit{5MHz}), permette di generare sinusoidi con un range di frequenze maggiore; altro motivo per cui si sono scelti i componenti come spiegato sopra.
+	L'\textit{UA741} viene impiegato come filtro attivo passa alto del primo ordine $(e come amplificatore finale)$ per togliere le componenti inferiori a 20Hz come richiesto dal progetto e sfruttare contemporaneamente la banda passante ridotta del dispositvo al fine di attenuare le alte frequenze indesiderate.
 
 	\noindent I motivi per cui le frequenze in gioco risultino essere elevate sono indicate nel capitolo \ref{ch:Risultati}.
 
@@ -219,7 +219,7 @@
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[scale=0.5]{Immagini/Schema a blocchi PSEA.png}
+		\includegraphics[scale=0.5]{Immagini/Schema a blocchicompleto giusto ita.png}
 		\caption{Schema a blocchi del sistema realizzato}
 		\label{fig: Schema a blocchi finale}
 	\end{figure}
@@ -260,8 +260,8 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[scale=0.7]{Immagini/sch_osc_wien.png}
-		\caption{Schema generale di un oscillatore a ponte di Wien auto-avviante.}
+		\includegraphics[scale=0.7]{Immagini/Ponte di wien giusto.pdf}
+		\caption{Schema generale di un oscillatore a ponte di Wien auto-avviante. A sinistra lo schema utilizzato per il progetto.}
 		\label{fig:sch_osc_wien}
 	\end{figure}
 
