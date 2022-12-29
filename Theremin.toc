@@ -10,11 +10,14 @@
 \contentsline {section}{\numberline {2.2}Oscillatore sinusoidale di Wien}{9}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Moltiplicatore analogico}{12}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Filtro LP del quarto ordine}{12}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Risultati sperimentali}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}XR2206}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Oscillatore di Wien}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Mixer}{19}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Filtro passa basso di ordine 4}{20}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Filtro passa alto del primo ordine}{21}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Theremin}{24}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusioni}{28}{chapter.4}%
+\contentsline {section}{\numberline {2.5}Filtro passa alto del primo orine con amplificazione}{13}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Filtro passa banda passivo}{14}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Risultati sperimentali}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}XR2206}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Oscillatore di Wien}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Mixer}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Filtro passa basso di ordine 4}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Filtro passa alto del primo ordine}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Theremin}{25}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusioni}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}MODIFICHE}{30}{section.4.1}%

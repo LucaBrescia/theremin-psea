@@ -296,7 +296,7 @@
 	\noindent La frequenza di oscillazione si ottiene con l'\textit{Equazione \ref{eq:osc_wien}}:
 	\begin{equation}
 		\label{eq:osc_wien}
-		f_0 = \frac{1}{RC}
+		f_0 = \frac{1}{2\pi RC}
 	\end{equation}
 	
 	\noindent Per la valutazione della distorsione della sinusoide ottenuta si utilizza il calcolo del THD riportato nell'\textit{Equazione \ref{eq:thd}}:
@@ -385,6 +385,36 @@
 		H(s) = H_1(s)H_2(s) =  \frac{V_{in}}{V_u}\frac{V_u}{V_{out}} = \frac{V_{in}}{V_{out}}
 	\end{equation}
 
+	\section{Filtro passa alto del primo orine con amplificazione}
+	Come mostrato nello schema riportato in figura \ref{fig: Schema a blocchi finale}, il sistema presenta come ultimo blocco un filtro passa alto, per tagliare tutte le frequenze inferiori ai 20 \textit{Hz}, come da specifica. Inoltre, oltre a filtrare le basse frequenze si effettua anche un'amplificazione per compensare il fattore d attenuazione introdotto dal mixer.
+
+\section{Filtro passa banda passivo}
+Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 e dal primo oscillatore di Wien (QUELLO SBAGLIATO). 
+\noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce una continua per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}. Quindi, al fine di evitare la comparsa di più armoniche indesiderate in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{Immagini/sch_osc_wien_cad.pdf}
+	\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore di Wien}
+	\label{fig:antenna}
+\end{figure}
+
+La funzione di trasferimento del filtro è riportata nell'equazione GESù.
+
+Si possono notare un polo in ................  e uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
+
+Si può notare la presenza di un patitore di tensione. Per evitare un attenuazione del segnale si è deciso di iporre R2544 molto maggiore di R54854165 in modo che l'equazione del partitore di tensione, riportato nell'equazione \ref{eq: partitore di tensione}, diventi l'equazione \ref{eq: partitore di tensione circa 1}.
+
+\begin{equation}
+	V_{out} = V_{in} \frac{R_1}{R_1 + R_2}
+	\label{eq: partitore di tensione}
+\end{equation}
+
+\begin{equation}
+	V_{out} \sim  V_{in}   se   R_1 >> R_2
+	\label{eq: partitore di tensione circa 1}
+\end{equation}
 	
 \chapter{Risultati sperimentali}
 \label{ch:Risultati_sperimentali}
@@ -726,7 +756,15 @@
 	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema realizzato. La risoluzione infatti non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna il sistema risulta meno sensibile. Infatti, non è possibile rilevare variazioni inferiori al \textit{kHz}.
 	Il problema della risoluzione potrebbe essere risolto migliorando il sistema utilizzato per la realizzazione della capacità variabile. Inoltre, aumentando la frequenza di oscillazione dell'\textit{XR2206} è possibile ottenere una sensibilità maggiore poiché per aumentare la frequenza di oscillazione è necessario utilizzare capacità molto piccole (dell'ordine del pF) confrontabili con la capacità formata tra antenna e mano. Questo fa in modo di attuare una variazione di capacità molto incisiva per la generazione del segnale, il quale avrà una risoluzione maggiore.
 	\newpage
-	Bene questo progetto si conclude qui, \textit{grazie a tutti!}
+	
+
+	\section{MODIFICHE}
+	Risistemare il ponte di wien, rifare le immagini dello spetro e del THD
+	Sistemare il grafico dei filtri
+
+	studio e progetto dei filtri passa banda passivi
+
+	come funziona il VCO dell/XR e il sine shaper
 
 	\listoffigures
 	\listoftables
