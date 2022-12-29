@@ -265,8 +265,15 @@
 		\label{fig:sch_osc_wien}
 	\end{figure}
 
-	\noindent Analizzando la $f.d.t$ del circuito si osserva che il prodotto $A\cdot B$ deve essere 1, quindi un numero reale.
-	Il blocco di forward A è rappresentato dal guadagno del circuito ovvero: 
+	\noindent Analizzando la $f.d.t$ del circuito, riportata nell'equazione \ref{eq: fdt wien} si osserva che il prodotto $A\cdot B$ deve essere 1, overo che sia soddisfatta la condizione di risonanza \textit{$\omega = \omega_0$}.
+ 
+	\begin{equation}
+		\label{eq:LF356_Gain}
+		T(j\omega) = \frac{1 + \frac{R_2}{R_1}}{3 + j(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})}
+		\label{eq: fdt wien}
+	\end{equation}
+
+	Il blocco di forward A è rappresentato dal guadagno del circuito ovvero:
 
 	\begin{equation}
 		\label{eq:LF356_Gain}
@@ -278,9 +285,21 @@
 	\\
 	\begin{equation}
 		\label{eq:LF356_Feedback}
-		B = \frac{1}{3 + j\omega C R - j\frac{1}{\omega C R}}
+		B = \frac{1}{3 + j\omega RC  - j\frac{1}{\omega RC}}
 	\end{equation}
 	\\
+
+	Da questo si possono avere tre casi:
+	\begin{enumerate}
+		\item \textit{$T(j\omega) < 1$}: si ha una situazione stabile, in cui i segnali tendono a zero. Perché si hano due poli complessi coniugati a parte reale negative, che danno origine ad una sinusoide smorzata esponenzialmente.
+		\item \textit{$T(j\omega) > 1$}: si ha una situazioneinstabile, dove ogni disturbo con contributo spettrale vicino ad \textit{$\omega_0$} viene amplificato rigenerativamente. Pertanto l'amplificatore operazionale satura. Questo avviene percé si hanno due poli complessi coniugati a parte reale positiva, che danno origine ad una sinusoide con ampliezza crescente esponenzialmente.
+		\item \textit{$T(j\omega) = 1$}: si ha una situazione di stabilità. Perché si hanno due poli complessi coniugati a parte reale nulla, immaginari puri, che danno origine ad una sinusoide con ampiezza costante.
+	\end{enumerate}
+
+
+
+
+
 	Per l'innesco delle oscillazioni è necessario che il guadagno ad anello aperto sia inizialmente $A\cdot B>1$ ed $A>3$ per poi assestarsi a $A\cdot B=1$ ed $A=3$. La tecnica più semplice consiste nel disporre due diodi in antiparallelo lungo l'anello di retroazione dell'amplificatore operazionale.
 	
 	\noindent Quando \textit{$V_{O}$} è bassa i diodi presentano un'alta resistenza differenziale mentre all'aumentare di \textit{$V_{O}$} essa diminuisce. 
