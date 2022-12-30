@@ -406,7 +406,12 @@
 
 	\section{Filtro passa alto del primo orine con amplificazione}
 	Come mostrato nello schema riportato in figura \ref{fig: Schema a blocchi finale}, il sistema presenta come ultimo blocco un filtro passa alto, per tagliare tutte le frequenze inferiori ai 20 \textit{Hz}, come da specifica. Inoltre, oltre a filtrare le basse frequenze si effettua anche un'amplificazione per compensare il fattore d attenuazione introdotto dal mixer.
-
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{Immagini/sch_hp1_no_valori.pdf}
+		\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore di Wien}
+		\label{fig:FiltroH1Pnoval}
+	\end{figure}
 \section{Filtro passa banda passivo}
 Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 e dal primo oscillatore di Wien (QUELLO SBAGLIATO). 
 \noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce una continua per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}. Quindi, al fine di evitare la comparsa di più armoniche indesiderate in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura 
