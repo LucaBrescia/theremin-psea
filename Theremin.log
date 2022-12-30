@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.3)  30 DEC 2022 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.3)  30 DEC 2022 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,17 +863,17 @@ File: Immagini/bode_teorico_lp4.png Graphic file (type png)
 <use Immagini/bode_teorico_lp4.png>
 Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 380.
 (pdftex.def)             Requested size: 454.3934pt x 176.60815pt.
-<Immagini/sch_hp1_no_valori.pdf, id=406, 842.30682pt x 493.2427pt>
+<Immagini/sch_hp1_no_valori.pdf, id=406, 842.30688pt x 493.2427pt>
 File: Immagini/sch_hp1_no_valori.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1_no_valori.pdf>
 Package pdftex.def Info: Immagini/sch_hp1_no_valori.pdf  used on input line 411.
-(pdftex.def)             Requested size: 336.91676pt x 197.29358pt.
+(pdftex.def)             Requested size: 336.91678pt x 197.29358pt.
  [13 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
-<Immagini/sch_crc_no_valori.png, id=420, 691.83469pt x 362.85562pt>
+<Immagini/sch_crc_no_valori.png, id=420, 900.36375pt x 345.54094pt>
 File: Immagini/sch_crc_no_valori.png Graphic file (type png)
 <use Immagini/sch_crc_no_valori.png>
 Package pdftex.def Info: Immagini/sch_crc_no_valori.png  used on input line 422.
-(pdftex.def)             Requested size: 172.95824pt x 90.71368pt.
+(pdftex.def)             Requested size: 225.09038pt x 86.38501pt.
  [14 <./Immagini/sch_hp1_no_valori.pdf> <./Immagini/sch_crc_no_valori.png>]
 Capitolo 3.
 <Immagini/Antenna.jpg, id=447, 902.37125pt x 1604.99625pt>
@@ -1034,7 +1034,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1903b,1645s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\bresc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (34 pages, 2049442 bytes).
+Output written on Theremin.pdf (34 pages, 2051726 bytes).
 PDF statistics:
  863 PDF objects out of 1000 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
