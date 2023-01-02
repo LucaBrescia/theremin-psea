@@ -455,9 +455,9 @@ La funzione di trasferimento del filtro è riportata nell'equazione \ref{eq:fdt 
 	H(s) = \frac{\frac{s}{C_2R_1}}{s^2 + s(\frac{1}{C_2R_2} + \frac{1}{C_1R_1} + \frac{1}{C_2R_1}) + \frac{1}{C_2R_2C_1R_1}}
 \end{equation}
 
-Si possono notare due poli il prio in \textit{$sda$} e il secondo in \textit{$$} e di uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
+Si possono notare due poli il prio in \textit{$kHz$} e il secondo in \textit{$kHz$} e di uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
 
-Si può notare la presenza di un patitore di tensione. Per evitare un attenuazione del segnale si è deciso di iporre R2544 molto maggiore di R54854165 in modo che l'equazione del partitore di tensione, riportato nell'equazione \ref{eq: partitore di tensione}, diventi l'equazione \ref{eq: partitore di tensione circa 1}.
+Si può notare la presenza di un patitore di tensione. Per evitare un attenuazione del segnale si è deciso di iporre $R_2$ molto maggiore di $R_1$ in modo che l'equazione del partitore di tensione, riportato nell'equazione \ref{eq: partitore di tensione}, diventi l'equazione \ref{eq: partitore di tensione circa 1}.
 
 \begin{equation}
 	V_{out} = V_{in} \frac{R_1}{R_1 + R_2}
