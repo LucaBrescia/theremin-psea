@@ -12,14 +12,14 @@
 \contentsline {section}{\numberline {2.4}Filtro LP del quarto ordine}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Filtro passa alto del primo orine con amplificazione}{13}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Filtro passa banda passivo}{14}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Risultati sperimentali}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}XR2206}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Oscillatore di Wien}{18}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Oscillatore quasi di Wien}{18}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Oscillatore di Wien}{20}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Mixer}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Filtro passa basso di ordine 4}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Filtro passa alto del primo ordine}{23}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Theremin}{26}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Conclusioni}{30}{chapter.4}%
-\contentsline {section}{\numberline {4.1}MODIFICHE}{31}{section.4.1}%
+\contentsline {chapter}{\numberline {3}Risultati sperimentali}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}XR2206}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Oscillatore di Wien}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Oscillatore quasi di Wien}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Oscillatore di Wien}{21}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Mixer}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Filtro passa basso di ordine 4}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Filtro passa alto del primo ordine}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Theremin}{28}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Conclusioni}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}MODIFICHE}{33}{section.4.1}%
