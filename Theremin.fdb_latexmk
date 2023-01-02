@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Theremin"] 1672658242 "Theremin.aux" "Theremin.bbl" "Theremin" 1672658560
+["bibtex Theremin"] 1672658594 "Theremin.aux" "Theremin.bbl" "Theremin" 1672658598
   "D:/Programmi/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1643836892 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
-  "Theremin-blx.bib" 1672658560 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
-  "Theremin.aux" 1672658560 19760 1fcf2052af578b2b53afb6259477a74c "pdflatex"
+  "Theremin-blx.bib" 1672658598 341 70ea7cfbf1de28a9bf26028bf85e1b15 "pdflatex"
+  "Theremin.aux" 1672658598 19760 1fcf2052af578b2b53afb6259477a74c "pdflatex"
   (generated)
   "Theremin.bbl"
   "Theremin.blg"
-["pdflatex"] 1672658556 "d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1672658560
+["pdflatex"] 1672658594 "d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex" "Theremin.pdf" "Theremin" 1672658598
   "C:/Users/pezz9/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1649317785 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/pezz9/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1649318107 14064 d8076c8af5f6d9db09a96a84d98d38e4 ""
   "C:/Users/pezz9/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1649317845 10235235 f4cb19e0f0ed8d83c9cbcf5f14107ce2 ""
@@ -157,9 +157,9 @@
   "Immagini/lf353p_performance.pdf" 1650098798 32650 bba787d5473ad85f93c6fcd6eb707b07 ""
   "Immagini/lf356p_pinout.pdf" 1650098798 14232 195ba8d8a82eedf0195528cfa9f7f72d ""
   "Immagini/osc_wien+bp210k.PNG" 1666425398 47864 7a2eb7bd8a40fdc664a2df63482d86dd ""
-  "Immagini/sch_crc_no_valori.png" 1672414056 20439 1d4a12d6b07328776367e66868aea401 ""
+  "Immagini/sch_crc_no_valori.png" 1672658590 23506 6131caabb846576616d30b962363739b ""
   "Immagini/sch_hp1.pdf" 1667919480 33346 3ea2f400dc9ced297f837f655fe237b6 ""
-  "Immagini/sch_hp1_no_valori.pdf" 1672414770 10590 9ef2a07e079e07da1afd6f85f353fc89 ""
+  "Immagini/sch_hp1_no_valori.pdf" 1672658590 11018 b29ec09d6d5206a093e2d5f56d22cf8a ""
   "Immagini/sch_lp4.png" 1650098798 33466 7189f63f60ee28ac9f0d37b3f8acf655 ""
   "Immagini/sch_osc_wien.jpg" 1672413906 49810 f11e319c2bb778eb0587c7a99989d280 ""
   "Immagini/sch_osc_wien_cad.pdf" 1667028694 13486 9ec231dc0a368210cf9d8af8b6ab96c2 ""
@@ -173,14 +173,14 @@
   "Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png" 1650098800 17166 b13a27ee69c651a17769976970d09a65 ""
   "Theremin-frn.pdf" 1650098800 135872 069d37333e0adeb68b75d92a08a81d29 ""
   "Theremin-frn.tex" 1650098800 994 d11605f6d84f398b3138871a9fe11454 ""
-  "Theremin.aux" 1672658560 19760 1fcf2052af578b2b53afb6259477a74c "pdflatex"
-  "Theremin.bbl" 1672658244 533 205fa30ee4c093bb2bc4676324ab99fd "bibtex Theremin"
-  "Theremin.lof" 1672658560 5148 ad61e86fa810a0b6ee45f5afcac04e86 "pdflatex"
-  "Theremin.lot" 1672658560 906 1ddd9569643498d7c6cf05f6bab4d88d "pdflatex"
-  "Theremin.out" 1672658560 3895 8cd666ec8a9c05f5ce2c7d668b1c3d64 "pdflatex"
-  "Theremin.run.xml" 1672658560 2599 40229afc5cd2c637c7b6cb5862316c6f "pdflatex"
+  "Theremin.aux" 1672658598 19760 1fcf2052af578b2b53afb6259477a74c "pdflatex"
+  "Theremin.bbl" 1672658596 533 205fa30ee4c093bb2bc4676324ab99fd "bibtex Theremin"
+  "Theremin.lof" 1672658598 5148 ad61e86fa810a0b6ee45f5afcac04e86 "pdflatex"
+  "Theremin.lot" 1672658598 906 1ddd9569643498d7c6cf05f6bab4d88d "pdflatex"
+  "Theremin.out" 1672658598 3895 8cd666ec8a9c05f5ce2c7d668b1c3d64 "pdflatex"
+  "Theremin.run.xml" 1672658598 2599 40229afc5cd2c637c7b6cb5862316c6f "pdflatex"
   "Theremin.tex" 1672658556 51708 1a7800dcee02725f1a5bf741d053f63b ""
-  "Theremin.toc" 1672658560 1948 d79ea2c536485354b8767686483ac82e "pdflatex"
+  "Theremin.toc" 1672658598 1948 d79ea2c536485354b8767686483ac82e "pdflatex"
   "d:/Università/PSEA/Progetto/RelazioneComune/theremin-psea/Theremin.tex" 1672658556 51708 1a7800dcee02725f1a5bf741d053f63b ""
   (generated)
   "Theremin-blx.bib"
