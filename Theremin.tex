@@ -410,25 +410,52 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{Immagini/sch_hp1_no_valori.pdf}
-		\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore di Wien}
+		\caption{Schematico del filtro passa alto attio del primo ordine, con guadagno per compensare l'attenuazioen itordotta dal mixer. Posto in uscita dal filtro passa basso del quarto ordine.}
 		\label{fig:FiltroH1Pnoval}
 	\end{figure}
+
+La funzione di trasferimetno del filtro può essere vista come il prodotto di due dieversi blocchi. Il blocco di guadagno non invertente riportato nell'equazione \ref{eq:gain passa alto}, ovveor il blocco di retroazione. 
+
+\begin{equation}
+	\label{eq:gain passa alto}
+	A = 1 + \frac{R_2}{R_1}
+\end{equation}
+
+Il secondo blocco invece conprende la parte di filtraggio e la sua funzione di trasferimento è quella riportata nell'eqauzione \ref{eq:fdt passa alto}.
+
+\begin{equation}
+	\label{eq:fdt passa alto}
+	H(j\omega) = \frac{j\omega RC}{1 + j\omega RC}
+\end{equation}
+
+Moltiplicando l'equazione \ref{eq:gain passa alto} con l'equazione \ref{eq:fdt passa alto} e passando nel dominio di Laplace, ovvero ponendo \textit{$j\omega = s$} si ottine la finzione di trasferimento complessiava del filtro attivo riportata nell'equazione \ref{eq:fdt passa alto + gain}.
+
+\begin{equation}
+	\label{eq:fdt passa alto + gain}
+	H(s) = \frac{sRC}{1 + sRC}(1 + \frac{R_2}{R_1})
+\end{equation}
+
 \section{Filtro passa banda passivo}
 \label{sc: passa banda teoria}
-Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 e dal primo oscillatore di Wien (QUELLO SBAGLIATO). 
-\noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce una continua per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}. Quindi, al fine di evitare la comparsa di più armoniche indesiderate in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura 
+Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 edall'oscillatore riportato nella sezione \ref{subsc: wien sbagliato}. 
+\noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce un offset per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}; mentre l'oscillatore nella sezione \ref{subsc: wien sbagliato} si presentava con un pessimo \textit{THD} dovuto alla presenza di diverse aroniche indesiderate. Quindi, al fine di evitare la comparsa di più armoniche indesiderate in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura \ref{fig:FiltroBP}.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{Immagini/sch_crc_no_valori.png}
-	\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore di Wien}
+	\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nel paragrafo \ref{subsc: wien sbagliato}}
 	\label{fig:FiltroBP}
 \end{figure}
 
-La funzione di trasferimento del filtro è riportata nell'equazione GESù.
+La funzione di trasferimento del filtro è riportata nell'equazione \ref{eq:fdt passa banda teo}.
 
-Si possono notare un polo in ................  e uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
+\begin{equation}
+	\label{eq:fdt passa banda teo}
+	H(s) = \frac{\frac{s}{C_2R_1}}{s^2 + s(\frac{1}{C_2R_2} + \frac{1}{C_1R_1} + \frac{1}{C_2R_1}) + \frac{1}{C_2R_2C_1R_1}}
+\end{equation}
+
+Si possono notare due poli il prio in \textit{$sda$} e il secondo in \textit{$$} e di uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
 
 Si può notare la presenza di un patitore di tensione. Per evitare un attenuazione del segnale si è deciso di iporre R2544 molto maggiore di R54854165 in modo che l'equazione del partitore di tensione, riportato nell'equazione \ref{eq: partitore di tensione}, diventi l'equazione \ref{eq: partitore di tensione circa 1}.
 
@@ -581,22 +608,32 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 	\subsection{Oscillatore di Wien}
 	\label{subsc: wien giusto}
 
-	In figura (PORCO DUE) è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di 158755522 \textit{kHz}. 
+	In figura (PORCO DUE) è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di 158755522 \textit{kHz}. La frequenza è stata ottenuta sostituendo nell'equazione \ref{eq:osc_wien} il valore di \textit{C} pari a \textit{330pF} e una \textit{R} pari a \textit{$2 k\Omega$}.
 
 	IMMAGINE
 
-	L'oscillatore è stato montato prima su una breadboard, dove si pò notare la sinusoide in uscita in figura PINCOPALLO e la sua FFT in figura PICOPALLO2.
+	L'oscillatore è stato montato prima su una breadboard, dove si pò notare la sinusoide in uscita in figura \ref{fig:SINwien breadboard} e la sua \textit{FFT} in figura \ref{fig:FFT SINwien breadboard}.
 
 
-	Immagine 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/Wien sin giusto bread.PNG}
+		\caption{Sinusoide in uscita dall'oscillatore di Wien montato si breadboard}
+		\label{fig:SINwien breadboard}
+	\end{figure} 
 
-	Immagine
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{Immagini/FFT wien giusto bread.PNG}
+		\caption{FFT della sinusoide in uscita dall'oscillatore di Wien montato si breadboard}
+		\label{fig:FFT SINwien breadboard}
+	\end{figure} 
 
 	Successivamente si è calcolato il \textit{THD} della sinusoide e i risultati sono riportati nella tabella CIAOBELLO
 
 	Tabella
 
-	Successivamente si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella ZIOBESTIONE.
+	Si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella ZIOBESTIONE.
 
 	Immagine
 
@@ -604,7 +641,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 
 	Tabella
 
-	Si può notare che i due segneli, quello in figura PINCOPALLO e quello in figura ZIOBESTIA presentano una frequenza di oscillazione differente. Questo è dovuto alle capacità parassite introdote dalla breadboard che aggiungono un offset capacitivo pari a circa \textit{88 pF}.
+	Si può notare che i due segneli, quello in figura \ref{fig:SINwien breadboard} e quello in figura ZIOBESTIA presentano una frequenza di oscillazione differente, la prima di circa \textit{177 kHz} e la seconda di \textit{245 kHz}. Questo è dovuto alle capacità parassite introdote dalla breadboard che aggiungono un offset capacitivo pari a circa \textit{88 pF}.
 
 
 
