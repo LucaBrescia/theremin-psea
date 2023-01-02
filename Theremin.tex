@@ -501,6 +501,10 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 
 \newpage
 \section{Oscillatore di Wien}
+\label{sc: oscillatore wien sperimentale}
+
+	\subsection{Oscillatore quasi di Wien}
+	\label{subsc: wien sbagliato}
 
 	In figura \ref{sch:osc_wien} è riportato il circuito finale utilizzato per la realizzazione dell'oscillatore di Wien.
 
@@ -573,6 +577,37 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 		\caption{Ampiezze delle armoniche del segnale filtrato con il filtro passa basso in cascata all'oscillatore di Wien.}
 		\label{tab:THD_WIEN+LP}
 	\end{table}
+
+	\subsection{Oscillatore di Wien}
+	\label{subsc: wien giusto}
+
+	In figura (PORCO DUE) è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di 158755522 \textit{kHz}. 
+
+	IMMAGINE
+
+	L'oscillatore è stato montato prima su una breadboard, dove si pò notare la sinusoide in uscita in figura PINCOPALLO e la sua FFT in figura PICOPALLO2.
+
+
+	Immagine 
+
+	Immagine
+
+	Successivamente si è calcolato il \textit{THD} della sinusoide e i risultati sono riportati nella tabella CIAOBELLO
+
+	Tabella
+
+	Successivamente si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella ZIOBESTIONE.
+
+	Immagine
+
+	Immagine
+
+	Tabella
+
+	Si può notare che i due segneli, quello in figura PINCOPALLO e quello in figura ZIOBESTIA presentano una frequenza di oscillazione differente. Questo è dovuto alle capacità parassite introdote dalla breadboard che aggiungono un offset capacitivo pari a circa \textit{88 pF}.
+
+
+
 
 \section{Mixer}
 \label{sec:Mixer}
