@@ -414,7 +414,7 @@
 		\label{fig:FiltroH1Pnoval}
 	\end{figure}
 
-La funzione di trasferimetno del filtro può essere vista come il prodotto di due dieversi blocchi. Il blocco di guadagno non invertente riportato nell'equazione \ref{eq:gain passa alto}, ovveor il blocco di retroazione. 
+La funzione di trasferimetno del filtro può essere vista come il prodotto di due dieversi blocchi. Il blocco di guadagno non invertente riportato nell'equazione \ref{eq:gain passa alto}, ovveor il blocco di retroazione. Che per compensare il fattore di attenuazione introdotto dal mixer il guadagno dovrà essere pari a 10. 
 
 \begin{equation}
 	\label{eq:gain passa alto}
@@ -434,6 +434,15 @@ Moltiplicando l'equazione \ref{eq:gain passa alto} con l'equazione \ref{eq:fdt p
 	\label{eq:fdt passa alto + gain}
 	H(s) = \frac{sRC}{1 + sRC}(1 + \frac{R_2}{R_1})
 \end{equation}
+
+La frequenza di taglio si ottine con la formula riportata nell'equazione \ref{eq:taglio passa alto}
+
+\begin{equation}
+	\label{eq:taglio passa alto}
+	f_t = \frac{1}{2\pi RC}
+\end{equation}
+
+Imponendo una \textit{C} pari a \textit{$47nF$}, per ottenere una $f_t$ pari a \textit{20 Hz}, si deve avere una \textit{R} pari a \textit{$169.3k\Omega$}.
 
 \section{Filtro passa banda passivo}
 \label{sc: passa banda teoria}
