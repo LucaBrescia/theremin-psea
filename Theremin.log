@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  2 JAN 2023 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.7)  3 JAN 2023 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -952,81 +952,83 @@ File: Immagini/bode_lp4.pdf Graphic file (type pdf)
 <use Immagini/bode_lp4.pdf>
 Package pdftex.def Info: Immagini/bode_lp4.pdf  used on input line 704.
 (pdftex.def)             Requested size: 468.47202pt x 290.3578pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[24 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
+ [24 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/bode_lf353p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/gbp_ua741.pdf, id=606, 177.6133pt x 170.35326pt>
+
+pdfTeX warning: pdflatex (file ./Immagini/zoom_lp4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Immagini/zoom_lp4.pdf, id=605, 597.55246pt x 845.07724pt>
+File: Immagini/zoom_lp4.pdf Graphic file (type pdf)
+<use Immagini/zoom_lp4.pdf>
+Package pdftex.def Info: Immagini/zoom_lp4.pdf  used on input line 711.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+[25 <./Immagini/bode_lp4.pdf>] [26 <./Immagini/zoom_lp4.pdf>]
+<Immagini/gbp_ua741.pdf, id=636, 177.6133pt x 170.35326pt>
 File: Immagini/gbp_ua741.pdf Graphic file (type pdf)
 <use Immagini/gbp_ua741.pdf>
-Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 720.
+Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 728.
 (pdftex.def)             Requested size: 177.61285pt x 170.35283pt.
- [25 <./Immagini/bode_lp4.pdf>]
+
 
 pdfTeX warning: pdflatex (file ./Immagini/sch_hp1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/sch_hp1.pdf, id=629, 845.07724pt x 597.55246pt>
+<Immagini/sch_hp1.pdf, id=637, 845.07724pt x 597.55246pt>
 File: Immagini/sch_hp1.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1.pdf>
-Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 729.
+Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 737.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
-<Immagini/bode_hp1_ua741.pdf, id=632, 1445.4pt x 718.93594pt>
-File: Immagini/bode_hp1_ua741.pdf Graphic file (type pdf)
-<use Immagini/bode_hp1_ua741.pdf>
-Package pdftex.def Info: Immagini/bode_hp1_ua741.pdf  used on input line 738.
-(pdftex.def)             Requested size: 491.4295pt x 244.43498pt.
+[27 <./Immagini/gbp_ua741.pdf>]
 
-Overfull \hbox (7.73264pt too wide) in paragraph at lines 738--739
- [][] 
- []
-
-[26 <./Immagini/gbp_ua741.pdf> <./Immagini/sch_hp1.pdf>] [27 <./Immagini/bode_hp1_ua741.pdf>]
+pdfTeX warning: pdflatex (file ./Immagini/hpf1_psea.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Immagini/hpf1_psea.pdf, id=669, 597.55246pt x 845.07724pt>
+File: Immagini/hpf1_psea.pdf Graphic file (type pdf)
+<use Immagini/hpf1_psea.pdf>
+Package pdftex.def Info: Immagini/hpf1_psea.pdf  used on input line 746.
+(pdftex.def)             Requested size: 418.28386pt x 591.55003pt.
+[28 <./Immagini/sch_hp1.pdf>] [29 <./Immagini/hpf1_psea.pdf>]
 
 pdfTeX warning: pdflatex (file ./Immagini/Schematico Completo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/Schematico Completo.pdf, id=695, 1194.98447pt x 845.07724pt>
+<Immagini/Schematico Completo.pdf, id=694, 1194.98447pt x 845.07724pt>
 File: Immagini/Schematico Completo.pdf Graphic file (type pdf)
 <use Immagini/Schematico Completo.pdf>
-Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 752.
+Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 760.
 (pdftex.def)             Requested size: 477.98532pt x 338.0249pt.
-<Immagini/fft_ad633+lp4.PNG, id=699, 803.0pt x 481.8pt>
+<Immagini/fft_ad633+lp4.PNG, id=698, 803.0pt x 481.8pt>
 File: Immagini/fft_ad633+lp4.PNG Graphic file (type png)
 <use Immagini/fft_ad633+lp4.PNG>
-Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 764.
+Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 772.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-[28 <./Immagini/Schematico Completo.pdf>]
+[30 <./Immagini/Schematico Completo.pdf>]
 <Immagini/ftt_ad633+lp4+hp1_final.PNG, id=716, 803.0pt x 481.8pt>
 File: Immagini/ftt_ad633+lp4+hp1_final.PNG Graphic file (type png)
 <use Immagini/ftt_ad633+lp4+hp1_final.PNG>
-Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 774.
+Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 782.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [29 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
+ [31 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
 <Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=723, 803.0pt x 481.8pt>
 File: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG Graphic file (type png)
 <use Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG>
-Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 783.
+Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 791.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>] [31]
+[32 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>] [33]
 Capitolo 4.
-[32
+[34
 
-] [33] (Theremin.lof [34
+] [35] (Theremin.lof [36
 
 ])
 \tf@lof=\write6
 \openout6 = `Theremin.lof'.
 
- [35] (Theremin.lot)
+ [37] (Theremin.lot)
 \tf@lot=\write7
 \openout7 = `Theremin.lot'.
 
- [36
+ [38
 
 ] (Theremin.aux)
 
@@ -1039,17 +1041,17 @@ Package logreq Info: Writing requests to 'Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20853 strings out of 478582
- 369827 string characters out of 2856070
- 862591 words of memory out of 3000000
- 38607 multiletter control sequences out of 15000+600000
+ 20864 strings out of 478582
+ 370037 string characters out of 2856070
+ 862726 words of memory out of 3000000
+ 38614 multiletter control sequences out of 15000+600000
  475755 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,77p,1904b,1531s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\pezz9\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Programmi/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (37 pages, 2117767 bytes).
+Output written on Theremin.pdf (39 pages, 2228167 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 920 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
