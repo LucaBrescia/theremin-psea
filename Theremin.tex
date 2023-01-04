@@ -464,7 +464,7 @@ La funzione di trasferimento del filtro è riportata nell'equazione \ref{eq:fdt 
 	H(s) = \frac{\frac{s}{C_2R_1}}{s^2 + s(\frac{1}{C_2R_2} + \frac{1}{C_1R_1} + \frac{1}{C_2R_1}) + \frac{1}{C_2R_2C_1R_1}}
 \end{equation}
 
-Si possono notare due poli il prio in \textit{$kHz$} e il secondo in \textit{$kHz$} e di uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze otre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
+Si possono notare due poli il primo in \textit{$kHz$} e il secondo in \textit{$kHz$} e di uno zero nell'origine. Questi garantiscono il filtraggio della continua come desiderato ed una prima attenuazione delle frequenze oltre il valore massimo che consente di demodulare in uscita la sinusoide con la frequenza compresa nell'intervallo imposto dalle specifiche.
 
 Si può notare la presenza di un patitore di tensione. Per evitare un attenuazione del segnale si è deciso di iporre $R_2$ molto maggiore di $R_1$ in modo che l'equazione del partitore di tensione, riportato nell'equazione \ref{eq: partitore di tensione}, diventi l'equazione \ref{eq: partitore di tensione circa 1}.
 
@@ -481,7 +481,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 \chapter{Risultati sperimentali}
 \label{ch:Risultati_sperimentali}
 \section{XR2206}
-	Per la realizzazione dell'armonica a frequenza variabile si è fatto riferimento al datasheet del componente scegliendo come valori di partenza quelli mostrati in esempio. 
+	Per la realizzazione della sinusoide a frequenza variabile si è fatto riferimento al datasheet del componente scegliendo come valori di partenza quelli mostrati in esempio. 
 	La capacità variabile è stata realizzata con un supporto rigido e della carta di alluminio creando una struttura simile ad una bandiera. Il tutto è stato collegato come mostrato in \textit{Figura \ref{fig:antenna}}.
 
 	\begin{figure}[H]
@@ -491,7 +491,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 		\label{fig:antenna}
 	\end{figure}
 	
-	Le prestazioni ottenute con questo tipo di antenna sono mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}}. Dalle figure si può osservare le sinusoidi in uscita dall'XR2206 in presenza dell'antenna a bandiera e in assenza della mano dell'utente, ovvero l'oscillazione a \textit{"riposo"} dell'oscillatore. È importante notare come dalla \textit{Figura \ref{fig:SINx}} venga evidenziata l'attenuazione e lo sfasamento del segnale dovuti all'effetto del filtro passa basso. Tuttavia, il filtro migliora le prestazioni di uscita dell'oscillatore. Infatti, già dalla \textit{Figura \ref{fig:SINxr+LP}} si può apprezzare la buona riuscita del sistema in termini di segnale sinusoidale generato. Prestazioni che possono essere quantificate con un'analisi di tipo spettrale.
+	Le prestazioni ottenute con questo tipo di antenna sono mostrate in \textit{Figura \ref{fig:SINxr+LP}} e in \textit{Figura \ref{fig:SINx}}. Dalle figure si può osservare le sinusoidi in uscita dall'XR2206 in presenza dell'antenna a bandiera e in assenza della mano dell'utente, ovvero l'oscillazione a \textit{"riposo"} dell'oscillatore. È importante notare come dalla \textit{Figura \ref{fig:SINx}} venga evidenziata l'attenuazione e lo sfasamento del segnale dovuti all'effetto del filtro passa banda. Tuttavia, il filtro migliora le prestazioni di uscita dell'oscillatore. Infatti, già dalla \textit{Figura \ref{fig:SINxr+LP}} si può apprezzare la buona riuscita del sistema in termini di segnale sinusoidale generato. Prestazioni che possono essere quantificate con un'analisi di tipo spettrale.
 
 	\begin{figure}[H]
 		\centering
@@ -743,7 +743,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.7]{Immagini/hpf1_filter_response.pdf}
+		\includegraphics[scale=0.8]{Immagini/hpf1_filter_response.pdf}
 		\caption{Diagramma di Bode del filtro passa alto del $1^o$ ordine}
 		\label{fig:BODEHp1Real}
 	\end{figure}
