@@ -17,25 +17,26 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Diagramma di Bode del modulo del filtro.\relax }}{13}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Schematico del filtro passa alto attio del primo ordine, con guadagno per compensare l'attenuazioen itordotta dal mixer. Posto in uscita dal filtro passa basso del quarto ordine.\relax }}{14}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nel paragrafo \ref {subsc: wien sbagliato}\relax }}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Diagramma di Bode del filtro passa banda passivo con evidenziati il polo e gli zeri.\relax }}{15}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Foto dell'antenna utilizzata come capacità variabile\relax }}{16}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima (in bianco) e dopo (in giallo) il fitro LP in cascata.\relax }}{17}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Segnale in uscita dal blocco XR2206 + LP.\relax }}{17}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Confronto tra le FFT del segnale in uscita dall'oscillatore monolitico XR2206 prima e dopo il filtro LP in cascata.\relax }}{18}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematico dell'oscillatore di Wien utilizzato\relax }}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Confronto tra i segnali in uscita dall'oscillatore di Wien prima e dopo il fitro BP in cascata.\relax }}{19}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Confronto tra le FFT del segnale in uscita dall'oscillatore di Wien prima e dopo il filtro BP in cascata.\relax }}{20}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Sinusoide in uscita dall'oscillatore di Wien montato si breadboard\relax }}{21}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces FFT della sinusoide in uscita dall'oscillatore di Wien montato si breadboard\relax }}{22}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces FFT in uscita dal mixer AD633 senza filtraggio\relax }}{23}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrammi di bode del componente LF353P in anello aperto\relax }}{24}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagramma di Bode del filtro Sallen-Key del $4^o$ ordine\relax }}{25}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagramma di Bode delle celle Sallen-Key del $2^o$ ordine, che compongono il filtro del $4^o$ ordine\relax }}{25}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Ampiezza massima del segnale di uscita in relazione alla sua frequenza\relax }}{26}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Schema del filtro attivo passa alto del primo ordine\relax }}{27}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagramma di Bode del filtro passa alto del $1^o$ ordine\relax }}{28}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Schematico completo del circuito realizzato\relax }}{29}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces FFT in uscita dall'AD633 dopo il Filtro passa basso del quarto ordine\relax }}{30}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces FFT della sinusoide in uscita dal sistema\relax }}{30}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto\relax }}{31}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Foto dell'antenna utilizzata come capacità variabile\relax }}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Confronto tra i segnali in uscita dall'oscillatore monolitico XR2206 prima (in bianco) e dopo (in giallo) il fitro LP in cascata.\relax }}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Segnale in uscita dal blocco XR2206 + LP.\relax }}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Confronto tra le FFT del segnale in uscita dall'oscillatore monolitico XR2206 prima e dopo il filtro LP in cascata.\relax }}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematico dell'oscillatore di Wien utilizzato\relax }}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Confronto tra i segnali in uscita dall'oscillatore di Wien prima e dopo il fitro BP in cascata.\relax }}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Confronto tra le FFT del segnale in uscita dall'oscillatore di Wien prima e dopo il filtro BP in cascata.\relax }}{20}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sinusoide in uscita dall'oscillatore di Wien montato si breadboard\relax }}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces FFT della sinusoide in uscita dall'oscillatore di Wien montato si breadboard\relax }}{22}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces FFT in uscita dal mixer AD633 senza filtraggio\relax }}{23}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagrammi di bode del componente LF353P in anello aperto\relax }}{24}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Diagramma di Bode del filtro Sallen-Key del $4^o$ ordine\relax }}{25}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagramma di Bode delle celle Sallen-Key del $2^o$ ordine, che compongono il filtro del $4^o$ ordine\relax }}{25}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Ampiezza massima del segnale di uscita in relazione alla sua frequenza\relax }}{26}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Schema del filtro attivo passa alto del primo ordine\relax }}{27}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagramma di Bode del filtro passa alto del $1^o$ ordine\relax }}{28}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Schematico completo del circuito realizzato\relax }}{29}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces FFT in uscita dall'AD633 dopo il Filtro passa basso del quarto ordine\relax }}{30}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces FFT della sinusoide in uscita dal sistema\relax }}{30}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Sinusoidi in uscita dall'AD633 senza e con il filtro passa alto\relax }}{31}{figure.caption.41}%
 \addvspace {10\p@ }
