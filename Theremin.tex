@@ -617,7 +617,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 	\subsection{Oscillatore di Wien}
 	\label{subsc: wien giusto}
 
-	In figura (PORCO DUE) è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di 158755522 \textit{kHz}. La frequenza è stata ottenuta sostituendo nell'equazione \ref{eq:osc_wien} il valore di \textit{C} pari a \textit{330pF} e una \textit{R} pari a \textit{$2 k\Omega$}.
+	In figura \ref{fig:sch_osc_wien} è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di TODO \textit{kHz}. La frequenza è stata ottenuta sostituendo nell'equazione \ref{eq:osc_wien} il valore di \textit{C} pari a \textit{330pF} e una \textit{R} pari a \textit{$2 k\Omega$}.
 
 	IMMAGINE
 
@@ -638,17 +638,48 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 		\label{fig:FFT SINwien breadboard}
 	\end{figure} 
 
-	Successivamente si è calcolato il \textit{THD} della sinusoide e i risultati sono riportati nella tabella CIAOBELLO
+	Successivamente si è calcolato il \textit{THD} della sinusoide e i risultati sono riportati nella tabella \ref{tab:template}
 
-	Tabella
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c|c|c||}
+			\hline
+			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
+			\hline
+			Fondamentale & 3800 &\\
+			\cline{1-2}
+			$2^a$ armonica & 400 & 10.61 \\
+			\cline{1-2} 
+			$3^a$ armonica & 50 & \\
+			\hline	
+		\end{tabular}
+		\caption{TABELLA DA FARE QUI COME TEMPLATE}
+		\label{tab:template}
+	\end{table}
 
-	Si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella ZIOBESTIONE.
+	Si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella \ref{tab:template2}.
 
 	Immagine
 
 	Immagine
 
-	Tabella
+
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{||c|c|c||}
+			\hline
+			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
+			\hline
+			Fondamentale & 3800 &\\
+			\cline{1-2}
+			$2^a$ armonica & 400 & 10.61 \\
+			\cline{1-2} 
+			$3^a$ armonica & 50 & \\
+			\hline	
+		\end{tabular}
+		\caption{TABELLA DA FARE QUI COME TEMPLATE}
+		\label{tab:template2}
+	\end{table}
 
 	Si può notare che i due segneli, quello in figura \ref{fig:SINwien breadboard} e quello in figura ZIOBESTIA presentano una frequenza di oscillazione differente, la prima di circa \textit{177 kHz} e la seconda di \textit{245 kHz}. Questo è dovuto alle capacità parassite introdote dalla breadboard che aggiungono un offset capacitivo pari a circa \textit{88 pF}.
 
@@ -799,9 +830,7 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 	Tuttavia, è stato immediatamente riscontrato il problema della sensibilità, ovvero si è osservato come le uniche variazioni di frequenza apprezzabili si ottenessero quando la mano era posta a contatto con l'antenna o se quest'ultima fosse completamente assente. Si riusciva dunque a coprire una piccolissima parte del range richiesto dal progetto senza però ottenere le variazioni volute.
 	Perciò, si è deciso di alzare le frequenze operative, portando il riferimento in uscita dall'oscillatore di Wien ad un valore di \textit{245kHz} come mostrato in \textit{Figura \ref{fig:SINwien+BP}}. Questo ha porta a dover aumentare anche il range di frequenze del \textit{VCO} portando così gli estremi da un'oscillazione di \textit{275kHz} senza la presenza della mano a circa \textit{250kHz} con la presenza della mano ad una distanza minima ove la mano risultasse quasi a contatto con l'antenna.
 	In questo caso, si è riscontrato un netto miglioramento della sensibilità nella variazione della frequenza rispetto alla distanza della mano.
-	Nella \textit{Tabella \ref{tab:Distanza-Frequenza}} sono mostrati i risultati sperimentali ottenuti misurando la frequenza di oscillazione del segnale di uscita in relazione alla distanza della mano dalla bandiera.
-
-	
+	Nella \textit{Tabella \ref{tab:Distanza-Frequenza}} sono mostrati i risultati sperimentali ottenuti misurando la frequenza di oscillazione del segnale di uscita in relazione alla distanza della mano dalla bandiera. \newline	
 %\section{Problematiche}
 
 % Cosa succede se la distorsione è sull'amplificatore, piuttosto che sull'oscillatore piuttosto che sull'XR? Bisogna che i componenti siano a bassa distorsione armonica.
@@ -813,7 +842,6 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 
 	%\label{FIGURE}
 	
-
 	\begin{table}[h!]
 		\centering
 		\begin{tabular}{||c|c|c||}
@@ -857,6 +885,14 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 		\label{tab:Distanza-Frequenza}
 	\end{table}
 	
+	Dalla tabella \ref{tab:Distanza-Frequenza} si è calcolato la sensibilità relativa del sistema completo al variare della distanza della mano dall'antenna. \newline
+	In figura \ref{fig:sens_sistema} vengono mostrati i punti ottenuti sperimentalmente e una curva ottenuta con un'approssimazione ai minimi quadrati utilizzando un polinomio di grado 5.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale = 0.4]{Immagini/sens_poly.jpg}
+		\caption{Sensibilità del sistema}
+		\label{fig:sens_sistema}
+	\end{figure}
 %\newpage
 %	\begin{figure}[]
 %		\centering
@@ -875,12 +911,14 @@ Si può notare la presenza di un patitore di tensione. Per evitare un attenuazio
 
 	\section{MODIFICHE}
 	Risistemare il ponte di wien, rifare le immagini dello spetro e del THD
-	Sistemare il grafico dei filtri
-
+	Sistemare il grafico dei filtri \newline
+	\noindent
 	studio e progetto dei filtri passa banda passivi
-
+	\noindent
 	come funziona il VCO dell/XR e il sine shaper
-
+	\newline
+	FFT del mixer da rifare \newline
+	Sch ponte di wien e calcolo in V del THD della sinusoide di uscita
 	\listoffigures
 	\listoftables
 \end{document}
