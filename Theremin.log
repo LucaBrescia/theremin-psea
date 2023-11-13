@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.3)  12 NOV 2023 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.12.3)  12 NOV 2023 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -575,11 +575,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (Theremin.aux
-
-LaTeX Warning: Label `eq:LF356_Gain' multiply defined.
-
-)
+ (Theremin.aux)
 \openout1 = `Theremin.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -704,23 +700,18 @@ Package: ragged2e 2022/11/13 v3.2 ragged2e Package
 \JustifyingParindent=\skip98
 )
 Package hyperref Info: Link coloring OFF on input line 18.
- (Theremin.out) (Theremin.out)
 \@outlinefile=\write4
 \openout4 = `Theremin.out'.
 
-<Theremin-frn.pdf, id=95, 597.50829pt x 845.0471pt>
+<Theremin-frn.pdf, id=3, 597.50829pt x 845.0471pt>
 File: Theremin-frn.pdf Graphic file (type pdf)
 <use Theremin-frn.pdf>
 Package pdftex.def Info: Theremin-frn.pdf  used on input line 24.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
  [1
 
- <./Theremin-frn.pdf{C:/Users/bresc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>] (Theremin.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-)
+ <./Theremin-frn.pdf{C:/Users/bresc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}>]
+No file Theremin.toc.
 \tf@toc=\write5
 \openout5 = `Theremin.toc'.
 
@@ -738,7 +729,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 43.
-<Immagini/Schema_progetto_17.png, id=167, 484.209pt x 361.95226pt>
+
+
+LaTeX Warning: Reference `fig:Schema_Assegnazione' on page 2 undefined on input line 43.
+
+<Immagini/Schema_progetto_17.png, id=50, 484.209pt x 361.95226pt>
 File: Immagini/Schema_progetto_17.png Graphic file (type png)
 <use Immagini/Schema_progetto_17.png>
 Package pdftex.def Info: Immagini/Schema_progetto_17.png  used on input line 48.
@@ -748,7 +743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--52
 
  []
 
-<Immagini/Schema Generale PSEA.png, id=168, 809.0225pt x 322.20375pt>
+<Immagini/Schema Generale PSEA.png, id=51, 809.0225pt x 322.20375pt>
 File: Immagini/Schema Generale PSEA.png Graphic file (type png)
 <use Immagini/Schema Generale PSEA.png>
 Package pdftex.def Info: Immagini/Schema Generale PSEA.png  used on input line 57.
@@ -757,79 +752,130 @@ Package pdftex.def Info: Immagini/Schema Generale PSEA.png  used on input line 5
 
  <./Immagini/Schema_progetto_17.png> <./Immagini/Schema Generale PSEA.png>]
 Capitolo 1.
+
+LaTeX Warning: Reference `ch:Risultati' on page 3 undefined on input line 93.
+
 [3
 
 ]
-<Immagini/ua741_pinout.pdf, id=200, 203.49933pt x 104.9269pt>
+
+LaTeX Warning: Reference `ch:Risultati' on page 4 undefined on input line 106.
+
+<Immagini/ua741_pinout.pdf, id=83, 203.49933pt x 104.9269pt>
 File: Immagini/ua741_pinout.pdf Graphic file (type pdf)
 <use Immagini/ua741_pinout.pdf>
 Package pdftex.def Info: Immagini/ua741_pinout.pdf  used on input line 114.
 (pdftex.def)             Requested size: 193.47578pt x 99.76482pt.
-<Immagini/lf353n_pinout.pdf, id=201, 154.87862pt x 118.53284pt>
+<Immagini/lf353n_pinout.pdf, id=84, 154.87862pt x 118.53284pt>
 File: Immagini/lf353n_pinout.pdf Graphic file (type pdf)
 <use Immagini/lf353n_pinout.pdf>
 Package pdftex.def Info: Immagini/lf353n_pinout.pdf  used on input line 116.
 (pdftex.def)             Requested size: 145.11053pt x 111.05913pt.
-<Immagini/lf356p_pinout.pdf, id=202, 107.74557pt x 62.4164pt>
+<Immagini/lf356p_pinout.pdf, id=85, 107.74557pt x 62.4164pt>
 File: Immagini/lf356p_pinout.pdf Graphic file (type pdf)
 <use Immagini/lf356p_pinout.pdf>
 Package pdftex.def Info: Immagini/lf356p_pinout.pdf  used on input line 118.
 (pdftex.def)             Requested size: 193.47578pt x 112.09035pt.
-<Immagini/schema_blocchi_xr2206.pdf, id=204, 452.35329pt x 283.80057pt>
+
+LaTeX Warning: Reference `fig:sch_xr2206' on page 4 undefined on input line 128.
+
+<Immagini/schema_blocchi_xr2206.pdf, id=86, 452.35329pt x 283.80057pt>
 File: Immagini/schema_blocchi_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_blocchi_xr2206.pdf>
 Package pdftex.def Info: Immagini/schema_blocchi_xr2206.pdf  used on input line 133.
 (pdftex.def)             Requested size: 193.47578pt x 121.3823pt.
-<Immagini/schema_blocchi_pinout_xr2206.pdf, id=205, 514.3687pt x 277.8077pt>
+<Immagini/schema_blocchi_pinout_xr2206.pdf, id=87, 514.3687pt x 277.8077pt>
 File: Immagini/schema_blocchi_pinout_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_blocchi_pinout_xr2206.pdf>
 Package pdftex.def Info: Immagini/schema_blocchi_pinout_xr2206.pdf  used on input line 135.
 (pdftex.def)             Requested size: 241.84843pt x 130.6205pt.
- [4 <./Immagini/ua741_pinout.pdf> <./Immagini/lf353n_pinout.pdf
+[4 <./Immagini/ua741_pinout.pdf> <./Immagini/lf353n_pinout.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/lf353n_pinout.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Immagini/lf356p_pinout.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/lf356p_pinout.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/ad633_bp.pdf, id=241, 213.80533pt x 160.30577pt>
+
+LaTeX Warning: Reference `ch:scelte' on page 5 undefined on input line 140.
+
+
+LaTeX Warning: Reference `fig:sch_ad633' on page 5 undefined on input line 148.
+
+<Immagini/ad633_bp.pdf, id=121, 213.80533pt x 160.30577pt>
 File: Immagini/ad633_bp.pdf Graphic file (type pdf)
 <use Immagini/ad633_bp.pdf>
 Package pdftex.def Info: Immagini/ad633_bp.pdf  used on input line 152.
 (pdftex.def)             Requested size: 213.8048pt x 160.30537pt.
- [5 <./Immagini/schema_blocchi_xr2206.pdf> <./Immagini/schema_blocchi_pinout_xr2206.pdf
+
+LaTeX Warning: Reference `fig: AD633 schema a blocchi' on page 5 undefined on input line 158.
+
+
+LaTeX Warning: Reference `eq: funzione trasferimeto AD633' on page 5 undefined on input line 166.
+
+
+LaTeX Warning: Reference `sec:filtro_hp1' on page 5 undefined on input line 166.
+
+
+LaTeX Warning: Reference `eq: funzione trasferimeto AD633' on page 5 undefined on input line 168.
+
+[5 <./Immagini/schema_blocchi_xr2206.pdf> <./Immagini/schema_blocchi_pinout_xr2206.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/schema_blocchi_pinout_xr2206.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./Immagini/ad633_bp.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/ad633_bp.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/ad633_pinout.pdf, id=310, 150.49805pt x 116.03651pt>
+
+LaTeX Warning: Reference `eq:prodotto sinusoidi con fase' on page 6 undefined on input line 193.
+
+<Immagini/ad633_pinout.pdf, id=186, 150.49805pt x 116.03651pt>
 File: Immagini/ad633_pinout.pdf Graphic file (type pdf)
 <use Immagini/ad633_pinout.pdf>
 Package pdftex.def Info: Immagini/ad633_pinout.pdf  used on input line 208.
 (pdftex.def)             Requested size: 150.49767pt x 116.03622pt.
- [6 <./Immagini/ad633_pinout.pdf>]
+[6 <./Immagini/ad633_pinout.pdf>]
 Capitolo 2.
-<Immagini/Schema a blocchicompleto giusto ita.png, id=330, 854.19125pt x 427.5975pt>
+<Immagini/Schema a blocchicompleto giusto ita.png, id=207, 854.19125pt x 427.5975pt>
 File: Immagini/Schema a blocchicompleto giusto ita.png Graphic file (type png)
 <use Immagini/Schema a blocchicompleto giusto ita.png>
 Package pdftex.def Info: Immagini/Schema a blocchicompleto giusto ita.png  used on input line 222.
 (pdftex.def)             Requested size: 427.09459pt x 213.79822pt.
+
+LaTeX Warning: Reference `sec:VCO' on page 7 undefined on input line 227.
+
+
+LaTeX Warning: Reference `sec:osc_wien' on page 7 undefined on input line 227.
+
+
+LaTeX Warning: Reference `sec:AD633' on page 7 undefined on input line 227.
+
+
+LaTeX Warning: Reference `sec:LP4' on page 7 undefined on input line 227.
+
+
+LaTeX Warning: Reference `fig:sch_xr2206_' on page 7 undefined on input line 233.
+
 [7
 
  <./Immagini/Schema a blocchicompleto giusto ita.png>]
-<Immagini/schema_xr2206.pdf, id=343, 349.71185pt x 234.04086pt>
+<Immagini/schema_xr2206.pdf, id=216, 349.71185pt x 234.04086pt>
 File: Immagini/schema_xr2206.pdf Graphic file (type pdf)
 <use Immagini/schema_xr2206.pdf>
 Package pdftex.def Info: Immagini/schema_xr2206.pdf  used on input line 245.
 (pdftex.def)             Requested size: 349.71098pt x 234.04027pt.
  [8 <./Immagini/schema_xr2206.pdf>]
-<Immagini/sch_osc_wien.jpg, id=364, 676.77844pt x 536.0025pt>
+
+LaTeX Warning: Reference `fig:sch_osc_wien' on page 9 undefined on input line 259.
+
+<Immagini/sch_osc_wien.jpg, id=237, 676.77844pt x 536.0025pt>
 File: Immagini/sch_osc_wien.jpg Graphic file (type jpg)
 <use Immagini/sch_osc_wien.jpg>
 Package pdftex.def Info: Immagini/sch_osc_wien.jpg  used on input line 263.
 (pdftex.def)             Requested size: 270.70657pt x 214.3972pt.
+
+LaTeX Warning: Reference `eq: fdt wien' on page 9 undefined on input line 268.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
@@ -841,220 +887,429 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--291
  []
 
 [9 <./Immagini/sch_osc_wien.jpg>]
-<Immagini/009_OscillatoreWienFFT.png, id=376, 455.2441pt x 273.14645pt>
+<Immagini/009_OscillatoreWienFFT.png, id=249, 455.2441pt x 273.14645pt>
 File: Immagini/009_OscillatoreWienFFT.png Graphic file (type png)
 <use Immagini/009_OscillatoreWienFFT.png>
 Package pdftex.def Info: Immagini/009_OscillatoreWienFFT.png  used on input line 310.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
- [10 <./Immagini/009_OscillatoreWienFFT.png>] [11]
-<Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png, id=398, 455.2441pt x 273.14645pt>
+
+
+LaTeX Warning: Reference `eq:osc_wien' on page 10 undefined on input line 315.
+
+
+LaTeX Warning: Reference `eq:thd' on page 10 undefined on input line 321.
+
+[10 <./Immagini/009_OscillatoreWienFFT.png>] [11]
+
+LaTeX Warning: Reference `fig:FFTmixer' on page 12 undefined on input line 349.
+
+
+LaTeX Warning: Reference `sec:osc_wien' on page 12 undefined on input line 349.
+
+<Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png, id=267, 455.2441pt x 273.14645pt>
 File: Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png Graphic file (type png)
 <use Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>
 Package pdftex.def Info: Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png  used on input line 353.
 (pdftex.def)             Requested size: 409.7159pt x 245.82953pt.
-<Immagini/sch_lp4.png, id=401, 522.95375pt x 139.01938pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 354.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 354.
+
+LaTeX Warning: Reference `fig:FFTmixer' on page 12 undefined on input line 358.
+
+
+LaTeX Warning: Reference `fig:FFTmixer' on page 12 undefined on input line 360.
+
+<Immagini/sch_lp4.png, id=268, 522.95375pt x 139.01938pt>
 File: Immagini/sch_lp4.png Graphic file (type png)
 <use Immagini/sch_lp4.png>
 Package pdftex.def Info: Immagini/sch_lp4.png  used on input line 371.
 (pdftex.def)             Requested size: 470.65402pt x 125.11627pt.
- [12 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>]
-<Immagini/bode_teorico_lp4.png, id=412, 504.88625pt x 196.23312pt>
+[12 <./Immagini/uscita_ad633_con_fcngen_20k_e_osc_45k.png>]
+
+LaTeX Warning: Reference `fig:BodeLp4' on page 13 undefined on input line 376.
+
+<Immagini/bode_teorico_lp4.png, id=280, 504.88625pt x 196.23312pt>
 File: Immagini/bode_teorico_lp4.png Graphic file (type png)
 <use Immagini/bode_teorico_lp4.png>
 Package pdftex.def Info: Immagini/bode_teorico_lp4.png  used on input line 380.
 (pdftex.def)             Requested size: 454.3934pt x 176.60815pt.
-<Immagini/sch_hp1_no_valori.pdf, id=416, 842.30688pt x 493.2427pt>
+
+LaTeX Warning: Reference `eq:sallen-key-1' on page 13 undefined on input line 401.
+
+
+LaTeX Warning: Reference `eq:sallen-key-2' on page 13 undefined on input line 401.
+
+
+LaTeX Warning: Reference `fig: Schema a blocchi finale' on page 13 undefined on input line 409.
+
+<Immagini/sch_hp1_no_valori.pdf, id=281, 842.30688pt x 493.2427pt>
 File: Immagini/sch_hp1_no_valori.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1_no_valori.pdf>
 Package pdftex.def Info: Immagini/sch_hp1_no_valori.pdf  used on input line 412.
 (pdftex.def)             Requested size: 336.91678pt x 197.29358pt.
- [13 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>] [14 <./Immagini/sch_hp1_no_valori.pdf>]
-<Immagini/sch_crc_no_valori.png, id=462, 900.36375pt x 345.54094pt>
+[13 <./Immagini/sch_lp4.png> <./Immagini/bode_teorico_lp4.png>]
+
+LaTeX Warning: Reference `eq:gain passa alto' on page 14 undefined on input line 417.
+
+
+LaTeX Warning: Reference `eq:fdt passa alto' on page 14 undefined on input line 424.
+
+
+LaTeX Warning: Reference `eq:gain passa alto' on page 14 undefined on input line 431.
+
+
+LaTeX Warning: Reference `eq:fdt passa alto' on page 14 undefined on input line 431.
+
+
+LaTeX Warning: Reference `eq:fdt passa alto + gain' on page 14 undefined on input line 431.
+
+
+LaTeX Warning: Reference `eq:taglio passa alto' on page 14 undefined on input line 438.
+
+
+LaTeX Warning: Reference `fig: Schema a blocchi finale' on page 14 undefined on input line 449.
+
+
+LaTeX Warning: Reference `subsc: wien sbagliato' on page 14 undefined on input line 449.
+
+
+LaTeX Warning: Reference `sec:XR2206' on page 14 undefined on input line 450.
+
+
+LaTeX Warning: Reference `subsc: wien sbagliato' on page 14 undefined on input line 450.
+
+
+LaTeX Warning: Reference `fig:FiltroBP' on page 14 undefined on input line 450.
+
+[14 <./Immagini/sch_hp1_no_valori.pdf>]
+<Immagini/sch_crc_no_valori.png, id=318, 900.36375pt x 345.54094pt>
 File: Immagini/sch_crc_no_valori.png Graphic file (type png)
 <use Immagini/sch_crc_no_valori.png>
 Package pdftex.def Info: Immagini/sch_crc_no_valori.png  used on input line 455.
 (pdftex.def)             Requested size: 225.09038pt x 86.38501pt.
- [15 <./Immagini/sch_crc_no_valori.png>]
+
+
+LaTeX Warning: Reference `subsc: wien sbagliato' on page 15 undefined on input line 456.
+
+
+LaTeX Warning: Reference `subsc: wien sbagliato' on page 15 undefined on input line 456.
+
+
+LaTeX Warning: Reference `eq:fdt passa banda teo' on page 15 undefined on input line 460.
+
+
+LaTeX Warning: Reference `eq: partitore di tensione' on page 15 undefined on input line 469.
+
+
+LaTeX Warning: Reference `eq: partitore di tensione circa 1' on page 15 undefined on input line 469.
+
+
+LaTeX Warning: Reference `fig:BodeBP' on page 15 undefined on input line 481.
+
+<Immagini/bode_filtro_passa_banda_matlab.pdf, id=319, 597.23125pt x 306.5983pt>
+File: Immagini/bode_filtro_passa_banda_matlab.pdf Graphic file (type pdf)
+<use Immagini/bode_filtro_passa_banda_matlab.pdf>
+Package pdftex.def Info: Immagini/bode_filtro_passa_banda_matlab.pdf  used on input line 485.
+(pdftex.def)             Requested size: 477.78564pt x 245.27896pt.
+[15 <./Immagini/sch_crc_no_valori.png> <./Immagini/bode_filtro_passa_banda_matlab.pdf>]
 Capitolo 3.
-<Immagini/Antenna.jpg, id=478, 902.37125pt x 1604.99625pt>
+
+LaTeX Warning: Reference `fig:antenna' on page 16 undefined on input line 494.
+
+<Immagini/Antenna.jpg, id=354, 902.37125pt x 1604.99625pt>
 File: Immagini/Antenna.jpg Graphic file (type jpg)
 <use Immagini/Antenna.jpg>
-Package pdftex.def Info: Immagini/Antenna.jpg  used on input line 489.
+Package pdftex.def Info: Immagini/Antenna.jpg  used on input line 498.
 (pdftex.def)             Requested size: 225.59225pt x 401.24808pt.
+
+LaTeX Warning: Reference `fig:SINxr+LP' on page 16 undefined on input line 503.
+
+
+LaTeX Warning: Reference `fig:SINx' on page 16 undefined on input line 503.
+
+
+LaTeX Warning: Reference `fig:SINx' on page 16 undefined on input line 503.
+
+
+LaTeX Warning: Reference `fig:SINxr+LP' on page 16 undefined on input line 503.
+
 [16
 
  <./Immagini/Antenna.jpg>]
-<Immagini/sin_xr+lp.PNG, id=488, 803.0pt x 481.8pt>
+<Immagini/sin_xr+lp.PNG, id=362, 803.0pt x 481.8pt>
 File: Immagini/sin_xr+lp.PNG Graphic file (type png)
 <use Immagini/sin_xr+lp.PNG>
-Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 498.
+Package pdftex.def Info: Immagini/sin_xr+lp.PNG  used on input line 507.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/sin_xr.PNG, id=489, 803.0pt x 481.8pt>
+<Immagini/sin_xr.PNG, id=363, 803.0pt x 481.8pt>
 File: Immagini/sin_xr.PNG Graphic file (type png)
 <use Immagini/sin_xr.PNG>
-Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 506.
+Package pdftex.def Info: Immagini/sin_xr.PNG  used on input line 515.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [17 <./Immagini/sin_xr+lp.PNG (PNG copy)> <./Immagini/sin_xr.PNG (PNG copy)>]
-<Immagini/fft_xr+lp.PNG, id=500, 803.0pt x 481.8pt>
+
+
+LaTeX Warning: Reference `fig:FFTxr+LP' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Reference `tab:THD_XR2206+BP' on page 17 undefined on input line 520.
+
+
+LaTeX Warning: Reference `eq:thd' on page 17 undefined on input line 520.
+
+[17 <./Immagini/sin_xr+lp.PNG (PNG copy)> <./Immagini/sin_xr.PNG (PNG copy)>]
+<Immagini/fft_xr+lp.PNG, id=370, 803.0pt x 481.8pt>
 File: Immagini/fft_xr+lp.PNG Graphic file (type png)
 <use Immagini/fft_xr+lp.PNG>
-Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 515.
+Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 524.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [18 <./Immagini/fft_xr+lp.PNG (PNG copy)>]
-<Immagini/sch_osc_wien_cad.pdf, id=509, 600.92505pt x 438.55843pt>
+
+LaTeX Warning: Reference `sch:osc_wien' on page 19 undefined on input line 554.
+
+<Immagini/sch_osc_wien_cad.pdf, id=379, 600.92505pt x 438.55843pt>
 File: Immagini/sch_osc_wien_cad.pdf Graphic file (type pdf)
 <use Immagini/sch_osc_wien_cad.pdf>
-Package pdftex.def Info: Immagini/sch_osc_wien_cad.pdf  used on input line 549.
+Package pdftex.def Info: Immagini/sch_osc_wien_cad.pdf  used on input line 558.
 (pdftex.def)             Requested size: 300.46179pt x 219.27867pt.
-<Immagini/osc_wien+bp210k.PNG, id=510, 803.0pt x 481.8pt>
+<Immagini/osc_wien+bp210k.PNG, id=380, 803.0pt x 481.8pt>
 File: Immagini/osc_wien+bp210k.PNG Graphic file (type png)
 <use Immagini/osc_wien+bp210k.PNG>
-Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 558.
+Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 567.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [19 <./Immagini/sch_osc_wien_cad.pdf> <./Immagini/osc_wien+bp210k.PNG (PNG copy)>]
-<Immagini/fft_osc+bp210k.PNG, id=544, 803.0pt x 481.8pt>
+
+LaTeX Warning: Reference `fig:SINwien+BP' on page 19 undefined on input line 572.
+
+
+LaTeX Warning: Reference `fig:FFTwien+BP' on page 19 undefined on input line 572.
+
+
+LaTeX Warning: Reference `fig:SINwien+BP' on page 19 undefined on input line 574.
+
+
+LaTeX Warning: Reference `fig:FFTwien+BP' on page 19 undefined on input line 574.
+
+[19 <./Immagini/sch_osc_wien_cad.pdf> <./Immagini/osc_wien+bp210k.PNG (PNG copy)>]
+<Immagini/fft_osc+bp210k.PNG, id=412, 803.0pt x 481.8pt>
 File: Immagini/fft_osc+bp210k.PNG Graphic file (type png)
 <use Immagini/fft_osc+bp210k.PNG>
-Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 571.
+Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 580.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [20 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
-<Immagini/Wien sin giusto bread.PNG, id=561, 803.0pt x 481.8pt>
+
+
+LaTeX Warning: Reference `eq:thd' on page 20 undefined on input line 585.
+
+
+LaTeX Warning: Reference `tab:THD_WIEN' on page 20 undefined on input line 585.
+
+
+LaTeX Warning: Reference `tab:THD_WIEN+LP' on page 20 undefined on input line 585.
+
+
+LaTeX Warning: Reference `eq:thd' on page 20 undefined on input line 585.
+
+[20 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
+
+LaTeX Warning: Reference `fig:sch_osc_wien' on page 21 undefined on input line 629.
+
+
+LaTeX Warning: Reference `eq:osc_wien' on page 21 undefined on input line 629.
+
+
+LaTeX Warning: Reference `fig:SINwien breadboard' on page 21 undefined on input line 633.
+
+
+LaTeX Warning: Reference `fig:FFT SINwien breadboard' on page 21 undefined on input line 633.
+
+<Immagini/Wien sin giusto bread.PNG, id=420, 803.0pt x 481.8pt>
 File: Immagini/Wien sin giusto bread.PNG Graphic file (type png)
 <use Immagini/Wien sin giusto bread.PNG>
-Package pdftex.def Info: Immagini/Wien sin giusto bread.PNG  used on input line 629.
+Package pdftex.def Info: Immagini/Wien sin giusto bread.PNG  used on input line 638.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-<Immagini/FFT wien giusto bread.PNG, id=562, 803.0pt x 481.8pt>
+<Immagini/FFT wien giusto bread.PNG, id=421, 803.0pt x 481.8pt>
 File: Immagini/FFT wien giusto bread.PNG Graphic file (type png)
 <use Immagini/FFT wien giusto bread.PNG>
-Package pdftex.def Info: Immagini/FFT wien giusto bread.PNG  used on input line 636.
+Package pdftex.def Info: Immagini/FFT wien giusto bread.PNG  used on input line 645.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [21 <./Immagini/Wien sin giusto bread.PNG (PNG copy)>] [22 <./Immagini/FFT wien giusto bread.PNG (PNG copy)>]
-<Immagini/ad633_fft_mixed.PNG, id=579, 803.0pt x 481.8pt>
+[21 <./Immagini/Wien sin giusto bread.PNG (PNG copy)>]
+
+LaTeX Warning: Reference `tab:template' on page 22 undefined on input line 650.
+
+
+LaTeX Warning: Reference `tab:template2' on page 22 undefined on input line 669.
+
+
+LaTeX Warning: Reference `fig:SINwien breadboard' on page 22 undefined on input line 693.
+
+[22 <./Immagini/FFT wien giusto bread.PNG (PNG copy)>]
+
+LaTeX Warning: Reference `fig:FFTAD633' on page 23 undefined on input line 706.
+
+<Immagini/ad633_fft_mixed.PNG, id=437, 803.0pt x 481.8pt>
 File: Immagini/ad633_fft_mixed.PNG Graphic file (type png)
 <use Immagini/ad633_fft_mixed.PNG>
-Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 701.
+Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 710.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [23 <./Immagini/ad633_fft_mixed.PNG (PNG copy)>]
-<Immagini/lf353p_performance.pdf, id=587, 236.44513pt x 212.96779pt>
+[23 <./Immagini/ad633_fft_mixed.PNG (PNG copy)>]
+
+LaTeX Warning: Reference `eq: prodotto sinusoidi AD633' on page 24 undefined on input line 721.
+
+
+LaTeX Warning: Reference `eq:analog_multiply' on page 24 undefined on input line 722.
+
+
+LaTeX Warning: Reference `fig:bode_LF353P' on page 24 undefined on input line 727.
+
+<Immagini/lf353p_performance.pdf, id=443, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 723.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 732.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
-<Immagini/bode_lf353p.pdf, id=588, 242.80711pt x 203.29951pt>
+<Immagini/bode_lf353p.pdf, id=444, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 724.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 733.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
-<Immagini/bode_lp4.png, id=591, 974.13937pt x 560.59438pt>
+
+LaTeX Warning: Reference `fig:BODELp4Real' on page 24 undefined on input line 739.
+
+
+LaTeX Warning: Reference `fig:BODELp4Real' on page 24 undefined on input line 740.
+
+<Immagini/bode_lp4.png, id=445, 974.13937pt x 560.59438pt>
 File: Immagini/bode_lp4.png Graphic file (type png)
 <use Immagini/bode_lp4.png>
-Package pdftex.def Info: Immagini/bode_lp4.png  used on input line 735.
+Package pdftex.def Info: Immagini/bode_lp4.png  used on input line 744.
 (pdftex.def)             Requested size: 467.58159pt x 269.08224pt.
- [24 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
+[24 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
 pdfTeX warning: pdflatex (file ./Immagini/bode_lf353p.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Immagini/bode_lp2_tag.png, id=610, 996.72375pt x 548.54938pt>
+<Immagini/bode_lp2_tag.png, id=464, 996.72375pt x 548.54938pt>
 File: Immagini/bode_lp2_tag.png Graphic file (type png)
 <use Immagini/bode_lp2_tag.png>
-Package pdftex.def Info: Immagini/bode_lp2_tag.png  used on input line 742.
+Package pdftex.def Info: Immagini/bode_lp2_tag.png  used on input line 751.
 (pdftex.def)             Requested size: 478.42197pt x 263.3007pt.
  [25 <./Immagini/bode_lp4.png> <./Immagini/bode_lp2_tag.png>]
-<Immagini/gbp_ua741.pdf, id=619, 177.6133pt x 170.35326pt>
+
+LaTeX Warning: Reference `fig:gbp_ua741' on page 26 undefined on input line 764.
+
+<Immagini/gbp_ua741.pdf, id=473, 177.6133pt x 170.35326pt>
 File: Immagini/gbp_ua741.pdf Graphic file (type pdf)
 <use Immagini/gbp_ua741.pdf>
-Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 759.
+Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 768.
 (pdftex.def)             Requested size: 177.61285pt x 170.35283pt.
 
 
 pdfTeX warning: pdflatex (file ./Immagini/sch_hp1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/sch_hp1.pdf, id=620, 845.07724pt x 597.55246pt>
+<Immagini/sch_hp1.pdf, id=474, 845.07724pt x 597.55246pt>
 File: Immagini/sch_hp1.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1.pdf>
-Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 768.
+Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 777.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
 [26 <./Immagini/gbp_ua741.pdf>]
-<Immagini/hpf1_filter_response.png, id=652, 947.54pt x 561.59813pt>
+
+LaTeX Warning: Reference `fig:BODEHp1Real' on page 27 undefined on input line 782.
+
+
+LaTeX Warning: Reference `fig:FFTfinale' on page 27 undefined on input line 782.
+
+<Immagini/hpf1_filter_response.png, id=505, 947.54pt x 561.59813pt>
 File: Immagini/hpf1_filter_response.png Graphic file (type png)
 <use Immagini/hpf1_filter_response.png>
-Package pdftex.def Info: Immagini/hpf1_filter_response.png  used on input line 777.
+Package pdftex.def Info: Immagini/hpf1_filter_response.png  used on input line 786.
 (pdftex.def)             Requested size: 454.81403pt x 269.56404pt.
- [27 <./Immagini/sch_hp1.pdf>] [28 <./Immagini/hpf1_filter_response.png>]
+[27 <./Immagini/sch_hp1.pdf>] [28 <./Immagini/hpf1_filter_response.png>]
+
+LaTeX Warning: Reference `fig:Schematico Completo' on page 29 undefined on input line 796.
+
+
 
 pdfTeX warning: pdflatex (file ./Immagini/Schematico Completo.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Immagini/Schematico Completo.pdf, id=675, 1194.98447pt x 845.07724pt>
+<Immagini/Schematico Completo.pdf, id=526, 1194.98447pt x 845.07724pt>
 File: Immagini/Schematico Completo.pdf Graphic file (type pdf)
 <use Immagini/Schematico Completo.pdf>
-Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 791.
+Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 800.
 (pdftex.def)             Requested size: 477.98532pt x 338.0249pt.
-<Immagini/fft_ad633+lp4.PNG, id=679, 803.0pt x 481.8pt>
+
+LaTeX Warning: Reference `fig:FFTwien+BP' on page 29 undefined on input line 806.
+
+
+LaTeX Warning: Reference `fig:FFTxr+LP' on page 29 undefined on input line 806.
+
+
+LaTeX Warning: Reference `fig:FFTAD33+LP4' on page 29 undefined on input line 808.
+
+<Immagini/fft_ad633+lp4.PNG, id=527, 803.0pt x 481.8pt>
 File: Immagini/fft_ad633+lp4.PNG Graphic file (type png)
 <use Immagini/fft_ad633+lp4.PNG>
-Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 803.
+Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 812.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 [29 <./Immagini/Schematico Completo.pdf>]
-<Immagini/ftt_ad633+lp4+hp1_final.PNG, id=696, 803.0pt x 481.8pt>
+
+LaTeX Warning: Reference `fig:FFTfinale' on page 30 undefined on input line 818.
+
+<Immagini/ftt_ad633+lp4+hp1_final.PNG, id=543, 803.0pt x 481.8pt>
 File: Immagini/ftt_ad633+lp4+hp1_final.PNG Graphic file (type png)
 <use Immagini/ftt_ad633+lp4+hp1_final.PNG>
-Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 813.
-(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
- [30 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
-<Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=704, 803.0pt x 481.8pt>
-File: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG Graphic file (type png)
-<use Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG>
-Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 822.
+Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 822.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 828--835
+LaTeX Warning: Reference `fig:FFTAD33+LP4' on page 30 undefined on input line 827.
+
+
+LaTeX Warning: Reference `sec:OpAmp' on page 30 undefined on input line 827.
+
+[30 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
+<Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=551, 803.0pt x 481.8pt>
+File: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG Graphic file (type png)
+<use Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG>
+Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 831.
+(pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
+
+
+LaTeX Warning: Reference `fig:SINwien+BP' on page 31 undefined on input line 840.
+
+
+LaTeX Warning: Reference `tab:Distanza-Frequenza' on page 31 undefined on input line 842.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 837--844
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Immagini/sens_poly.jpg, id=709, 1204.5pt x 712.91344pt>
+
+LaTeX Warning: Reference `tab:Distanza-Frequenza' on page 31 undefined on input line 897.
+
+
+LaTeX Warning: Reference `fig:sens_sistema' on page 31 undefined on input line 898.
+
+<Immagini/sens_poly.jpg, id=552, 1204.5pt x 712.91344pt>
 File: Immagini/sens_poly.jpg Graphic file (type jpg)
 <use Immagini/sens_poly.jpg>
-Package pdftex.def Info: Immagini/sens_poly.jpg  used on input line 892.
+Package pdftex.def Info: Immagini/sens_poly.jpg  used on input line 901.
 (pdftex.def)             Requested size: 481.79147pt x 285.16032pt.
 [31 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>] [32 <./Immagini/sens_poly.jpg>]
 Capitolo 4.
+
+LaTeX Warning: Reference `tab:Distanza-Frequenza' on page 33 undefined on input line 915.
+
 [33
 
-] [34] (Theremin.lof [35
-
-])
+] [34]
+No file Theremin.lof.
 \tf@lof=\write6
 \openout6 = `Theremin.lof'.
 
- [36] (Theremin.lot)
+[35
+
+]
+No file Theremin.lot.
 \tf@lot=\write7
 \openout7 = `Theremin.lot'.
 
- [37
-
-] (Theremin.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `Theremin.out' has not changed.
-(rerunfilecheck)             Checksum: 8CD666EC8A9C05F5CE2C7D668B1C3D64;3895.
-Package logreq Info: Writing requests to 'Theremin.run.xml'.
-\openout1 = `Theremin.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 21055 strings out of 475281
- 380412 string characters out of 2774065
- 923950 words of memory out of 3000000
- 42091 multiletter control sequences out of 15000+600000
- 475755 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,10n,77p,1903b,1645s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\bresc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/bresc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Theremin.pdf (38 pages, 2383074 bytes).
-PDF statistics:
- 910 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+[36
