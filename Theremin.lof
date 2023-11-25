@@ -16,7 +16,7 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Filtro attivo di ordine 4.}}{13}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Diagramma di Bode del modulo del filtro.}}{13}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Schematico del filtro passa alto attio del primo ordine, con guadagno per compensare l'attenuazioen itordotta dal mixer. Posto in uscita dal filtro passa basso del quarto ordine.}}{14}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nel paragrafo \ref {subsc: wien sbagliato}}}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nella sezione \ref {sec:osc_wien}}}{15}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Diagramma di Bode del filtro passa banda passivo con evidenziati il polo e gli zeri.}}{15}{figure.caption.18}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Foto dell'antenna utilizzata come capacità variabile}}{16}{figure.caption.19}%

@@ -268,7 +268,7 @@
 	\noindent Analizzando la $f.d.t$ del circuito, riportata nell'equazione \ref{eq: fdt wien} si osserva che il prodotto $A\cdot B$ deve essere 1, overo che sia soddisfatta la condizione di risonanza \textit{$\omega = \omega_0$}.
  
 	\begin{equation}
-		\label{eq:LF356_Gain}
+		\label{eq:LF356_Gain1}
 		T(j\omega) = \frac{1 + \frac{R_2}{R_1}}{3 + j(\frac{\omega}{\omega_0} - \frac{\omega_0}{\omega})}
 		\label{eq: fdt wien}
 	\end{equation}
@@ -276,7 +276,7 @@
 	Il blocco di forward A è rappresentato dal guadagno del circuito ovvero:
 
 	\begin{equation}
-		\label{eq:LF356_Gain}
+		\label{eq:LF356_Gain2}
 		A = 1 + \frac{R_2}{R_1}
 	\end{equation}
 
@@ -446,14 +446,14 @@ Imponendo una \textit{C} pari a \textit{$47nF$}, per ottenere una $f_t$ pari a \
 
 \section{Filtro passa banda passivo}
 \label{sc: passa banda teoria}
-Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 edall'oscillatore riportato nella sezione \ref{subsc: wien sbagliato}. 
-\noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce un offset per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}; mentre l'oscillatore nella sezione \ref{subsc: wien sbagliato} si presentava con un pessimo \textit{THD} dovuto alla presenza di diverse aroniche indesiderate. Quindi, al fine di evitare la comparsa di più armoniche indesiderate in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura \ref{fig:FiltroBP}.
+Anche se nello schema riportato in figura \ref{fig: Schema a blocchi finale} i filtri passa banda vengono posti all'inizio, sono stati messi come ultimo sezione in quanto la loro necessità si è presentata solo dopo una prima anlisi dei segnali in uscita dall'XR2206 edall'oscillatore riportato nella sezione \ref{sec:osc_wien}. 
+\noindent Visto che i due segnali impiegati nella misurazioni presentavano delle componenti in continua, sopratutto il segnale in uscita dall'XR2206 che introduce un offset per garantire l'oscillazione con un'alimetazione singola, come spiegato nella sezione \ref{sec:XR2206}; mentre l'oscillatore nella sezione \ref{sec:osc_wien} presenta un \textit{THD} elevato. Quindi, al fine di evitare di ottenere ulteriore distorsione in uscita dal mixer si è deciso di introdurre il filtro passa banda passivo riportato in figura \ref{fig:FiltroBP}.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.25]{Immagini/sch_crc_no_valori.png}
-	\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nel paragrafo \ref{subsc: wien sbagliato}}
+	\caption{Schematico del filtro passa banda passivo meso in uscita dal XR2206 e in uscita all'oscillatore riportato nella sezione \ref{sec:osc_wien}}
 	\label{fig:FiltroBP}
 \end{figure}
 
@@ -554,7 +554,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 		\centering
 		\includegraphics[scale=0.5]{Immagini/sch_osc_wien.jpg}
 		\caption{Schematico dell'oscillatore di Wien utilizzato}
-		\label{fig:sch_osc_wien}
+		\label{fig:sch_osc_wien2}
 	\end{figure}
 
 	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzurro si può notare che la sinusoide satura sulla semionda negativa e le pendenze di salita a discesa sono differenti. Questo accade quando il valore di resistenza utilizzato dei potenziometri è comparabile. La saturazione del segnale di uscita dell'integrato porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato dal segnale in bianco mostrato in \textit{Figura \ref{fig:FFTwien+BP}}.
@@ -636,7 +636,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 		\label{fig:FFTAD633}
 	\end{figure}
 
-	Quello che si evince osservando la figura \ref{fig:FFTAD633} è che le armoniche presenti alle frequenze superiori a quelle di interesse nei due segnali e in ingresso all'integrato, visibili nelle figure \ref{fig:FFT SINwien breadboard} e \ref{fig:FFTwien+BP}, comportano la presenza delle armoniche fondamentali conseguenti al prodotto tra le due sinusoidi. Inoltre, l'ampiezza maggiore delle armoniche di alta frequenza rispetto a quelle in bassa frequenza, è dovuto alla sovrapposizione dei prodotti misti tra armoniche indesiderate e fondamentali dei segnali. In particolar modo, i prodotti in cui le frequenze si sommano, si sovrappongono a quelli in cui le frequenze si sottraggono. La figura \ref{fig:FFTAD633mark} evidenzia le armoniche citate.
+	Quello che si evince osservando la figura \ref{fig:FFTAD633} è che le armoniche presenti alle frequenze superiori a quelle di interesse nei due segnali e in ingresso all'integrato, visibili nelle figure \ref{fig:FFTAD633} e \ref{fig:FFTwien+BP}, comportano la presenza delle armoniche fondamentali conseguenti al prodotto tra le due sinusoidi. Inoltre, l'ampiezza maggiore delle armoniche di alta frequenza rispetto a quelle in bassa frequenza, è dovuto alla sovrapposizione dei prodotti misti tra armoniche indesiderate e fondamentali dei segnali. In particolar modo, i prodotti in cui le frequenze si sommano, si sovrappongono a quelli in cui le frequenze si sottraggono. La figura \ref{fig:FFTAD633mark} evidenzia le armoniche citate.
 
 	\begin{figure}
 		\centering
