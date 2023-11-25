@@ -703,8 +703,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 
 	Una delle problematiche riscontrate durante l'utilizzo del mixer è stata la manifestazione di un offset del segnale dovuto all'impossibilità degli ingressi di scaricare le correnti di bias verso massa. Questo ha portato alla comparsa di offset negativo e alla cancellazione delle altre armoniche in uscita.
 
-	La soluzione si è trovata inserendo una resistenza di valore \textit{680k$\Omega$} agli ingressi del mixer, creando un percorso verso massa per le correnti di bias. La scelta di tale valore è dovuta al compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore formato con la resistenza del filtro. La scelta di un valore errato produrrebbe un'attenuazione indesiderata del segnale di ingresso al mixer. Il resistore scelto evita l'attenuazione del segnale e salvaguarda l'alta impedenza del componente. Il risultato che si è ottenuto è mostrato in \textit{Figura \ref{fig:FFTAD633}}, dove è possibile osservare le due armoniche fondamentali generate dal prodotto delle due sinusoidi, esattamente come ci si aspetta dalla teoria.
-
+	La soluzione si è trovata inserendo una resistenza di valore \textit{680k$\Omega$} agli ingressi del mixer, creando un percorso verso massa per le correnti di bias. La scelta di tale valore è dovuta al compromesso tra l'ingresso ad alta impedenza dell'AD633 e il partitore formato con la resistenza del filtro. La scelta di un valore errato produrrebbe un'attenuazione indesiderata del segnale di ingresso al mixer. Il resistore scelto evita l'attenuazione del segnale e salvaguarda l'alta impedenza del componente. Ciò che si è ottenuto è mostrato in \textit{Figura \ref{fig:FFTAD633}}, dove è possibile osservare il risultato della moltiplicazione di due segnali sinusoidali nel dominio delle frequenze.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale = 0.5]{Immagini/ad633_fft_mixed.PNG}
@@ -712,7 +711,14 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 		\label{fig:FFTAD633}
 	\end{figure}
 
+	Quello che si evince osservando la figura \ref{fig:FFTAD633} è che le armoniche presenti alle frequenze superiori a quelle di interesse nei due segnali e in ingresso all'integrato, visibili nelle figure \ref{fig:FFT SINwien breadboard} e \ref{fig:FFTwien+BP}, comportano la presenza delle armoniche fondamentali conseguenti al prodotto tra le due sinusoidi. Inoltre, l'ampiezza maggiore delle armoniche di alta frequenza rispetto a quelle in bassa frequenza, è dovuto alla sovrapposizione dei prodotti misti tra armoniche indesiderate e fondamentali dei segnali. In particolar modo, i prodotti in cui le frequenze si sommano, si sovrappongono a quelli in cui le frequenze si sottraggono. La figura \ref{fig:FFTAD633mark} evidenzia le armoniche citate.
 
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.75]{Immagini/ad633_edited.png}
+		\caption{Armoniche coinvolte nella sovrapposizione messe in evidenza}
+		\label{fig:FFTAD633mark}
+	\end{figure}
 
 	\label{ch:Risultati}
 	
@@ -895,7 +901,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 	\end{table}
 	
 	Dalla tabella \ref{tab:Distanza-Frequenza} si è calcolato la sensibilità relativa del sistema completo al variare della distanza della mano dall'antenna. \newline
-	In figura \ref{fig:sens_sistema} vengono mostrati i punti ottenuti sperimentalmente e una curva ottenuta con un'approssimazione ai minimi quadrati utilizzando un polinomio di grado 5.
+	In figura \ref{fig:sens_sistema} vengono mostrati i punti ottenuti sperimentalmente e una curva ottenuta con un'approssimazione ai minimi quadrati utilizzando un polinomio di grado 3. Dalla figura è possibile osservare come la sensibilità sia molto elevata per distanze mano-antenna molto piccole, mentre sia pressoché nulla quando la mano supera gli 8 cm di distanza dall'antenna.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale = 0.4]{Immagini/sens_poly.jpg}
@@ -912,6 +918,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 
 \chapter{Conclusioni}
  	\label{ch:Conclusioni}
+
 	In conclusione, il circuito realizzato rispetta le specifiche di progetto, in quanto testando con un generatore di funzione i filtri, in uscita essi garantiscono il passaggio di sinusoidi con frequenza compresa tra \textit{20Hz e 20kHz}. Osservando la \textit{Tabella \ref{tab:Distanza-Frequenza}} si può osservare che i limiti inferiore e superiore concordano con la scelta di un oscillazione di \textit{245kHz} per l'oscillatore di Wien. Infatti, l'uscita complessiva del sistema oscilla tra \textit{22kHz} in assenza della mano, fino a \textit{1kHz} quando la mano è in prossimità dell'antenna. Il risultato non è ottimo ma abbastanza soddisfacente visti i limiti fisici dovuti agli strumenti a disposizione. Infatti, il limite inferiore di oscillazione del sistema è dovuto soltato ai disturbi generati dall'antenna quando la mano è molto vicina (circa 2cm di distanza). Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
 	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema realizzato. La risoluzione infatti non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna il sistema risulta meno sensibile. Infatti, non è possibile rilevare variazioni inferiori al \textit{kHz}.
 	Il problema della risoluzione potrebbe essere risolto migliorando il sistema utilizzato per la realizzazione della capacità variabile. Inoltre, aumentando la frequenza di oscillazione dell'\textit{XR2206} è possibile ottenere una sensibilità maggiore poiché per aumentare la frequenza di oscillazione è necessario utilizzare capacità molto piccole (dell'ordine del pF) confrontabili con la capacità formata tra antenna e mano. Questo fa in modo di attuare una variazione di capacità molto incisiva per la generazione del segnale, il quale avrà una risoluzione maggiore.
