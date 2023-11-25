@@ -548,19 +548,18 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 \section{Oscillatore di Wien}
 \label{sc: oscillatore wien sperimentale}
 
-	\subsection{Oscillatore quasi di Wien}
-	\label{subsc: wien sbagliato}
 
 	In figura \ref{sch:osc_wien} è riportato il circuito finale utilizzato per la realizzazione dell'oscillatore di Wien.
+	In figura \ref{fig:sch_osc_wien} è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di 245 \textit{kHz}. La frequenza è stata ottenuta sostituendo nell'equazione \ref{eq:osc_wien} il valore di \textit{C} pari a \textit{330pF} e una \textit{R} pari a \textit{$2 k\Omega$}. Inoltre si è scelto di usare una \textit{R2a} di \textit{2M\Omega} per garantire un passaggio di corrente tra uscita e ingresso.
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5]{Immagini/sch_osc_wien_cad.pdf}
+		\includegraphics[scale=0.5]{Immagini/sch_osc_wien.jpg}
 		\caption{Schematico dell'oscillatore di Wien utilizzato}
-		\label{sch:osc_wien}
+		\label{fig:sch_osc_wien}
 	\end{figure}
 
-	Si può notare che sono stati aggiunti due potenziometri, $R3$ e $R4$ rispettivamente, del valore  $1k\Omega$,  in serie alle resistenze $R5$ e $R6$, del valore di  $1k\Omega$. Tale scelta è stata fatta per accordare l'oscillazione del segnale e ridurre quindi la distorsione armonica. Tuttavia si è notato che la presenza di questi ultimi può portare alla perdita dell'oscillazione stessa, in quanto se i due potenziometri hanno valori simili viene meno la condizione di oscillazione del circuito. Grazie ai potenziometri  si ha la possibilità di sbilanciare il ponte rendendo possibile l'avviarsi dell'oscillatore ottenendo un'oscillazione continua e con una possibilità di regolare le caratteristiche del segnale generato.
+	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzurro si può notare che la sinusoide satura sulla semionda negativa e le pendenze di salita a discesa sono differenti. Questo accade quando il valore di resistenza utilizzato dei potenziometri è comparabile. La saturazione del segnale di uscita dell'integrato porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato dal segnale in bianco mostrato in \textit{Figura \ref{fig:FFTwien+BP}}.
 
 	\begin{figure}[H]
 		\centering
@@ -569,7 +568,6 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 		\label{fig:SINwien+BP}
 	\end{figure}
 
-	La figura \ref{fig:SINwien+BP} mostra l'uscita dell'oscillatore di Wien. In azzurro si può notare che la sinusoide satura sulla semionda negativa e le pendenze di salita a discesa sono differenti. Questo accade quando il valore di resistenza utilizzato dei potenziometri è comparabile. La saturazione del segnale di uscita dell'integrato porta all'introduzione di altre armoniche oltre alla fondamentale, come mostrato dal segnale in bianco mostrato in \textit{Figura \ref{fig:FFTwien+BP}}.
 	Per risolvere questo problema è stato aggiunto un filtro passivo all'uscita dell'oscillatore. Il filtro è di tipo passa banda formato da un condensatore per tagliare la continua, seguito da un passa basso RC ($R = 7.5k\Omega$; $C = 100pF; f_c = 212kHz$).
 	L'aggiunta di questo filtro porta un notevole miglioramento del segnale di uscita. Tale miglioramento è osservabile sia in \textit{Figura \ref{fig:SINwien+BP}} (sinusoide in giallo), dove si può notare l'assenza di saturazione delle semionde e fronti di salita e discesa pressoché identici, che in figura \ref{fig:FFTwien+BP} dove di può notare la notevole riduzione delle armoniche nello spettro del segnale.
 
@@ -622,77 +620,6 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 		\caption{Ampiezze delle armoniche del segnale filtrato con il filtro passa basso in cascata all'oscillatore di Wien.}
 		\label{tab:THD_WIEN+LP}
 	\end{table}
-
-	\subsection{Oscillatore di Wien}
-	\label{subsc: wien giusto}
-
-	In figura \ref{fig:sch_osc_wien} è riportato lo schematico dell'oscillatore di Wien utilizzato per generare la sinusoide di riferimento alla frequenza di TODO \textit{kHz}. La frequenza è stata ottenuta sostituendo nell'equazione \ref{eq:osc_wien} il valore di \textit{C} pari a \textit{330pF} e una \textit{R} pari a \textit{$2 k\Omega$}.
-
-	IMMAGINE
-
-	L'oscillatore è stato montato prima su una breadboard, dove si può notare la sinusoide in uscita in figura \ref{fig:SINwien breadboard} e la sua \textit{FFT} in figura \ref{fig:FFT SINwien breadboard}.
-
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/Wien sin giusto bread.PNG}
-		\caption{Sinusoide in uscita dall'oscillatore di Wien montato si breadboard}
-		\label{fig:SINwien breadboard}
-	\end{figure} 
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{Immagini/FFT wien giusto bread.PNG}
-		\caption{FFT della sinusoide in uscita dall'oscillatore di Wien montato si breadboard}
-		\label{fig:FFT SINwien breadboard}
-	\end{figure} 
-
-	Successivamente si è calcolato il \textit{THD} della sinusoide e i risultati sono riportati nella tabella \ref{tab:template}
-
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{||c|c|c||}
-			\hline
-			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
-			\hline
-			Fondamentale & 3800 &\\
-			\cline{1-2}
-			$2^a$ armonica & 400 & 10.61 \\
-			\cline{1-2} 
-			$3^a$ armonica & 50 & \\
-			\hline	
-		\end{tabular}
-		\caption{TABELLA DA FARE QUI COME TEMPLATE}
-		\label{tab:template}
-	\end{table}
-
-	Si è spostato il crcuito su basetta millefori. Ottenendo il seganle riportato in figura ZIOBESTIA, la cui \textit{FFT} è riportata in figura ZIOBESTIA2 e il \textit{THD} riportato in tabella \ref{tab:template2}.
-
-	Immagine
-
-	Immagine
-
-
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{||c|c|c||}
-			\hline
-			\cellcolor{gray!10}Armonica & \cellcolor{gray!10}Ampiezza [mV] & \cellcolor{gray!10}THD (\%) \\
-			\hline
-			Fondamentale & 3800 &\\
-			\cline{1-2}
-			$2^a$ armonica & 400 & 10.61 \\
-			\cline{1-2} 
-			$3^a$ armonica & 50 & \\
-			\hline	
-		\end{tabular}
-		\caption{TABELLA DA FARE QUI COME TEMPLATE}
-		\label{tab:template2}
-	\end{table}
-
-	Si può notare che i due segneli, quello in figura \ref{fig:SINwien breadboard} e quello in figura ZIOBESTIA presentano una frequenza di oscillazione differente, la prima di circa \textit{177 kHz} e la seconda di \textit{245 kHz}. Questo è dovuto alle capacità parassite introdote dalla breadboard che aggiungono un offset capacitivo pari a circa \textit{88 pF}.
-
-
 
 
 \section{Mixer}
