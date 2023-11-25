@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.25)  25 NOV 2023 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.25)  25 NOV 2023 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,76 +918,46 @@ File: Immagini/fft_xr+lp.PNG Graphic file (type png)
 Package pdftex.def Info: Immagini/fft_xr+lp.PNG  used on input line 524.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [18 <./Immagini/fft_xr+lp.PNG (PNG copy)>]
-
-LaTeX Warning: Reference `sch:osc_wien' on page 19 undefined on input line 552.
-
-/home/b/Progetti/theremin-psea/Theremin.tex:553: Missing $ inserted.
-<inserted text> 
-                $
-l.553 ...are una \textit{R2a} di \textit{2M\Omega}
-                                                   per garantire un passaggi...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/b/Progetti/theremin-psea/Theremin.tex:553: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.553 ...are una \textit{R2a} di \textit{2M\Omega}
-                                                   per garantire un passaggi...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/b/Progetti/theremin-psea/Theremin.tex:554: Missing $ inserted.
-<inserted text> 
-                $
-l.554 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 File: Immagini/sch_osc_wien.jpg Graphic file (type jpg)
 <use Immagini/sch_osc_wien.jpg>
-Package pdftex.def Info: Immagini/sch_osc_wien.jpg  used on input line 557.
+Package pdftex.def Info: Immagini/sch_osc_wien.jpg  used on input line 555.
 (pdftex.def)             Requested size: 338.3884pt x 268.0006pt.
 <Immagini/osc_wien+bp210k.PNG, id=529, 803.0pt x 481.8pt>
 File: Immagini/osc_wien+bp210k.PNG Graphic file (type png)
 <use Immagini/osc_wien+bp210k.PNG>
-Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 566.
+Package pdftex.def Info: Immagini/osc_wien+bp210k.PNG  used on input line 564.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
-[19]
+ [19]
 <Immagini/fft_osc+bp210k.PNG, id=538, 803.0pt x 481.8pt>
 File: Immagini/fft_osc+bp210k.PNG Graphic file (type png)
 <use Immagini/fft_osc+bp210k.PNG>
-Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 578.
+Package pdftex.def Info: Immagini/fft_osc+bp210k.PNG  used on input line 576.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [20{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Immagini/osc_wien+bp210k.PNG (PNG copy)>] [21 <./Immagini/fft_osc+bp210k.PNG (PNG copy)>]
 <Immagini/ad633_fft_mixed.PNG, id=555, 803.0pt x 481.8pt>
 File: Immagini/ad633_fft_mixed.PNG Graphic file (type png)
 <use Immagini/ad633_fft_mixed.PNG>
-Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 636.
+Package pdftex.def Info: Immagini/ad633_fft_mixed.PNG  used on input line 634.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
 
-LaTeX Warning: Reference `fig:FFT SINwien breadboard' on page 22 undefined on input line 641.
+LaTeX Warning: Reference `fig:FFT SINwien breadboard' on page 22 undefined on input line 639.
 
 <Immagini/ad633_edited.png, id=559, 570.13pt x 340.27126pt>
 File: Immagini/ad633_edited.png Graphic file (type png)
 <use Immagini/ad633_edited.png>
-Package pdftex.def Info: Immagini/ad633_edited.png  used on input line 645.
+Package pdftex.def Info: Immagini/ad633_edited.png  used on input line 643.
 (pdftex.def)             Requested size: 427.59645pt x 255.2028pt.
 [22 <./Immagini/ad633_fft_mixed.PNG (PNG copy)>]
 <Immagini/lf353p_performance.pdf, id=568, 236.44513pt x 212.96779pt>
 File: Immagini/lf353p_performance.pdf Graphic file (type pdf)
 <use Immagini/lf353p_performance.pdf>
-Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 665.
+Package pdftex.def Info: Immagini/lf353p_performance.pdf  used on input line 663.
 (pdftex.def)             Requested size: 217.66211pt x 196.05296pt.
 <Immagini/bode_lf353p.pdf, id=569, 242.80711pt x 203.29951pt>
 File: Immagini/bode_lf353p.pdf Graphic file (type pdf)
 <use Immagini/bode_lf353p.pdf>
-Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 666.
+Package pdftex.def Info: Immagini/bode_lf353p.pdf  used on input line 664.
 (pdftex.def)             Requested size: 237.01411pt x 198.45663pt.
 
 
@@ -996,13 +966,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Immagini/bode_lp4.png, id=572, 974.13937pt x 560.59438pt>
 File: Immagini/bode_lp4.png Graphic file (type png)
 <use Immagini/bode_lp4.png>
-Package pdftex.def Info: Immagini/bode_lp4.png  used on input line 677.
+Package pdftex.def Info: Immagini/bode_lp4.png  used on input line 675.
 (pdftex.def)             Requested size: 467.58159pt x 269.08224pt.
 [23 <./Immagini/ad633_edited.png>]
 <Immagini/bode_lp2_tag.png, id=582, 996.72375pt x 548.54938pt>
 File: Immagini/bode_lp2_tag.png Graphic file (type png)
 <use Immagini/bode_lp2_tag.png>
-Package pdftex.def Info: Immagini/bode_lp2_tag.png  used on input line 684.
+Package pdftex.def Info: Immagini/bode_lp2_tag.png  used on input line 682.
 (pdftex.def)             Requested size: 478.42197pt x 263.3007pt.
  [24 <./Immagini/lf353p_performance.pdf> <./Immagini/bode_lf353p.pdf
 
@@ -1011,7 +981,7 @@ pdfTeX warning: /usr/local/texlive/2023/bin/x86_64-linux/pdflatex (file ./Immagi
 <Immagini/gbp_ua741.pdf, id=606, 177.6133pt x 170.35326pt>
 File: Immagini/gbp_ua741.pdf Graphic file (type pdf)
 <use Immagini/gbp_ua741.pdf>
-Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 701.
+Package pdftex.def Info: Immagini/gbp_ua741.pdf  used on input line 699.
 (pdftex.def)             Requested size: 177.61285pt x 170.35283pt.
 
 
@@ -1019,13 +989,13 @@ pdfTeX warning: /usr/local/texlive/2023/bin/x86_64-linux/pdflatex (file ./Immagi
 <Immagini/sch_hp1.pdf, id=607, 845.07724pt x 597.55246pt>
 File: Immagini/sch_hp1.pdf Graphic file (type pdf)
 <use Immagini/sch_hp1.pdf>
-Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 710.
+Package pdftex.def Info: Immagini/sch_hp1.pdf  used on input line 708.
 (pdftex.def)             Requested size: 422.53758pt x 298.7755pt.
 [26 <./Immagini/gbp_ua741.pdf>]
 <Immagini/hpf1_filter_response.png, id=639, 947.54pt x 561.59813pt>
 File: Immagini/hpf1_filter_response.png Graphic file (type png)
 <use Immagini/hpf1_filter_response.png>
-Package pdftex.def Info: Immagini/hpf1_filter_response.png  used on input line 719.
+Package pdftex.def Info: Immagini/hpf1_filter_response.png  used on input line 717.
 (pdftex.def)             Requested size: 454.81403pt x 269.56404pt.
  [27 <./Immagini/sch_hp1.pdf>] [28 <./Immagini/hpf1_filter_response.png>]
 
@@ -1033,27 +1003,27 @@ pdfTeX warning: /usr/local/texlive/2023/bin/x86_64-linux/pdflatex (file ./Immagi
 <Immagini/Schematico Completo.pdf, id=662, 1194.98447pt x 845.07724pt>
 File: Immagini/Schematico Completo.pdf Graphic file (type pdf)
 <use Immagini/Schematico Completo.pdf>
-Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 733.
+Package pdftex.def Info: Immagini/Schematico Completo.pdf  used on input line 731.
 (pdftex.def)             Requested size: 477.98532pt x 338.0249pt.
 <Immagini/fft_ad633+lp4.PNG, id=666, 803.0pt x 481.8pt>
 File: Immagini/fft_ad633+lp4.PNG Graphic file (type png)
 <use Immagini/fft_ad633+lp4.PNG>
-Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 745.
+Package pdftex.def Info: Immagini/fft_ad633+lp4.PNG  used on input line 743.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 [29 <./Immagini/Schematico Completo.pdf>]
 <Immagini/ftt_ad633+lp4+hp1_final.PNG, id=683, 803.0pt x 481.8pt>
 File: Immagini/ftt_ad633+lp4+hp1_final.PNG Graphic file (type png)
 <use Immagini/ftt_ad633+lp4+hp1_final.PNG>
-Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 755.
+Package pdftex.def Info: Immagini/ftt_ad633+lp4+hp1_final.PNG  used on input line 753.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
  [30 <./Immagini/fft_ad633+lp4.PNG (PNG copy)> <./Immagini/ftt_ad633+lp4+hp1_final.PNG (PNG copy)>]
 <Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG, id=691, 803.0pt x 481.8pt>
 File: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG Graphic file (type png)
 <use Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG>
-Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 764.
+Package pdftex.def Info: Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG  used on input line 762.
 (pdftex.def)             Requested size: 401.49902pt x 240.8994pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--777
+Underfull \hbox (badness 10000) in paragraph at lines 768--775
 
  []
 
@@ -1063,7 +1033,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Immagini/sens_poly.jpg, id=696, 1204.5pt x 580.41844pt>
 File: Immagini/sens_poly.jpg Graphic file (type jpg)
 <use Immagini/sens_poly.jpg>
-Package pdftex.def Info: Immagini/sens_poly.jpg  used on input line 834.
+Package pdftex.def Info: Immagini/sens_poly.jpg  used on input line 832.
 (pdftex.def)             Requested size: 481.79147pt x 232.16325pt.
 [31 <./Immagini/sin_ad633+lp4_ad633+lp4+hp1.PNG (PNG copy)>] [32 <./Immagini/sens_poly.jpg>]
 Capitolo 4.
@@ -1102,21 +1072,17 @@ Package rerunfilecheck Info: File `Theremin.out' has not changed.
 Package logreq Info: Writing requests to 'Theremin.run.xml'.
 \openout1 = `Theremin.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 553 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 21028 strings out of 474267
- 376335 string characters out of 5747435
- 1942555 words of memory out of 5000000
- 42850 multiletter control sequences out of 15000+600000
- 564605 words of font info for 57 fonts, out of 8000000 for 9000
+ 21026 strings out of 474267
+ 376309 string characters out of 5747435
+ 1941555 words of memory out of 5000000
+ 42848 multiletter control sequences out of 15000+600000
+ 564565 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,10n,81p,1904b,1751s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Theremin.pdf (38 pages, 2650754 bytes).
+ 67i,10n,81p,1904b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Theremin.pdf (38 pages, 2648065 bytes).
 PDF statistics:
  897 PDF objects out of 1000 (max. 8388607)
  703 compressed objects within 8 object streams
