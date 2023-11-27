@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.25)  25 NOV 2023 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.25)  27 NOV 2023 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -570,11 +570,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./Theremin.aux
-
-LaTeX Warning: Label `eq:LF356_Gain' multiply defined.
-
-)
+ (./Theremin.aux)
 \openout1 = `Theremin.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1019,17 +1015,17 @@ Package pdftex.def Info: Immagini/sens_poly.jpg  used on input line 832.
 Capitolo 4.
 [33
 
-] [34] (./Theremin.lof [35
+] (./Theremin.lof [34
 
 ])
 \tf@lof=\write6
 \openout6 = `Theremin.lof'.
 
- [36] (./Theremin.lot)
+ [35] (./Theremin.lot)
 \tf@lot=\write7
 \openout7 = `Theremin.lot'.
 
- [37
+ [36
 
 ] (./Theremin.aux)
  ***********
@@ -1038,27 +1034,33 @@ L3 programming layer <2023-11-09>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package rerunfilecheck Warning: File `Theremin.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `Theremin.out' has not changed.
-(rerunfilecheck)             Checksum: 84B1D3E0D1CEBF61AF7B876BBE0B30BC;3536.
+Package rerunfilecheck Info: Checksums for `Theremin.out':
+(rerunfilecheck)             Before: 84B1D3E0D1CEBF61AF7B876BBE0B30BC;3536
+(rerunfilecheck)             After:  DD85C0C3EB067CEA9391AA444B3D5D1D;3436.
 Package logreq Info: Writing requests to 'Theremin.run.xml'.
 \openout1 = `Theremin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21026 strings out of 474267
- 376294 string characters out of 5747435
+ 21024 strings out of 474267
+ 376272 string characters out of 5747435
  1941555 words of memory out of 5000000
- 42848 multiletter control sequences out of 15000+600000
+ 42847 multiletter control sequences out of 15000+600000
  564258 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,10n,81p,1904b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist, replaced by a fixed one
+
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Theremin.pdf (38 pages, 2647376 bytes).
+Output written on Theremin.pdf (37 pages, 2646706 bytes).
 PDF statistics:
- 903 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 141 named destinations out of 1000 (max. 500000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 705 compressed objects within 8 object streams
+ 140 named destinations out of 1000 (max. 500000)
  369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

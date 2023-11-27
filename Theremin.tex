@@ -847,19 +847,7 @@ In figura \ref{fig:BodeBP} riporta il diagrama di Bode del modulo relativo al fi
 	In conclusione, il circuito realizzato rispetta le specifiche di progetto, in quanto testando con un generatore di funzione i filtri, in uscita essi garantiscono il passaggio di sinusoidi con frequenza compresa tra \textit{20Hz e 20kHz}. Osservando la \textit{Tabella \ref{tab:Distanza-Frequenza}} si può osservare che i limiti inferiore e superiore concordano con la scelta di un oscillazione di \textit{245kHz} per l'oscillatore di Wien. Infatti, l'uscita complessiva del sistema oscilla tra \textit{22kHz} in assenza della mano, fino a \textit{1kHz} quando la mano è in prossimità dell'antenna. Il risultato non è ottimo ma abbastanza soddisfacente visti i limiti fisici dovuti agli strumenti a disposizione. Infatti, il limite inferiore di oscillazione del sistema è dovuto soltato ai disturbi generati dall'antenna quando la mano è molto vicina (circa 2cm di distanza). Le frequenze nell'ordine delle centinaia di \textit{kHz} permettono di avere delle variazioni apprezzabili sulla frequenza in uscita al sistema. Ovvero la riduzione della frequenza della sinusoide risulta proporzionale alla distanza della mano dall'antenna.
 	Non sono stati imposti vincoli sulla risoluzione, principale tallone d'Achille del sistema realizzato. La risoluzione infatti non risulta costante, inoltre man mano ci si avvicina con la mano all'antenna il sistema risulta meno sensibile. Infatti, non è possibile rilevare variazioni inferiori al \textit{kHz}.
 	Il problema della risoluzione potrebbe essere risolto migliorando il sistema utilizzato per la realizzazione della capacità variabile. Inoltre, aumentando la frequenza di oscillazione dell'\textit{XR2206} è possibile ottenere una sensibilità maggiore poiché per aumentare la frequenza di oscillazione è necessario utilizzare capacità molto piccole (dell'ordine del pF) confrontabili con la capacità formata tra antenna e mano. Questo fa in modo di attuare una variazione di capacità molto incisiva per la generazione del segnale, il quale avrà una risoluzione maggiore.
-	\newpage
-	
 
-	\section{MODIFICHE}
-	Risistemare il ponte di wien, rifare le immagini dello spetro e del THD
-	Sistemare il grafico dei filtri \newline
-	\noindent
-	studio e progetto dei filtri passa banda passivi
-	\noindent
-	come funziona il VCO dell/XR e il sine shaper
-	\newline
-	FFT del mixer da rifare \newline
-	Sch ponte di wien e calcolo in V del THD della sinusoide di uscita
 	\listoffigures
 	\listoftables
 \end{document}
